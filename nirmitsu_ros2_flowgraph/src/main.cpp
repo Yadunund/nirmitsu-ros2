@@ -26,6 +26,8 @@
 
 #include <rclcpp/rclcpp.hpp>
 
+#include <iostream>
+
 using QtNodes::DataModelRegistry;
 using QtNodes::FlowScene;
 using QtNodes::FlowView;
@@ -40,17 +42,6 @@ static std::shared_ptr<DataModelRegistry> registerDataModels()
 
 int main(int argc, char** argv)
 {
-
-  // std::vector<std::string> non_ros_args =
-  //   rclcpp::init_and_remove_ros_arguments(argc, argv);
-  // std::vector<char *> non_ros_args_c_strings;
-  // for (auto & arg : non_ros_args) {
-  //   non_ros_args_c_strings.push_back(&arg.front());
-  // }
-  // int non_ros_argc = static_cast<int>(non_ros_args_c_strings.size());
-
-  // QApplication app(non_ros_argc, non_ros_args_c_strings.data());
-
   QApplication app(argc, argv);
 
   rclcpp::init(argc, argv);
@@ -63,6 +54,6 @@ int main(int argc, char** argv)
   view.resize(800, 600);
   view.show();
 
-  return app.exec();
+  app.exec();
   rclcpp::shutdown();
 }

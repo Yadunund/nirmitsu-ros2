@@ -42,17 +42,17 @@ public:
 
   ~SimplePublisher();
 
-public:
-
   QString
   caption() const override
   { return QString("Simple publisher"); }
 
+  static QString
+  Name()
+  { return QString("SimplePublisher"); }
+
   QString
   name() const override
   { return QString("SimplePublisher"); }
-
-public:
 
   virtual QString
   modelName() const
@@ -74,7 +74,7 @@ public:
   setInData(std::shared_ptr<NodeData> nodeData, PortIndex port) override;
 
   QWidget *
-  embeddedWidget() override { return _label; }
+  embeddedWidget() override { return _data->_label; }
 
   bool
   resizable() const override { return true; }
@@ -85,16 +85,20 @@ protected:
   eventFilter(QObject *object, QEvent *event) override;
 
 private:
-  QLabel * _label;
+  struct Data
+  {
+    QLabel * _label;
+    std::shared_ptr<NodeData> _nodeData;
+    std::thread _spin_thread;
+    std::thread _pub_thread;
+    std::chrono::nanoseconds _period;
+    rclcpp::Node::SharedPtr _node;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr _pub;
+    rclcpp::TimerBase::SharedPtr _timer;
+  };
 
-  std::shared_ptr<NodeData> _nodeData;
+  std::shared_ptr<Data> _data;
 
-  std::thread _spin_thread;
-  std::thread _pub_thread;
-  std::chrono::nanoseconds _period;
-  rclcpp::Node::SharedPtr _node;
-  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr _pub;
-  rclcpp::TimerBase::SharedPtr _timer;
 
 };
 

@@ -5,54 +5,54 @@
 
 #include <QtWidgets/QFileDialog>
 
+#include <iostream>
+
+//=============================================================================
 SimplePublisher::SimplePublisher()
-  : _label(new QLabel("Image will appear here"))
 {
-  _label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
+  _data = std::make_shared<Data>();
+  _data->_label = new QLabel("Robot");
+  _data->_label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
+  _data->_period = std::chrono::seconds(1);
 
-  QFont f = _label->font();
-  f.setBold(true);
-  f.setItalic(true);
-
-  _label->setFont(f);
-
-  _label->setFixedSize(200, 200);
-
-  _label->installEventFilter(this);
-
-  _period = std::chrono::seconds(1);
-
-  _node = std::make_shared<rclcpp::Node>("simple_publisher_node");
-  _pub = _node->create_publisher<std_msgs::msg::String>(
+  _data->_node = std::make_shared<rclcpp::Node>("simple_publisher_node");
+  _data->_pub = _data->_node->create_publisher<std_msgs::msg::String>(
     "/chatter",
     rclcpp::SystemDefaultsQoS()
   );
 
-  _pub_thread = std::thread(
-    [&]()
+  _data->_pub_thread = std::thread(
+    [data = _data]()
     {
       while (rclcpp::ok())
       {
         auto msg = std::make_unique<std_msgs::msg::String>();
         msg->data = "Hello from flow component";
-        _pub->publish(std::move(msg));
-        std::this_thread::sleep_for(_period);
+        data->_pub->publish(std::move(msg));
+        std::this_thread::sleep_for(data->_period);
+
       }
     });
 
-  _spin_thread = std::thread(
-    [&]()
+  _data->_spin_thread = std::thread(
+    [data = _data]()
     {
-      rclcpp::spin(_node);
+      while(rclcpp::ok())
+      {
+        rclcpp::spin_some(data->_node);
+      }
     }
   );
+
 }
 
+//=============================================================================
 SimplePublisher::~SimplePublisher()
 {
-  if(_spin_thread.joinable())
-    _spin_thread.join();
-  // rclcpp::shutdown();
+  if (_data->_spin_thread.joinable())
+    _data->_spin_thread.join();
+  if (_data->_pub_thread.joinable())
+    _data->_pub_thread.join();
 }
 
 unsigned int
@@ -77,26 +77,26 @@ nPorts(PortType portType) const
   return result;
 }
 
-
+//=============================================================================
 bool SimplePublisher::eventFilter(QObject *object, QEvent *event)
 {
   return false;
 }
 
-
+//=============================================================================
 std::shared_ptr<NodeData>
 SimplePublisher::
 outData(PortIndex)
 {
-  return _nodeData;
+  return _data->_nodeData;
 }
 
-
+//=============================================================================
 void
 SimplePublisher::
 setInData(std::shared_ptr<NodeData> nodeData, PortIndex)
 {
-  _nodeData = nodeData;
+  _data->_nodeData = nodeData;
 
   Q_EMIT dataUpdated(0);
 }
