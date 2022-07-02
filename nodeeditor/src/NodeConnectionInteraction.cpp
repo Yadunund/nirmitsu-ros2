@@ -38,10 +38,17 @@ canConnect(PortIndex &portIndex, TypeConverter & converter) const
     return false;
   }
 
-  // 1.5) Forbid connecting the node to itself
-  Node* node = _connection->getNode(oppositePort(requiredPort));
+  // Prevent segfault if someone tries to connect to the canvas
+  const auto& opposite_port =  oppositePort(requiredPort);
+  if (opposite_port == PortType::None)
+  {
+    return false;
+  }
 
-  if (node == _node)
+  // 1.5) Forbid connecting the node to itself
+  const Node* node = _connection->getNode(oppositePort(requiredPort));
+
+  if (node == nullptr || node == _node)
     return false;
 
   // 2) connection point is on top of the node port
@@ -236,11 +243,11 @@ nodePortIsEmpty(PortType portType, PortIndex portIndex) const
   // Check if the connection already exists connected to the respective
   // input and output ports
   auto sourcePortType = oppositePort(portType);
-  auto it = std::find_if(connections.begin(), connections.end(), 
+  auto it = std::find_if(connections.begin(), connections.end(),
     [this, sourcePortType](const auto& connection)
     {
       const auto* const currentConn = connection.second;
-      
+
       assert(_connection->getNode(sourcePortType));
       assert(currentConn->getNode(sourcePortType));
       return _connection->getNode(sourcePortType) == currentConn->getNode(sourcePortType) &&
