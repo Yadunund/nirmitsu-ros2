@@ -11,6 +11,7 @@
 #include "NodePainterDelegate.hpp"
 #include "Export.hpp"
 #include "memory.hpp"
+#include "Connection.hpp"
 
 namespace QtNodes
 {
@@ -22,7 +23,7 @@ enum class NodeValidationState
   Error
 };
 
-class Connection;
+// class Connection;
 
 class StyleCollection;
 

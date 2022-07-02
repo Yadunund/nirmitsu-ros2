@@ -42,6 +42,7 @@ using QtNodes::PortIndex;
 using QtNodes::NodeData;
 using QtNodes::NodeDataType;
 using QtNodes::NodeDataModel;
+using QtNodes::Connection;
 
 ///=============================================================================
 // The model dictates the number of inputs and outputs for the Node.
@@ -88,7 +89,9 @@ public:
 
   void setInData(std::shared_ptr<NodeData> nodeData, PortIndex port) override;
 
-  QWidget * embeddedWidget() override;
+  QWidget* embeddedWidget() override;
+
+  void outputConnectionDeleted(Connection const& con) override;
 
   bool resizable() const override { return true; }
 
@@ -102,8 +105,8 @@ private:
   {
     QLabel* _label;
     std::shared_ptr<StringData> _string_data;
-    std::shared_ptr<WheelData> _left_wheel_data;
-    std::shared_ptr<WheelData> _right_wheel_data;
+    std::shared_ptr<WheelData> _left_wheel_data = nullptr;
+    std::shared_ptr<WheelData> _right_wheel_data = nullptr;
     std::thread _spin_thread;
     std::thread _pub_thread;
     std::chrono::nanoseconds _period;

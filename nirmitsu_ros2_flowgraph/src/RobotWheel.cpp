@@ -46,7 +46,7 @@ unsigned int RobotWheel::nPorts(PortType portType) const
 
     case PortType::Out:
       result = 2;
-
+      break;
     default:
       break;
   }

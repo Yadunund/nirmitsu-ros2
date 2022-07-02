@@ -40,36 +40,26 @@ NumberSlider::NumberSlider()
 //=============================================================================
 unsigned int NumberSlider::nPorts(PortType portType) const
 {
-  unsigned int result = 1;
-
-  switch (portType)
-  {
-    case PortType::In:
-      result = 0;
-      break;
-
-    case PortType::Out:
-      result = 2; // 0 : Display, 1 : IntegerData
-
-    default:
-      break;
-  }
-
-  return result;
+  if (portType == PortType::In)
+    return 0;
+  else if (portType == PortType::Out)
+    return 2;
+  else
+    return 0;
 }
 
 //=============================================================================
 NodeDataType NumberSlider::dataType(PortType portType, PortIndex portIndex) const
 {
-  switch (portIndex)
-  {
-    case 0:
-      return _string->type();
-    case 1:
-      return _number->type();
-    default:
-      break;
-  }
+  if (portType == PortType::In)
+    return NodeDataType();
+  
+  if (portIndex == 0)
+    return _string->type();
+  else if (portIndex == 1)
+    return _number->type();
+  else
+    return NodeDataType();
 }
 
 //=============================================================================
