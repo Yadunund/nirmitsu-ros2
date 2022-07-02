@@ -23,6 +23,7 @@
 #include <QtWidgets/QApplication>
 
 #include "SimplePublisher.hpp"
+#include "DisplayResult.hpp"
 
 #include <rclcpp/rclcpp.hpp>
 
@@ -36,6 +37,7 @@ static std::shared_ptr<DataModelRegistry> registerDataModels()
 {
   auto ret = std::make_shared<DataModelRegistry>();
   ret->registerModel<SimplePublisher>();
+  ret->registerModel<DisplayResult>();
   return ret;
 }
 
