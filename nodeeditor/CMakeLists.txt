@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.8)
 
 project(NodeEditor CXX)
 
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic -Wuninitialized)
+endif()
+
 set(CMAKE_DISABLE_IN_SOURCE_BUILD OFF)
 set(CMAKE_DISABLE_SOURCE_CHANGES  OFF)
 set(OpenGL_GL_PREFERENCE LEGACY)

@@ -37,7 +37,6 @@ using QtNodes::PortIndex;
 using QtNodes::NodeData;
 using QtNodes::NodeDataType;
 using QtNodes::NodeDataModel;
-using QtNodes::NodeValidationState;
 
 //=============================================================================
 class MyNodeData : public NodeData

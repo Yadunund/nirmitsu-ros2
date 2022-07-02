@@ -24,6 +24,7 @@
 
 #include "SimplePublisher.hpp"
 #include "DisplayResult.hpp"
+#include "NumberSlider.hpp"
 
 #include <rclcpp/rclcpp.hpp>
 
@@ -36,8 +37,10 @@ using QtNodes::FlowView;
 static std::shared_ptr<DataModelRegistry> registerDataModels()
 {
   auto ret = std::make_shared<DataModelRegistry>();
-  ret->registerModel<SimplePublisher>();
-  ret->registerModel<DisplayResult>();
+  ret->registerModel<SimplePublisher>("Robot");
+  ret->registerModel<DisplayResult>("Result");
+  ret->registerModel<NumberSlider>("Input");
+
   return ret;
 }
 
