@@ -91,7 +91,7 @@ public:
 
   QWidget* embeddedWidget() override;
 
-  void outputConnectionDeleted(Connection const& con) override;
+  void inputConnectionDeleted(Connection const& con) override;
 
   bool resizable() const override { return true; }
 

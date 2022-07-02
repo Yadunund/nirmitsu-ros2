@@ -20,6 +20,8 @@
 
 #include "Node.hpp"
 
+#include <iostream>
+
 using QtNodes::ConnectionGraphicsObject;
 using QtNodes::Connection;
 using QtNodes::FlowScene;
@@ -204,18 +206,28 @@ mouseReleaseEvent(QGraphicsSceneMouseEvent* event)
   ungrabMouse();
   event->accept();
 
+  // TODO(YV): Account for users dragging a valid connection away from input node
   auto node = locateNodeAt(event->scenePos(), _scene,
                            _scene.views()[0]->transform());
+
+  if (node == nullptr)
+  {
+    std::cout << "[mouseReleaseEvent] located node is null" << std::endl;
+    std::cout << "Connection complete: " << _connection.complete() << std::endl;
+    _scene.deleteConnection(_connection);
+    return;
+  }
 
   NodeConnectionInteraction interaction(*node, _connection, _scene);
 
   if (node && interaction.tryConnect())
   {
+    std::cout << "Here 0" << std::endl;
     node->resetReactionToConnection();
   }
-
-  if (_connection.connectionState().requiresPort())
+  else
   {
+    std::cout << "Here 1" << std::endl;
     _scene.deleteConnection(_connection);
   }
 }

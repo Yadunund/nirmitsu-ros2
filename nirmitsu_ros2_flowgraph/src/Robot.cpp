@@ -88,7 +88,7 @@ Robot::Robot()
             }
             else
             {
-              const auto& value = data->_left_wheel_data->value();
+              const auto& value = data->_right_wheel_data->value();
               msg->header.frame_id = value.name.toStdString();
               msg->twist.linear.x = value.speed / 100.0;
               data->_active_frame_id = value.name;
@@ -259,7 +259,7 @@ void Robot::setInData(std::shared_ptr<NodeData> data, PortIndex port)
 }
 
 //=============================================================================
-void Robot::outputConnectionDeleted(Connection const& con)
+void Robot::inputConnectionDeleted(Connection const& con)
 {
   const auto& port = con.getPortIndex(PortType::In);
   if (port == 0)
