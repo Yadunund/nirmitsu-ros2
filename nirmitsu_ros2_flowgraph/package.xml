@@ -12,6 +12,7 @@
   <depend>rclcpp</depend>
   <depend>NodeEditor</depend>
   <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
 
   <build_depend>qtbase5-dev</build_depend>
   <exec_depend>libqt5-core</exec_depend>

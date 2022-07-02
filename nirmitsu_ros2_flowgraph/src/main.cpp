@@ -22,9 +22,10 @@
 
 #include <QtWidgets/QApplication>
 
-#include "SimplePublisher.hpp"
 #include "Display.hpp"
 #include "NumberSlider.hpp"
+#include "Robot.hpp"
+#include "RobotWheel.hpp"
 
 #include <rclcpp/rclcpp.hpp>
 
@@ -37,7 +38,8 @@ using QtNodes::FlowView;
 static std::shared_ptr<DataModelRegistry> registerDataModels()
 {
   auto ret = std::make_shared<DataModelRegistry>();
-  ret->registerModel<SimplePublisher>("Robot");
+  ret->registerModel<Robot>("Robot");
+  ret->registerModel<RobotWheel>("Robot");
   ret->registerModel<Display>("Result");
   ret->registerModel<NumberSlider>("Input");
 

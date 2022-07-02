@@ -17,6 +17,7 @@ find_package(Qt5 REQUIRED
   OpenGL
 )
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 SET(CMAKE_AUTOMOC ON)
 SET(CMAKE_AUTOUIC ON)
@@ -36,6 +37,7 @@ target_link_libraries(nirmitsu
     ${Qt5Gui_LIBRARIES}
     ${Qt5OpenGL_LIBRARIES}
     ${std_msgs_LIBRARIES}
+    ${geometry_msgs_LIBRARIES}
 )
 
 target_include_directories(nirmitsu
@@ -50,6 +52,7 @@ target_include_directories(nirmitsu
     ${Qt5Gui_INCLUDE_DIRS}
     ${Qt5OpenGL_INCLUDE_DIRS}
     ${std_msgs_INCLUDE_DIRS}
+    ${geometry_msgs_INCLUDE_DIRS}
 )
 
 target_compile_features(nirmitsu INTERFACE cxx_std_17)
