@@ -12,6 +12,7 @@
 #include "DataModelRegistry.hpp"
 #include "TypeConverter.hpp"
 #include "memory.hpp"
+#include "Connection.hpp"
 
 namespace QtNodes
 {
@@ -20,7 +21,7 @@ class NodeDataModel;
 class FlowItemInterface;
 class Node;
 class NodeGraphicsObject;
-class Connection;
+// class Connection;
 class ConnectionGraphicsObject;
 class NodeStyle;
 
@@ -118,7 +119,7 @@ Q_SIGNALS:
   void nodeDeleted(Node &n);
 
   void connectionCreated(Connection const &c);
-  void connectionDeleted(Connection const &c);
+  void connectionDeleted(Connection const &c); // Unused
 
   void nodeMoved(Node& n, const QPointF& newLocation);
 

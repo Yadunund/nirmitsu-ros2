@@ -22,8 +22,6 @@
 #include "NodeGraphicsObject.hpp"
 #include "ConnectionGraphicsObject.hpp"
 
-#include "Connection.hpp"
-
 #include "FlowView.hpp"
 #include "DataModelRegistry.hpp"
 
