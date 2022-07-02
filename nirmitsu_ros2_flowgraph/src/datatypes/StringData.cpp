@@ -15,52 +15,43 @@
  *
 */
 
-#include "DisplayResult.hpp"
+#include "StringData.hpp"
 
 //=============================================================================
-DisplayResult::
-DisplayResult()
-  : _label(new QLabel("Result"))
+StringData::StringData()
+: _value(QString())
 {
-  _label->setMargin(3);
+  // Do nothing
 }
 
 //=============================================================================
-unsigned int
-DisplayResult::
-nPorts(PortType portType) const
+StringData::StringData(QString value)
+: _value(std::move(value))
 {
-  unsigned int result = 1;
-
-  switch (portType)
-  {
-    case PortType::In:
-      result = 1;
-      break;
-
-    case PortType::Out:
-      result = 0;
-
-    default:
-      break;
-  }
-
-  return result;
+  // Do nothing
 }
 
 //=============================================================================
-NodeDataType
-DisplayResult::
-dataType(PortType, PortIndex) const
+auto StringData::type() const -> NodeDataType
 {
-  return TextData().type();
+  return NodeDataType {"display", "Display"};
 }
 
 //=============================================================================
-std::shared_ptr<NodeData>
-DisplayResult::
-outData(PortIndex)
+QString StringData::value() const
 {
-  std::shared_ptr<NodeData> ptr;
-  return ptr;
+  return _value;
+}
+
+//=============================================================================
+StringData& StringData::value(QString value)
+{
+  _value = std::move(value);
+  return *this;
+}
+
+//=============================================================================
+QString StringData::to_string() const
+{
+  return _value;
 }

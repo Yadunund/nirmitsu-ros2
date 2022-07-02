@@ -20,6 +20,7 @@
 //=============================================================================
 NumberSlider::NumberSlider()
 : _slider(new QSlider(Qt::Horizontal)),
+  _string(std::make_shared<StringData>()),
   _number(std::make_shared<IntegerData>(0))
 {
   // QSlider can only accept integer values
@@ -32,6 +33,8 @@ NumberSlider::NumberSlider()
     this,
     &NumberSlider::onSliderUpdated
   );
+  // Initialize to 0
+  onSliderUpdated(0);
 }
 
 //=============================================================================
@@ -46,7 +49,7 @@ unsigned int NumberSlider::nPorts(PortType portType) const
       break;
 
     case PortType::Out:
-      result = 1;
+      result = 2; // 0 : Display, 1 : IntegerData
 
     default:
       break;
@@ -58,18 +61,39 @@ unsigned int NumberSlider::nPorts(PortType portType) const
 //=============================================================================
 NodeDataType NumberSlider::dataType(PortType portType, PortIndex portIndex) const
 {
-  return _number->type();
+  switch (portIndex)
+  {
+    case 0:
+      return _string->type();
+    case 1:
+      return _number->type();
+    default:
+      break;
+  }
 }
 
 //=============================================================================
-std::shared_ptr<NodeData> NumberSlider::outData(PortIndex port)
+std::shared_ptr<NodeData> NumberSlider::outData(PortIndex portIndex)
 {
-  return _number;
+  switch (portIndex)
+  {
+    case 0:
+      return _string;
+    case 1:
+      return _number;
+    default:
+      break;
+  }
+
+  return nullptr;
 }
 
 //=============================================================================
 void NumberSlider::onSliderUpdated(int value)
 {
   _number->value(value);
+  _string->value(
+    QStringLiteral("Slider value: %1").arg(QString::number(value)));
   Q_EMIT dataUpdated(0);
+  Q_EMIT dataUpdated(1);
 }

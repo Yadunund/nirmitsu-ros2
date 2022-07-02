@@ -15,19 +15,16 @@
  *
 */
 
-#ifndef SRC__NumberSlider_HPP
-#define SRC__NumberSlider_HPP
+#ifndef SRC__DISPLAY_HPP
+#define SRC__DISPLAY_HPP
 
 #include <QtCore/QObject>
-#include <QtWidgets/QLabel>
+#include <QTextEdit>
 
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include "datatypes/IntegerData.hpp"
-#include "datatypes/StringData.hpp"
-
-#include <QSlider>
+#include <vector>
 
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -38,29 +35,29 @@ using QtNodes::NodeDataModel;
 //=============================================================================
 /// The model dictates the number of inputs and outputs for the Node.
 /// In this example it has no logic.
-class NumberSlider : public NodeDataModel
+class Display : public NodeDataModel
 {
   Q_OBJECT
 
 public:
-  NumberSlider();
+  Display();
 
-  ~NumberSlider() {}
+  ~Display() {}
 
   QString
   caption() const override
-  { return QString("NumberSlider"); }
+  { return QString("Display"); }
 
   bool
   captionVisible() const override { return true; }
 
   static QString
   Name()
-  { return QString("NumberSlider"); }
+  { return QString("Display"); }
 
   QString
   name() const override
-  { return NumberSlider::Name(); }
+  { return Display::Name(); }
 
   unsigned int
   nPorts(PortType portType) const override;
@@ -72,19 +69,14 @@ public:
   outData(PortIndex port) override;
 
   void
-  setInData(std::shared_ptr<NodeData> data, int) override
-  { }
+  setInData(std::shared_ptr<NodeData> data, int) override;
 
   QWidget *
-  embeddedWidget() override { return _slider; }
-
-protected Q_SLOTS:
-  void onSliderUpdated(int value);
+  embeddedWidget() override { return _text_box; }
 
 private:
-  QSlider* _slider;
-  std::shared_ptr<StringData> _string;
-  std::shared_ptr<IntegerData> _number;
+
+  QTextEdit * _text_box;
 };
 
-#endif // SRC__NumberSlider_HPP
+#endif // SRC__DISPLAY_HPP

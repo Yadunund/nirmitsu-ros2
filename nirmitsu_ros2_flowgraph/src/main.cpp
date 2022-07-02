@@ -23,7 +23,7 @@
 #include <QtWidgets/QApplication>
 
 #include "SimplePublisher.hpp"
-#include "DisplayResult.hpp"
+#include "Display.hpp"
 #include "NumberSlider.hpp"
 
 #include <rclcpp/rclcpp.hpp>
@@ -38,7 +38,7 @@ static std::shared_ptr<DataModelRegistry> registerDataModels()
 {
   auto ret = std::make_shared<DataModelRegistry>();
   ret->registerModel<SimplePublisher>("Robot");
-  ret->registerModel<DisplayResult>("Result");
+  ret->registerModel<Display>("Result");
   ret->registerModel<NumberSlider>("Input");
 
   return ret;
