@@ -27,7 +27,7 @@ Robot::Robot()
   _data->_active_frame_id = QString();
   _data->_string_data = std::make_shared<StringData>();
 
-  _data->_period = std::chrono::milliseconds(250);
+  _data->_period = std::chrono::milliseconds(67);
 
   _data->_node = std::make_shared<rclcpp::Node>("robot_node");
   _data->_pub = _data->_node->create_publisher<Twist>(
@@ -265,7 +265,7 @@ void Robot::inputConnectionDeleted(Connection const& con)
   if (port == 0)
   {
     // std::lock_guard<std::mutex>lock(_data->_mutex);
-    RCLCPP_ERROR(
+    RCLCPP_INFO(
       _data->_node->get_logger(),
       "Deleted left wheel node"
     );
@@ -273,7 +273,7 @@ void Robot::inputConnectionDeleted(Connection const& con)
   }
   else if (port == 1)
   {
-    RCLCPP_ERROR(
+    RCLCPP_INFO(
       _data->_node->get_logger(),
       "Deleted right wheel node"
     );
