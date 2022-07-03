@@ -47,7 +47,7 @@ using QtNodes::Connection;
 ///=============================================================================
 // The model dictates the number of inputs and outputs for the Node.
 /// In this example it has no logic.
-class Robot : public NodeDataModel
+class Robot : public NodeDataModel, public std::enable_shared_from_this<Robot>
 {
   Q_OBJECT
 
