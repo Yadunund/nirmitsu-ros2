@@ -15,18 +15,18 @@
  *
 */
 
-#ifndef SRC__NUMBERSLIDER_HPP
-#define SRC__NUMBERSLIDER_HPP
+#ifndef SRC__SWITCH_HPP
+#define SRC__SWITCH_HPP
 
 #include <QtCore/QObject>
 
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include"../datatypes/IntegerData.hpp"
+#include"../datatypes/BoolData.hpp"
 #include"../datatypes/StringData.hpp"
 
-#include <QSlider>
+#include <QCheckBox>
 
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -37,29 +37,29 @@ using QtNodes::NodeDataModel;
 //=============================================================================
 /// The model dictates the number of inputs and outputs for the Node.
 /// In this example it has no logic.
-class NumberSlider : public NodeDataModel
+class Switch : public NodeDataModel
 {
   Q_OBJECT
 
 public:
-  NumberSlider();
+  Switch();
 
-  ~NumberSlider() {}
+  ~Switch() {}
 
   QString
   caption() const override
-  { return QString("NumberSlider"); }
+  { return QString("Switch"); }
 
   bool
   captionVisible() const override { return true; }
 
   static QString
   Name()
-  { return QString("NumberSlider"); }
+  { return QString("Switch"); }
 
   QString
   name() const override
-  { return NumberSlider::Name(); }
+  { return Switch::Name(); }
 
   unsigned int
   nPorts(PortType portType) const override;
@@ -75,15 +75,15 @@ public:
   { }
 
   QWidget *
-  embeddedWidget() override { return _slider; }
+  embeddedWidget() override { return _switch; }
 
 protected Q_SLOTS:
-  void onSliderUpdated(int value);
+  void onStateChanged(int value);
 
 private:
-  QSlider* _slider;
+  QCheckBox* _switch;
   std::shared_ptr<StringData> _string;
-  std::shared_ptr<IntegerData> _number;
+  std::shared_ptr<BoolData> _on;
 };
 
-#endif // SRC__NUMBERSLIDER_HPP
+#endif // SRC__SWITCH_HPP

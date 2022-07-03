@@ -25,6 +25,7 @@
 #include "outputs/Display.hpp"
 #include "inputs/NumberSlider.hpp"
 #include "inputs/TextBox.hpp"
+#include "inputs/Switch.hpp"
 #include "robot/Robot.hpp"
 #include "robot/RobotWheel.hpp"
 
@@ -50,6 +51,7 @@ static std::shared_ptr<DataModelRegistry> registerDataModels()
   // Register inputs
   ret->registerModel<NumberSlider>("Input");
   ret->registerModel<TextBox>("Input");
+  ret->registerModel<Switch>("Input");
 
   return ret;
 }
