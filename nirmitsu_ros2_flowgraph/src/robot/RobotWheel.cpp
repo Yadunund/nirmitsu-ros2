@@ -23,7 +23,8 @@ RobotWheel::RobotWheel()
   _string_data(std::make_shared<StringData>()),
   _wheel_data(nullptr),
   _speed_data(nullptr),
-  _name_data(nullptr)
+  _name_data(nullptr),
+  _on_data(nullptr)
 {
   _label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
 }
@@ -32,7 +33,7 @@ RobotWheel::RobotWheel()
 unsigned int RobotWheel::nPorts(PortType portType) const
 {
   if (portType == PortType::In)
-    return 2;
+    return 3;
   else if (portType == PortType::Out)
     return 2;
   else
@@ -48,6 +49,8 @@ QString RobotWheel::portCaption(PortType portType, PortIndex portIndex) const
       return QStringLiteral("Name");
     else if (portIndex == 1)
       return QStringLiteral("Speed");
+    else if (portIndex == 2)
+      return QStringLiteral("On");
     else
       return QString();
   }
@@ -80,6 +83,8 @@ NodeDataType RobotWheel::dataType(PortType portType, PortIndex portIndex) const
     {
       return IntegerData().type();
     }
+    else if (portIndex == 2)
+      return BoolData().type();
     else
     {
       return NodeDataType();
@@ -115,27 +120,31 @@ void RobotWheel::setInData(std::shared_ptr<NodeData> data, PortIndex portIndex)
     auto name = std::dynamic_pointer_cast<StringData>(data);
     if (name == nullptr || name->value().isEmpty())
       return;
-    if (_name_data == nullptr)
-      _name_data = std::move(name);
-    else
-      _name_data->value(name->value());
+    _name_data = std::move(name);
     _label->setText(QStringLiteral("%1 Wheel").arg(_name_data->value()));
     _label->adjustSize();
     if (_wheel_data != nullptr)
       _wheel_data->set_name(_name_data->value());
   }
-  // Slider
+  // Speed
   else if (portIndex == 1)
   {
     auto speed_data = std::dynamic_pointer_cast<IntegerData>(data);
     if (speed_data == nullptr)
       return;
-    if (_speed_data == nullptr)
-      _speed_data = std::move(speed_data);
-    else
-      _speed_data->value(speed_data->value());
+    _speed_data = std::move(speed_data);
     if (_wheel_data != nullptr)
       _wheel_data->set_speed(_speed_data->value());
+  }
+  // On
+  else if (portIndex == 2)
+  {
+    auto on = std::dynamic_pointer_cast<BoolData>(data);
+    if (on == nullptr)
+      return;
+    _on_data = std::move(on);
+    if (_wheel_data != nullptr)
+      _wheel_data->set_on(_on_data->value());
   }
   else
   {
@@ -145,11 +154,11 @@ void RobotWheel::setInData(std::shared_ptr<NodeData> data, PortIndex portIndex)
   // Create or update wheel data
   if (_wheel_data == nullptr)
   {
-    if (_name_data != nullptr && _speed_data != nullptr)
+    if (_name_data != nullptr && _speed_data != nullptr && _on_data != nullptr)
     {
       _wheel_data = std::make_shared<WheelData>(WheelDataType(
         _name_data->value(),
-        true,
+        _on_data->value(),
         _speed_data->value()));
       _string_data->value(_wheel_data->to_string());
       Q_EMIT dataUpdated(0);
