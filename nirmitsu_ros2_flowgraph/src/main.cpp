@@ -22,10 +22,10 @@
 
 #include <QtWidgets/QApplication>
 
-#include "Display.hpp"
-#include "NumberSlider.hpp"
-#include "Robot.hpp"
-#include "RobotWheel.hpp"
+#include "outputs/Display.hpp"
+#include "inputs/NumberSlider.hpp"
+#include "robot/Robot.hpp"
+#include "robot/RobotWheel.hpp"
 
 #include <rclcpp/rclcpp.hpp>
 

@@ -15,8 +15,8 @@
  *
 */
 
-#ifndef SRC__ROBOT_HPP
-#define SRC__ROBOT_HPP
+#ifndef SRC__RobotWheelWHEEL_HPP
+#define SRC__RobotWheelWHEEL_HPP
 
 #include <QtCore/QObject>
 #include <QtCore/QEvent>
@@ -26,50 +26,40 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include "datatypes/StringData.hpp"
-#include "datatypes/WheelData.hpp"
-
-#include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/string.hpp>
-#include <geometry_msgs/msg/twist_stamped.hpp>
-
-#include <thread>
-#include <memory>
-#include <mutex>
+#include"../datatypes/StringData.hpp"
+#include"../datatypes/IntegerData.hpp"
+#include"../datatypes/WheelData.hpp"
 
 using QtNodes::PortType;
 using QtNodes::PortIndex;
 using QtNodes::NodeData;
 using QtNodes::NodeDataType;
 using QtNodes::NodeDataModel;
-using QtNodes::Connection;
 
 ///=============================================================================
 // The model dictates the number of inputs and outputs for the Node.
 /// In this example it has no logic.
-class Robot : public NodeDataModel
+class RobotWheel : public NodeDataModel
 {
   Q_OBJECT
 
 public:
-  Robot();
-
-  ~Robot();
+  RobotWheel();
 
   QString
   caption() const override
-  { return QString("TwoWheel Robot"); }
+  { return QString("RobotWheel"); }
 
   bool
   captionVisible() const override { return true; }
 
   static QString
   Name()
-  { return QString("TwoWheel Robot"); }
+  { return QString("RobotWheel"); }
 
   QString
   name() const override
-  { return Robot::name(); }
+  { return RobotWheel::name(); }
 
   unsigned int
   nPorts(PortType portType) const override;
@@ -85,41 +75,19 @@ public:
 
   NodeDataType dataType(PortType portType, PortIndex portIndex) const override;
 
-  std::shared_ptr<NodeData> outData(PortIndex port) override;
+  std::shared_ptr<NodeData> outData(PortIndex portIndex) override;
 
-  void setInData(std::shared_ptr<NodeData> nodeData, PortIndex port) override;
+  void setInData(std::shared_ptr<NodeData> data, PortIndex portIndex) override;
 
-  QWidget* embeddedWidget() override;
-
-  void inputConnectionDeleted(Connection const& con) override;
+  QWidget * embeddedWidget() override;
 
   bool resizable() const override { return true; }
 
-protected:
-
-  bool eventFilter(QObject *object, QEvent *event) override;
-
 private:
-  using Twist = geometry_msgs::msg::TwistStamped;
-  struct Data
-  {
     QLabel* _label;
     std::shared_ptr<StringData> _string_data;
-    std::shared_ptr<WheelData> _left_wheel_data = nullptr;
-    std::shared_ptr<WheelData> _right_wheel_data = nullptr;
-    std::thread _spin_thread;
-    std::thread _pub_thread;
-    std::chrono::nanoseconds _period;
-    rclcpp::Node::SharedPtr _node;
-    rclcpp::Publisher<Twist>::SharedPtr _pub;
-    rclcpp::TimerBase::SharedPtr _timer;
-    std::mutex _mutex;
-    QString _active_frame_id;
-  };
-
-  std::shared_ptr<Data> _data;
-
-
+    std::shared_ptr<IntegerData> _slider_data;
+    std::shared_ptr<WheelData> _wheel_data;
 };
 
-#endif // SRC__ROBOT_HPP
+#endif // SRC__RobotWheelWHEEL_HPP

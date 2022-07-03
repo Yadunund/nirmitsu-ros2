@@ -25,15 +25,15 @@ using QtNodes::NodeDataType;
 
 //=============================================================================
 // Implement bool datatype
-class StringData : public BaseNodeData<bool>
+class BoolData : public BaseNodeData<bool>
 {
 public:
-  StringData();
-  StringData(bool value);
+  BoolData();
+  BoolData(bool value);
   NodeDataType type() const override;
   bool value() const final;
-  StringData& value(bool value) final;
-  bool to_string() const final;
+  BoolData& value(bool value) final;
+  QString to_string() const final;
 
 private:
   bool _value;

@@ -51,7 +51,10 @@ BoolData& BoolData::value(bool value)
 }
 
 //=============================================================================
-bool BoolData::to_string() const
+QString BoolData::to_string() const
 {
-  return _value;
+  if (_value)
+    return QStringLiteral("True");
+
+  return QStringLiteral("False");
 }

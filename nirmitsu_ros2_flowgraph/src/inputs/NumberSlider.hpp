@@ -24,8 +24,8 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include "datatypes/IntegerData.hpp"
-#include "datatypes/StringData.hpp"
+#include"../datatypes/IntegerData.hpp"
+#include"../datatypes/StringData.hpp"
 
 #include <QSlider>
 
