@@ -6,8 +6,6 @@
 #include "DataModelRegistry.hpp"
 #include "FlowScene.hpp"
 
-#include <iostream>
-
 using QtNodes::NodeConnectionInteraction;
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -44,7 +42,6 @@ canConnect(PortIndex &portIndex, TypeConverter & converter) const
   const auto& opposite_port =  oppositePort(requiredPort);
   if (opposite_port == PortType::None)
   {
-    std::cout << "[canConnect] Tried connecting to canvas" << std::endl;
     return false;
   }
 
@@ -159,7 +156,7 @@ disconnect(PortType portToDisconnect) const
   NodeState &state = _node->nodeState();
 
   // clear pointer to Connection in the NodeState
-  state.getEntries(portToDisconnect)[portIndex].clear();
+  state.getEntries(portToDisconnect)[portIndex].erase(_connection->id());
 
   // 4) Propagate invalid data to IN node
   _connection->propagateEmptyData();
