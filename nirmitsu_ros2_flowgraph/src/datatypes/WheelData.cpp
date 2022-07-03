@@ -38,7 +38,7 @@ auto WheelData::type() const -> NodeDataType
 }
 
 //=============================================================================
-WheelDataType WheelData::value() const
+const WheelDataType& WheelData::value() const
 {
   return _value;
 }

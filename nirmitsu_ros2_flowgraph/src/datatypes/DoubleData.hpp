@@ -31,7 +31,7 @@ public:
   DoubleData();
   DoubleData(double value);
   NodeDataType type() const override;
-  double value() const final;
+  const double& value() const final;
   DoubleData& value(double value) final;
   QString to_string() const final;
 

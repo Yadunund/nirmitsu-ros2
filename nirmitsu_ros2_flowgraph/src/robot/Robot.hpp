@@ -58,14 +58,14 @@ public:
 
   QString
   caption() const override
-  { return QString("TwoWheel Robot"); }
+  { return QString("Robot"); }
 
   bool
   captionVisible() const override { return true; }
 
   static QString
   Name()
-  { return QString("TwoWheel Robot"); }
+  { return QString("Robot"); }
 
   QString
   name() const override
@@ -105,8 +105,9 @@ private:
   {
     QLabel* _label;
     std::shared_ptr<StringData> _string_data;
-    std::shared_ptr<WheelData> _left_wheel_data = nullptr;
-    std::shared_ptr<WheelData> _right_wheel_data = nullptr;
+    std::shared_ptr<WheelData> _wheel_1_data = nullptr;
+    std::shared_ptr<WheelData> _wheel_2_data = nullptr;
+    std::shared_ptr<StringData> _joystick_data = nullptr;
     std::thread _spin_thread;
     std::thread _pub_thread;
     std::chrono::nanoseconds _period;
@@ -114,7 +115,6 @@ private:
     rclcpp::Publisher<Twist>::SharedPtr _pub;
     rclcpp::TimerBase::SharedPtr _timer;
     std::mutex _mutex;
-    QString _active_frame_id;
   };
 
   std::shared_ptr<Data> _data;

@@ -38,7 +38,7 @@ auto DoubleData::type() const -> NodeDataType
 }
 
 //=============================================================================
-double DoubleData::value() const
+const double& DoubleData::value() const
 {
   return _value;
 }

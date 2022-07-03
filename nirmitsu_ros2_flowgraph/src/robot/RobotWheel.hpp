@@ -48,14 +48,14 @@ public:
 
   QString
   caption() const override
-  { return QString("RobotWheel"); }
+  { return QString("Wheel"); }
 
   bool
   captionVisible() const override { return true; }
 
   static QString
   Name()
-  { return QString("RobotWheel"); }
+  { return QString("Wheel"); }
 
   QString
   name() const override

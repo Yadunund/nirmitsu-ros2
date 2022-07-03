@@ -54,7 +54,7 @@ public:
   WheelData();
   WheelData(WheelDataType value);
   NodeDataType type() const override;
-  WheelDataType value() const final;
+  const WheelDataType& value() const final;
   WheelData& value(WheelDataType value) final;
   QString to_string() const final;
 

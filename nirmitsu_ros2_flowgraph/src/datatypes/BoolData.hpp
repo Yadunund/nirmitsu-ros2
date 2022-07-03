@@ -31,7 +31,7 @@ public:
   BoolData();
   BoolData(bool value);
   NodeDataType type() const override;
-  bool value() const final;
+  const bool& value() const final;
   BoolData& value(bool value) final;
   QString to_string() const final;
 

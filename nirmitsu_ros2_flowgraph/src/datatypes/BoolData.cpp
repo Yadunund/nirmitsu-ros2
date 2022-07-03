@@ -38,7 +38,7 @@ auto BoolData::type() const -> NodeDataType
 }
 
 //=============================================================================
-bool BoolData::value() const
+const bool& BoolData::value() const
 {
   return _value;
 }

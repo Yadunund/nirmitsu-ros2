@@ -44,12 +44,12 @@ QString RobotWheel::portCaption(PortType portType, PortIndex portIndex) const
 {
   if (portType == PortType::In)
   {
-      if (portIndex == 0)
-        return QStringLiteral("Name");
-      else if (portIndex == 1)
-        return QStringLiteral("Speed");
-      else
-        return QString();
+    if (portIndex == 0)
+      return QStringLiteral("Name");
+    else if (portIndex == 1)
+      return QStringLiteral("Speed");
+    else
+      return QString();
   }
   else if (portType == PortType::Out)
   {
@@ -113,7 +113,7 @@ void RobotWheel::setInData(std::shared_ptr<NodeData> data, PortIndex portIndex)
   if (portIndex == 0)
   {
     auto name = std::dynamic_pointer_cast<StringData>(data);
-    if (name == nullptr)
+    if (name == nullptr || name->value().isEmpty())
       return;
     if (_name_data == nullptr)
       _name_data = std::move(name);

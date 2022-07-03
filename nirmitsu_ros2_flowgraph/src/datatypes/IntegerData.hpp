@@ -31,7 +31,7 @@ public:
   IntegerData();
   IntegerData(int value);
   NodeDataType type() const override;
-  int value() const final;
+  const int& value() const final;
   IntegerData& value(int value) final;
   QString to_string() const final;
 

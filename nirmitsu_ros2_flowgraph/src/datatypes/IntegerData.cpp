@@ -38,7 +38,7 @@ auto IntegerData::type() const -> NodeDataType
 }
 
 //=============================================================================
-int IntegerData::value() const
+const int& IntegerData::value() const
 {
   return _value;
 }

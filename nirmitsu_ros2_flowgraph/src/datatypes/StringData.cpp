@@ -38,7 +38,7 @@ auto StringData::type() const -> NodeDataType
 }
 
 //=============================================================================
-QString StringData::value() const
+const QString& StringData::value() const
 {
   return _value;
 }

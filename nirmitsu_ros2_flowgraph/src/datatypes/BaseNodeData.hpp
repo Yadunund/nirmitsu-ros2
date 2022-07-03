@@ -33,7 +33,7 @@ class BaseNodeData : public NodeData
 {
 public:
   // Get the value
-  virtual T value() const = 0;
+  virtual const T& value() const = 0;
 
   // Set the value
   virtual BaseNodeData& value(T) = 0;

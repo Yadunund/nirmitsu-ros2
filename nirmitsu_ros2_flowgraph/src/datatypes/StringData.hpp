@@ -31,7 +31,7 @@ public:
   StringData();
   StringData(QString value);
   NodeDataType type() const override;
-  QString value() const final;
+  const QString& value() const final;
   StringData& value(QString value) final;
   QString to_string() const final;
 

@@ -24,7 +24,6 @@ Robot::Robot()
   _data->_label = new QLabel("MyRobot");
   _data->_label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
 
-  _data->_active_frame_id = QString();
   _data->_string_data = std::make_shared<StringData>();
 
   _data->_period = std::chrono::milliseconds(67);
@@ -40,70 +39,60 @@ Robot::Robot()
     {
       while (rclcpp::ok())
       {
+        std::this_thread::sleep_for(data->_period);
         // TODO(YV): Wait on a cv for input from wheels
         std::lock_guard<std::mutex>lock(data->_mutex);
+        if (data->_wheel_1_data == nullptr && data->_wheel_2_data == nullptr)
         {
-          if (data->_left_wheel_data == nullptr && data->_right_wheel_data == nullptr)
-          {
-            RCLCPP_DEBUG(
-              data->_node->get_logger(),
-              "[Robot] Waiting for a wheel to connect"
-            );
-            std::this_thread::sleep_for(data->_period);
-            continue;
-          }
+          RCLCPP_DEBUG(
+            data->_node->get_logger(),
+            "[Robot] Waiting for a wheel to connect"
+          );
+          continue;
+        }
+
+        // If we're receiving joystick commands, only publish that Twist
+        if (data->_joystick_data != nullptr &&
+          (data->_wheel_1_data != nullptr && data->_wheel_1_data->value().on) &&
+          ((data->_wheel_2_data != nullptr && data->_wheel_2_data->value().on)))
+        {
           auto msg = std::make_unique<Twist>();
           msg->header.stamp = data->_node->get_clock()->now();
-          if (data->_left_wheel_data != nullptr)
-          {
-            if (data->_right_wheel_data != nullptr)
-            {
-              // Both wheels are connected
-              RCLCPP_DEBUG(
-                data->_node->get_logger(),
-                "[Robot] Logic not implemented for two wheels connected"
-              );
-              std::this_thread::sleep_for(data->_period);
-              continue;
-            }
-            else
-            {
-              const auto& value = data->_left_wheel_data->value();
-              msg->header.frame_id = value.name.toStdString();
-              msg->twist.linear.x = value.speed / 100.0;
-              data->_active_frame_id = value.name;
-            }
-          }
-          else
-          {
-            if (data->_left_wheel_data != nullptr)
-            {
-              // Both wheels are connected
-              RCLCPP_DEBUG(
-                data->_node->get_logger(),
-                "[Robot] Logic not implemented for two wheels connected"
-              );
-              std::this_thread::sleep_for(data->_period);
-              continue;
-            }
-            else
-            {
-              const auto& value = data->_right_wheel_data->value();
-              msg->header.frame_id = value.name.toStdString();
-              msg->twist.linear.x = value.speed / 100.0;
-              data->_active_frame_id = value.name;
-            }
-          }
-          // data->_string_data->value(
-          //   QStringLiteral("[%1_%2] Published Speed %2 to Wheel %3")
-          //   .arg((int)msg->header.stamp.sec)
-          //   .arg((int)msg->header.stamp.nanosec)
-          //   .arg((int)msg->twist.linear.x)
-          //   .arg(data->_active_frame_id)
-          // );
+          msg->header.frame_id = "robot";
+          data->_pub->publish(std::move(msg));
+          continue;
+        }
+
+        // Publish Wheel msgs
+        if (data->_wheel_1_data != nullptr &&
+          data->_wheel_1_data->value().on)
+        {
+          auto msg = std::make_unique<Twist>();
+          msg->header.stamp = data->_node->get_clock()->now();
+          const auto& value = data->_wheel_1_data->value();
+          msg->header.frame_id = value.name.toStdString();
+          msg->twist.linear.x = value.speed / 100.0;
           data->_pub->publish(std::move(msg));
         }
-        std::this_thread::sleep_for(data->_period);
+
+        if (data->_wheel_2_data != nullptr &&
+          data->_wheel_2_data->value().on)
+        {
+          auto msg = std::make_unique<Twist>();
+          msg->header.stamp = data->_node->get_clock()->now();
+          const auto& value = data->_wheel_2_data->value();
+          msg->header.frame_id = value.name.toStdString();
+          msg->twist.linear.x = value.speed / 100.0;
+          data->_pub->publish(std::move(msg));
+        }
+
+        // data->_string_data->value(
+        //   QStringLiteral("[%1_%2] Published Speed %2 to Wheel %3")
+        //   .arg((int)msg->header.stamp.sec)
+        //   .arg((int)msg->header.stamp.nanosec)
+        //   .arg((int)msg->twist.linear.x)
+        //   .arg(data->_active_frame_id)
+        // );
       }
     });
 
@@ -152,9 +141,9 @@ QString Robot::portCaption(PortType portType, PortIndex portIndex) const
   if (portType == PortType::In)
   {
       if (portIndex == 0)
-        return QStringLiteral("Left Wheel");
+        return QStringLiteral("Wheel #1");
       else if (portIndex == 1)
-        return QStringLiteral("Right Wheel");
+        return QStringLiteral("Wheel #2");
       else if (portIndex == 2)
         return QStringLiteral("Joystick");
       else
@@ -191,7 +180,7 @@ NodeDataType Robot::dataType(PortType portType, PortIndex portIndex) const
     // Joystick
     else if (portIndex == 2)
     {
-      return _data->_string_data->type();
+      return StringData().type();
     }
     else
     {
@@ -201,7 +190,7 @@ NodeDataType Robot::dataType(PortType portType, PortIndex portIndex) const
 
   else if (portType == PortType::Out)
   {
-    return _data->_string_data->type();
+    return StringData().type();
   }
   else
   {
@@ -213,42 +202,40 @@ NodeDataType Robot::dataType(PortType portType, PortIndex portIndex) const
 void Robot::setInData(std::shared_ptr<NodeData> data, PortIndex port)
 {
   // std::lock_guard<std::mutex>lock(_data->_mutex);
-  // Left Wheel
+  // Wheel 1
   if (port == 0)
   {
     auto wheel_data = std::dynamic_pointer_cast<WheelData>(data);
     if (wheel_data == nullptr)
       return;
-    // First time connecting to Left Wheel
-    if (_data->_left_wheel_data == nullptr)
-    {
-      _data->_left_wheel_data = std::make_shared<WheelData>();
-    }
-    _data->_left_wheel_data = std::move(wheel_data);
+    _data->_wheel_1_data = std::move(wheel_data);
     _data->_string_data->value(
-      QStringLiteral("Updated Left wheel:\n") +
-      _data->_left_wheel_data->to_string());
+      QStringLiteral("Updated wheel:\n") +
+      _data->_wheel_1_data->to_string());
 
   }
-  // Right Wheel
+  // Wheel 2
   else if (port == 1)
   {
     auto wheel_data = std::dynamic_pointer_cast<WheelData>(data);
     if (wheel_data == nullptr)
       return;
-    // First time connecting to Right Wheel
-    if (_data->_right_wheel_data == nullptr)
-    {
-      _data->_right_wheel_data = std::make_shared<WheelData>();
-    }
-    _data->_right_wheel_data = std::move(wheel_data);
+    _data->_wheel_2_data = std::move(wheel_data);
     _data->_string_data->value(
-      QStringLiteral("Updated right wheel:\n") +
-      _data->_right_wheel_data->to_string());  }
+      QStringLiteral("Updated wheel:\n") +
+      _data->_wheel_2_data->to_string());
+  }
   // Joystick
   else if (port == 2)
   {
-
+    auto joy_data = std::dynamic_pointer_cast<StringData>(data);
+    if (joy_data == nullptr)
+      return;
+    // First time connecting to Right Wheel
+    _data->_joystick_data = std::move(joy_data);
+    _data->_string_data->value(
+      QStringLiteral("Received joystick command %1:\n")
+      .arg(_data->_joystick_data->to_string()));
   }
   else
   {
@@ -267,18 +254,27 @@ void Robot::inputConnectionDeleted(Connection const& con)
     // std::lock_guard<std::mutex>lock(_data->_mutex);
     RCLCPP_INFO(
       _data->_node->get_logger(),
-      "Deleted left wheel node"
+      "Deleted wheel #1 node"
     );
-    _data->_left_wheel_data = nullptr;
+    _data->_wheel_1_data = nullptr;
   }
   else if (port == 1)
   {
     RCLCPP_INFO(
       _data->_node->get_logger(),
-      "Deleted right wheel node"
+      "Deleted wheel #2 node"
     );
     // std::lock_guard<std::mutex>lock(_data->_mutex);
-    _data->_right_wheel_data = nullptr;
+    _data->_wheel_2_data = nullptr;
+  }
+  else if (port == 2)
+  {
+    RCLCPP_INFO(
+      _data->_node->get_logger(),
+      "Deleted joystick node"
+    );
+    // std::lock_guard<std::mutex>lock(_data->_mutex);
+    _data->_joystick_data = nullptr;
   }
   else
     return;
