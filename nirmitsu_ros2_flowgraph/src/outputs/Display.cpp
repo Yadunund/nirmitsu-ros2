@@ -23,7 +23,6 @@
 Display::Display()
 : _text_box(new QTextEdit())
 {
-  // _text_box->setFrameRect(QRect(0, 0, 10, 10));
 }
 
 //=============================================================================

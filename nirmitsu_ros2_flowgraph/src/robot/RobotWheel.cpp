@@ -19,39 +19,24 @@
 
 //=============================================================================
 RobotWheel::RobotWheel()
-: _label(new QLabel("Left")),
+: _label(new QLabel()),
   _string_data(std::make_shared<StringData>()),
-  _wheel_data(std::make_shared<WheelData>()),
-  _slider_data(std::make_shared<IntegerData>(0))
+  _wheel_data(nullptr),
+  _speed_data(nullptr),
+  _name_data(nullptr)
 {
   _label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
-  _wheel_data->set_name(_label->text());
-  _wheel_data->set_on(true);
-  _wheel_data->set_speed(0);
-
-  Q_EMIT dataUpdated(0);
-  Q_EMIT dataUpdated(1);
 }
 
 //=============================================================================
 unsigned int RobotWheel::nPorts(PortType portType) const
 {
-  unsigned int result = 1;
-
-  switch (portType)
-  {
-    case PortType::In:
-      result = 1;
-      break;
-
-    case PortType::Out:
-      result = 2;
-      break;
-    default:
-      break;
-  }
-
-  return result;
+  if (portType == PortType::In)
+    return 2;
+  else if (portType == PortType::Out)
+    return 2;
+  else
+    return 0;
 }
 
 //=============================================================================
@@ -60,6 +45,8 @@ QString RobotWheel::portCaption(PortType portType, PortIndex portIndex) const
   if (portType == PortType::In)
   {
       if (portIndex == 0)
+        return QStringLiteral("Name");
+      else if (portIndex == 1)
         return QStringLiteral("Speed");
       else
         return QString();
@@ -87,11 +74,11 @@ NodeDataType RobotWheel::dataType(PortType portType, PortIndex portIndex) const
     // Slider
     if (portIndex == 0)
     {
-      return _slider_data->type();
+      return StringData().type();
     }
     else if (portIndex == 1)
     {
-      return _wheel_data->type();
+      return IntegerData().type();
     }
     else
     {
@@ -106,7 +93,7 @@ NodeDataType RobotWheel::dataType(PortType portType, PortIndex portIndex) const
     }
     else if (portIndex == 1)
     {
-      return _wheel_data->type();
+      return WheelData().type();
     }
     else
     {
@@ -122,21 +109,59 @@ NodeDataType RobotWheel::dataType(PortType portType, PortIndex portIndex) const
 //=============================================================================
 void RobotWheel::setInData(std::shared_ptr<NodeData> data, PortIndex portIndex)
 {
-  // Slider
+  // Name
   if (portIndex == 0)
+  {
+    auto name = std::dynamic_pointer_cast<StringData>(data);
+    if (name == nullptr)
+      return;
+    if (_name_data == nullptr)
+      _name_data = std::move(name);
+    else
+      _name_data->value(name->value());
+    _label->setText(QStringLiteral("%1 Wheel").arg(_name_data->value()));
+    _label->adjustSize();
+    if (_wheel_data != nullptr)
+      _wheel_data->set_name(_name_data->value());
+  }
+  // Slider
+  else if (portIndex == 1)
   {
     auto speed_data = std::dynamic_pointer_cast<IntegerData>(data);
     if (speed_data == nullptr)
       return;
-    _wheel_data->set_speed(speed_data->value());
+    if (_speed_data == nullptr)
+      _speed_data = std::move(speed_data);
+    else
+      _speed_data->value(speed_data->value());
+    if (_wheel_data != nullptr)
+      _wheel_data->set_speed(_speed_data->value());
   }
   else
   {
     return;
   }
-  _string_data->value(_wheel_data->to_string());
-  Q_EMIT dataUpdated(0);
-  Q_EMIT dataUpdated(1);
+
+  // Create or update wheel data
+  if (_wheel_data == nullptr)
+  {
+    if (_name_data != nullptr && _speed_data != nullptr)
+    {
+      _wheel_data = std::make_shared<WheelData>(WheelDataType(
+        _name_data->value(),
+        true,
+        _speed_data->value()));
+      _string_data->value(_wheel_data->to_string());
+      Q_EMIT dataUpdated(0);
+      Q_EMIT dataUpdated(1);
+    }
+  }
+  else
+  {
+    _string_data->value(_wheel_data->to_string());
+    Q_EMIT dataUpdated(0);
+    Q_EMIT dataUpdated(1);
+  }
 }
 
 //=============================================================================

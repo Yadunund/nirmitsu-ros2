@@ -86,7 +86,8 @@ public:
 private:
     QLabel* _label;
     std::shared_ptr<StringData> _string_data;
-    std::shared_ptr<IntegerData> _slider_data;
+    std::shared_ptr<StringData> _name_data;
+    std::shared_ptr<IntegerData> _speed_data;
     std::shared_ptr<WheelData> _wheel_data;
 };
 

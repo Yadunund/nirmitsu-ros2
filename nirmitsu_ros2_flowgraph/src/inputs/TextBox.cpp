@@ -43,6 +43,15 @@ unsigned int TextBox::nPorts(PortType portType) const
 }
 
 //=============================================================================
+QString TextBox::portCaption(PortType portType, PortIndex portIndex) const
+{
+  if (portType == PortType::Out && portIndex == 0)
+    return QStringLiteral("Text");
+
+  return QString();
+}
+
+//=============================================================================
 NodeDataType TextBox::dataType(PortType portType, PortIndex portIndex) const
 {
   if (portType == PortType::In)

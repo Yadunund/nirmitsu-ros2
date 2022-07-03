@@ -62,6 +62,16 @@ public:
   unsigned int
   nPorts(PortType portType) const override;
 
+  bool
+  portCaptionVisible(PortType portType, PortIndex portIndex) const override
+  {
+    Q_UNUSED(portType); Q_UNUSED(portIndex);
+    return true;
+  }
+
+  QString portCaption(PortType portType, PortIndex portIndex) const override;
+
+
   NodeDataType
   dataType(PortType portType, PortIndex portIndex) const override;
 
