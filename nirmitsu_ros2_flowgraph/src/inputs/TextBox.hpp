@@ -15,8 +15,8 @@
  *
 */
 
-#ifndef SRC__DISPLAY_HPP
-#define SRC__DISPLAY_HPP
+#ifndef SRC__TEXTBOX_HPP
+#define SRC__TEXTBOX_HPP
 
 #include <QtCore/QObject>
 #include <QTextEdit>
@@ -24,7 +24,7 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include <vector>
+#include"../datatypes/StringData.hpp"
 
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -35,29 +35,29 @@ using QtNodes::NodeDataModel;
 //=============================================================================
 /// The model dictates the number of inputs and outputs for the Node.
 /// In this example it has no logic.
-class Display : public NodeDataModel
+class TextBox : public NodeDataModel
 {
   Q_OBJECT
 
 public:
-  Display();
+  TextBox();
 
-  ~Display() {}
+  ~TextBox() {}
 
   QString
   caption() const override
-  { return QString("Display"); }
+  { return QString("TextBox"); }
 
   bool
   captionVisible() const override { return true; }
 
   static QString
   Name()
-  { return QString("Display"); }
+  { return QString("TextBox"); }
 
   QString
   name() const override
-  { return Display::Name(); }
+  { return TextBox::Name(); }
 
   unsigned int
   nPorts(PortType portType) const override;
@@ -69,14 +69,18 @@ public:
   outData(PortIndex port) override;
 
   void
-  setInData(std::shared_ptr<NodeData> data, int) override;
+  setInData(std::shared_ptr<NodeData> data, int) override
+  { }
 
   QWidget *
   embeddedWidget() override { return _text_box; }
 
-private:
+protected Q_SLOTS:
+  void onTextChanged();
 
+private:
   QTextEdit* _text_box;
+  std::shared_ptr<StringData> _string;
 };
 
-#endif // SRC__DISPLAY_HPP
+#endif // SRC__TEXTBOX_HPP

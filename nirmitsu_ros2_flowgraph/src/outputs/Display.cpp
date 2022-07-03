@@ -23,7 +23,7 @@
 Display::Display()
 : _text_box(new QTextEdit())
 {
-  _text_box->setFrameRect(QRect(0, 0, 10, 10));
+  // _text_box->setFrameRect(QRect(0, 0, 10, 10));
 }
 
 //=============================================================================
@@ -69,6 +69,8 @@ void Display::setInData(std::shared_ptr<NodeData> data, int)
   if (string_data)
   {
     _text_box->setText(string_data->value());
+    const QSize& size = _text_box->document()->size().toSize();
+    _text_box->setFixedHeight(size.height() + 3);
   }
   else
   {

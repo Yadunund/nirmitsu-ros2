@@ -24,6 +24,7 @@
 
 #include "outputs/Display.hpp"
 #include "inputs/NumberSlider.hpp"
+#include "inputs/TextBox.hpp"
 #include "robot/Robot.hpp"
 #include "robot/RobotWheel.hpp"
 
@@ -38,10 +39,17 @@ using QtNodes::FlowView;
 static std::shared_ptr<DataModelRegistry> registerDataModels()
 {
   auto ret = std::make_shared<DataModelRegistry>();
+
+  // Register robots
   ret->registerModel<Robot>("Robot");
   ret->registerModel<RobotWheel>("Robot");
+
+  // Register outputs
   ret->registerModel<Display>("Result");
+
+  // Register inputs
   ret->registerModel<NumberSlider>("Input");
+  ret->registerModel<TextBox>("Input");
 
   return ret;
 }

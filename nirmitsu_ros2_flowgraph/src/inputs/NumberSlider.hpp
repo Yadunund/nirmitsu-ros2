@@ -15,8 +15,8 @@
  *
 */
 
-#ifndef SRC__NumberSlider_HPP
-#define SRC__NumberSlider_HPP
+#ifndef SRC__NUMBERSLIDER_HPP
+#define SRC__NUMBERSLIDER_HPP
 
 #include <QtCore/QObject>
 #include <QtWidgets/QLabel>
@@ -87,4 +87,4 @@ private:
   std::shared_ptr<IntegerData> _number;
 };
 
-#endif // SRC__NumberSlider_HPP
+#endif // SRC__NUMBERSLIDER_HPP

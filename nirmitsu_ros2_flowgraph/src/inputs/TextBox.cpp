@@ -15,70 +15,61 @@
  *
 */
 
-#include "NumberSlider.hpp"
+#include "TextBox.hpp"
 
 //=============================================================================
-NumberSlider::NumberSlider()
-: _slider(new QSlider(Qt::Horizontal)),
-  _string(std::make_shared<StringData>()),
-  _number(std::make_shared<IntegerData>(0))
+TextBox::TextBox()
+: _text_box(new QTextEdit()),
+  _string(std::make_shared<StringData>())
 {
-  // QSlider can only accept integer values
-  _slider->setMinimum(0);
-  _slider->setMaximum(100);
-  _slider->setSingleStep(1);
   connect(
-    _slider,
-    &QSlider::valueChanged,
+    _text_box,
+    &QTextEdit::textChanged,
     this,
-    &NumberSlider::onSliderUpdated
+    &TextBox::onTextChanged
   );
-  // Initialize to 0
-  onSliderUpdated(0);
+
 }
 
 //=============================================================================
-unsigned int NumberSlider::nPorts(PortType portType) const
+unsigned int TextBox::nPorts(PortType portType) const
 {
   if (portType == PortType::In)
     return 0;
   else if (portType == PortType::Out)
-    return 2;
+    return 1;
   else
     return 0;
 }
 
 //=============================================================================
-NodeDataType NumberSlider::dataType(PortType portType, PortIndex portIndex) const
+NodeDataType TextBox::dataType(PortType portType, PortIndex portIndex) const
 {
   if (portType == PortType::In)
     return NodeDataType();
 
   if (portIndex == 0)
     return _string->type();
-  else if (portIndex == 1)
-    return _number->type();
   else
     return NodeDataType();
 }
 
 //=============================================================================
-std::shared_ptr<NodeData> NumberSlider::outData(PortIndex portIndex)
+std::shared_ptr<NodeData> TextBox::outData(PortIndex portIndex)
 {
   if (portIndex == 0)
+  {
     return _string;
-  else if (portIndex == 1)
-    return _number;
-  else
-    return nullptr;
+  }
+
+  return nullptr;
 }
 
 //=============================================================================
-void NumberSlider::onSliderUpdated(int value)
+void TextBox::onTextChanged()
 {
-  _number->value(value);
-  _string->value(
-    QStringLiteral("Slider value: %1").arg(QString::number(value)));
+  _string->value(_text_box->toPlainText());
+  const QSize& size = _text_box->document()->size().toSize();
+  _text_box->setFixedHeight(size.height() + 3);
   Q_EMIT dataUpdated(0);
-  Q_EMIT dataUpdated(1);
 }
