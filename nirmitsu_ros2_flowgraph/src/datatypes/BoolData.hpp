@@ -15,8 +15,8 @@
  *
 */
 
-#ifndef SRC__DATATYPES__INTEGERDATA_HPP
-#define SRC__DATATYPES__INTEGERDATA_HPP
+#ifndef SRC__DATATYPES__BOOLDATA_HPP
+#define SRC__DATATYPES__BOOLDATA_HPP
 
 #include "BaseNodeData.hpp"
 
@@ -24,19 +24,19 @@ using QtNodes::NodeData;
 using QtNodes::NodeDataType;
 
 //=============================================================================
-// Implement int datatype
-class IntegerData : public BaseNodeData<int>
+// Implement bool datatype
+class StringData : public BaseNodeData<bool>
 {
 public:
-  IntegerData();
-  IntegerData(int value);
+  StringData();
+  StringData(bool value);
   NodeDataType type() const override;
-  int value() const final;
-  IntegerData& value(int value) final;
-  QString to_string() const final;
+  bool value() const final;
+  StringData& value(bool value) final;
+  bool to_string() const final;
 
 private:
-  int _value;
+  bool _value;
 };
 
-#endif // SRC__DATATYPES__INTEGERDATA_HPP
+#endif // SRC__DATATYPES__BOOLDATA_HPP

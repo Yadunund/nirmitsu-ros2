@@ -15,43 +15,43 @@
  *
 */
 
-#include "StringData.hpp"
+#include "BoolData.hpp"
 
 //=============================================================================
-StringData::StringData()
-: _value(QString())
+BoolData::BoolData()
+: _value(bool())
 {
   // Do nothing
 }
 
 //=============================================================================
-StringData::StringData(QString value)
+BoolData::BoolData(bool value)
 : _value(std::move(value))
 {
   // Do nothing
 }
 
 //=============================================================================
-auto StringData::type() const -> NodeDataType
+auto BoolData::type() const -> NodeDataType
 {
-  return NodeDataType {"display", "Display"};
+  return NodeDataType {"bool", "Boolean"};
 }
 
 //=============================================================================
-QString StringData::value() const
+bool BoolData::value() const
 {
   return _value;
 }
 
 //=============================================================================
-StringData& StringData::value(QString value)
+BoolData& BoolData::value(bool value)
 {
-  _value = std::move(value);
+  _value = value;
   return *this;
 }
 
 //=============================================================================
-QString StringData::to_string() const
+bool BoolData::to_string() const
 {
   return _value;
 }
