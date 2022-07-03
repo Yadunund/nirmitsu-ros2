@@ -22,10 +22,10 @@
 #include "NodeGraphicsObject.hpp"
 #include "ConnectionGraphicsObject.hpp"
 
+#include "Connection.hpp"
+
 #include "FlowView.hpp"
 #include "DataModelRegistry.hpp"
-
-#include <iostream>
 
 using QtNodes::FlowScene;
 using QtNodes::Node;
@@ -184,7 +184,8 @@ void
 FlowScene::
 deleteConnection(Connection const& connection)
 {
-  sendConnectionDeletedToNodes(connection);
+  // Propagate the connection deletion to NodeModels
+  // sendConnectionDeletedToNodes(connection);
   auto it = _connections.find(connection.id());
   if (it != _connections.end())
   {
@@ -616,18 +617,22 @@ sendConnectionDeletedToNodes(Connection const& c)
   Node* from = c.getNode(PortType::Out);
   Node* to   = c.getNode(PortType::In);
 
-  // Q_ASSERT(from != nullptr);
-  // Q_ASSERT(to != nullptr);
-  if (from != nullptr)
-  {
-    std::cout << "[sendConnectionDeletedToNodes] calling outputConnectionDeleted()" << std::endl;
-    from->nodeDataModel()->outputConnectionDeleted(c);
-  }
-  if (to != nullptr)
-  {
-    std::cout << "[sendConnectionDeletedToNodes] calling inputConnectionDeleted()" << std::endl;
-    to->nodeDataModel()->inputConnectionDeleted(c);
-  }
+  Q_ASSERT(from != nullptr);
+  Q_ASSERT(to != nullptr);
+
+  from->nodeDataModel()->outputConnectionDeleted(c);
+  to->nodeDataModel()->inputConnectionDeleted(c);
+
+  // if (from != nullptr)
+  // {
+  //   std::cout << "[sendConnectionDeletedToNodes] calling outputConnectionDeleted()" << std::endl;
+  //   from->nodeDataModel()->outputConnectionDeleted(c);
+  // }
+  // if (to != nullptr)
+  // {
+  //   std::cout << "[sendConnectionDeletedToNodes] calling inputConnectionDeleted()" << std::endl;
+  //   to->nodeDataModel()->inputConnectionDeleted(c);
+  // }
 }
 
 

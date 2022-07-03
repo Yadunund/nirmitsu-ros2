@@ -20,8 +20,6 @@
 
 #include "Node.hpp"
 
-#include <iostream>
-
 using QtNodes::ConnectionGraphicsObject;
 using QtNodes::Connection;
 using QtNodes::FlowScene;
@@ -206,14 +204,16 @@ mouseReleaseEvent(QGraphicsSceneMouseEvent* event)
   ungrabMouse();
   event->accept();
 
-  // TODO(YV): Account for users dragging a valid connection away from input node
   auto node = locateNodeAt(event->scenePos(), _scene,
                            _scene.views()[0]->transform());
 
+  // YV: If the located of the mouse release event was over the canvas, it could
+  // either tbe the case whether the user failed to make a connection at the
+  // other node's port or the user tried to remove an existing connection by
+  // clicking on a connected port and releasing over the canvas.
+  // In either cases, we should delete the dangling connection
   if (node == nullptr)
   {
-    std::cout << "[mouseReleaseEvent] located node is null" << std::endl;
-    std::cout << "Connection complete: " << _connection.complete() << std::endl;
     _scene.deleteConnection(_connection);
     return;
   }
@@ -222,12 +222,10 @@ mouseReleaseEvent(QGraphicsSceneMouseEvent* event)
 
   if (node && interaction.tryConnect())
   {
-    std::cout << "Here 0" << std::endl;
     node->resetReactionToConnection();
   }
   else
   {
-    std::cout << "Here 1" << std::endl;
     _scene.deleteConnection(_connection);
   }
 }

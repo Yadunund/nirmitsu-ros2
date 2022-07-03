@@ -18,8 +18,6 @@
 #include "ConnectionGeometry.hpp"
 #include "ConnectionGraphicsObject.hpp"
 
-#include <iostream>
-
 using QtNodes::Connection;
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -267,14 +265,15 @@ removeFromNodes() const
 {
   if (_inNode)
   {
-    std::cout << "[removeFromNodes] _inNode is valid" << std::endl;
+    if (_inNode->nodeDataModel() != nullptr)
+      _inNode->nodeDataModel()->inputConnectionDeleted(*this);
     _inNode->nodeState().eraseConnection(PortType::In, _inPortIndex, id());
-
   }
 
   if (_outNode)
   {
-    std::cout << "[removeFromNodes] _outNode is valid" << std::endl;
+    if (_outNode->nodeDataModel() != nullptr)
+      _outNode->nodeDataModel()->outputConnectionDeleted(*this);
     _outNode->nodeState().eraseConnection(PortType::Out, _outPortIndex, id());
   }
 }
