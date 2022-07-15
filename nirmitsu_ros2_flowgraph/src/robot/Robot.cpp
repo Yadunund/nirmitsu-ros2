@@ -64,26 +64,26 @@ Robot::Robot()
         }
 
         // Publish Wheel msgs
-        if (data->_wheel_1_data != nullptr &&
-          data->_wheel_1_data->value().on)
+        if (data->_wheel_1_data != nullptr)
         {
           auto msg = std::make_unique<Twist>();
           msg->header.stamp = data->_node->get_clock()->now();
           const auto& value = data->_wheel_1_data->value();
           msg->header.frame_id = value.name.toStdString();
-          msg->twist.linear.x = value.speed / 100.0;
+          msg->twist.linear.x =
+            data->_wheel_1_data->value().on ? value.speed / 100.0 : 0.0;
           data->_pub->publish(std::move(msg));
 
         }
 
-        if (data->_wheel_2_data != nullptr &&
-          data->_wheel_2_data->value().on)
+        if (data->_wheel_2_data != nullptr)
         {
           auto msg = std::make_unique<Twist>();
           msg->header.stamp = data->_node->get_clock()->now();
           const auto& value = data->_wheel_2_data->value();
           msg->header.frame_id = value.name.toStdString();
-          msg->twist.linear.x = value.speed / 100.0;
+          msg->twist.linear.x =
+            data->_wheel_2_data->value().on ? value.speed / 100.0 : 0.0;
           data->_pub->publish(std::move(msg));
         }
 
