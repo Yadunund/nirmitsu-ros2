@@ -25,6 +25,7 @@ Robot::Robot()
   _data->_label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
 
   _data->_string_data = std::make_shared<StringData>();
+  _data->_on_data = std::make_shared<BoolData>(false);
 
   _data->_period = std::chrono::milliseconds(250);
 
@@ -53,8 +54,8 @@ Robot::Robot()
 
         // If we're receiving joystick commands, only publish that Twist
         if (data->_joystick_data != nullptr &&
-          (data->_wheel_1_data != nullptr && data->_wheel_1_data->value().on) &&
-          ((data->_wheel_2_data != nullptr && data->_wheel_2_data->value().on)))
+          data->_wheel_1_data != nullptr &&
+          data->_wheel_2_data != nullptr)
         {
           auto msg = std::make_unique<Twist>();
           msg->header.stamp = data->_node->get_clock()->now();
@@ -71,7 +72,7 @@ Robot::Robot()
           const auto& value = data->_wheel_1_data->value();
           msg->header.frame_id = value.name.toStdString();
           msg->twist.linear.x =
-            data->_wheel_1_data->value().on ? value.speed / 100.0 : 0.0;
+            data->_on_data->value() ? value.speed / 100.0 : 0.0;
           data->_pub->publish(std::move(msg));
 
         }
@@ -83,7 +84,7 @@ Robot::Robot()
           const auto& value = data->_wheel_2_data->value();
           msg->header.frame_id = value.name.toStdString();
           msg->twist.linear.x =
-            data->_wheel_2_data->value().on ? value.speed / 100.0 : 0.0;
+            data->_on_data->value() ? value.speed / 100.0 : 0.0;
           data->_pub->publish(std::move(msg));
         }
 
@@ -116,7 +117,7 @@ unsigned int Robot::nPorts(PortType portType) const
   switch (portType)
   {
     case PortType::In:
-      result = 3;
+      result = 4;
       break;
 
     case PortType::Out:
@@ -140,6 +141,8 @@ QString Robot::portCaption(PortType portType, PortIndex portIndex) const
         return QStringLiteral("Wheel #2");
       else if (portIndex == 2)
         return QStringLiteral("Joystick");
+      else if (portIndex == 3)
+        return QStringLiteral("On");
       else
         return QString();
   }
@@ -175,6 +178,11 @@ NodeDataType Robot::dataType(PortType portType, PortIndex portIndex) const
     else if (portIndex == 2)
     {
       return StringData().type();
+    }
+    // On
+    else if (portIndex == 3)
+    {
+      return BoolData().type();
     }
     else
     {
@@ -231,6 +239,17 @@ void Robot::setInData(std::shared_ptr<NodeData> data, PortIndex port)
       QStringLiteral("Received joystick command %1:\n")
       .arg(_data->_joystick_data->to_string()));
   }
+  // On
+  else if (port == 3)
+  {
+    auto on_data = std::dynamic_pointer_cast<BoolData>(data);
+    if (data == nullptr)
+      return;
+    _data->_on_data = on_data;
+    _data->_string_data->value(
+      QStringLiteral("Motor On changed to %1:\n")
+      .arg(_data->_on_data->to_string()));
+  }
   else
   {
     return;
@@ -269,6 +288,15 @@ void Robot::inputConnectionDeleted(Connection const& con)
     );
     // std::lock_guard<std::mutex>lock(_data->_mutex);
     _data->_joystick_data = nullptr;
+  }
+  else if (port == 3)
+  {
+    RCLCPP_INFO(
+      _data->_node->get_logger(),
+      "Deleted On node"
+    );
+    // std::lock_guard<std::mutex>lock(_data->_mutex);
+    _data->_on_data->value(false);
   }
   else
     return;
