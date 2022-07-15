@@ -4,6 +4,8 @@ from rclpy.node import Node
 import lgpio
 import time
 
+from rclpy.qos import qos_profile_sensor_data
+
 from geometry_msgs.msg import TwistStamped
 
 # Configuration
@@ -11,7 +13,7 @@ R_FWD = 18
 R_REV = 12
 L_FWD = 13
 L_REV = 19
-FREQ = 1000
+FREQ = 100
 
 h = lgpio.gpiochip_open(0)
 
@@ -59,9 +61,8 @@ class Robot(Node):
           write_val =  (1.0 - abs(val)) * 100
           lgpio.tx_pwm(h, pin, FREQ, write_val)
           self.get_logger().info(f'Writing value {write_val} to pin {pin}')
+      time.sleep(0.1)
 
-
-          # time.sleep(1)
     def __del__(self):
         lgpio.tx_pwm(h, R_FWD, FREQ, 100)
         lgpio.tx_pwm(h, R_REV, FREQ, 100)

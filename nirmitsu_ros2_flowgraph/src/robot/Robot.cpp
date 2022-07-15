@@ -26,12 +26,12 @@ Robot::Robot()
 
   _data->_string_data = std::make_shared<StringData>();
 
-  _data->_period = std::chrono::milliseconds(67);
+  _data->_period = std::chrono::milliseconds(250);
 
   _data->_node = std::make_shared<rclcpp::Node>("robot_node");
   _data->_pub = _data->_node->create_publisher<Twist>(
     "/cmd_vel",
-    rclcpp::SystemDefaultsQoS().reliable()
+    rclcpp::QoS(10).reliable()
   );
 
   _data->_pub_thread = std::thread(
@@ -72,16 +72,8 @@ Robot::Robot()
           const auto& value = data->_wheel_1_data->value();
           msg->header.frame_id = value.name.toStdString();
           msg->twist.linear.x = value.speed / 100.0;
-          // data->_string_data->value(
-          //   QStringLiteral("[%1_%2] Published Speed %3 to Wheel %4")
-          //   .arg((int)msg->header.stamp.sec)
-          //   .arg((int)msg->header.stamp.nanosec)
-          //   .arg(QString::number(value.speed))
-          //   .arg(value.name)
-          // );
           data->_pub->publish(std::move(msg));
-          // if (auto self = me.lock())
-          //   Q_EMIT self->dataUpdated(0);
+
         }
 
         if (data->_wheel_2_data != nullptr &&
