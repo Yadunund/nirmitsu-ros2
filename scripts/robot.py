@@ -44,7 +44,7 @@ class Robot(Node):
       # self.get_logger().info(f'Received msg {msg}')
       if (msg.header.frame_id == "Left"):
           val = msg.twist.linear.x
-          if val > 0: # fdw
+          if val >= 0: # fdw
               pin = L_FWD
           else:
               pin = L_REV
@@ -54,7 +54,7 @@ class Robot(Node):
 
       if (msg.header.frame_id == "Right"):
           val = msg.twist.linear.x
-          if val > 0: # fdw
+          if val >= 0: # fdw
               pin = R_FWD
           else:
               pin = R_REV

@@ -28,6 +28,7 @@
 
 #include"../datatypes/StringData.hpp"
 #include"../datatypes/WheelData.hpp"
+#include"../datatypes/BoolData.hpp"
 
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
@@ -105,6 +106,7 @@ private:
   {
     QLabel* _label;
     std::shared_ptr<StringData> _string_data;
+    std::shared_ptr<BoolData> _on_data;
     std::shared_ptr<WheelData> _wheel_1_data = nullptr;
     std::shared_ptr<WheelData> _wheel_2_data = nullptr;
     std::shared_ptr<StringData> _joystick_data = nullptr;
