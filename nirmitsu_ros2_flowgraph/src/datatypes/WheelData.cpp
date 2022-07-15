@@ -53,9 +53,8 @@ WheelData& WheelData::value(WheelDataType value)
 //=============================================================================
 QString WheelData::to_string() const
 {
-  return QStringLiteral("Name: %1\nOn: %2\nSpeed: %3")
+  return QStringLiteral("Name: %1\nSpeed: %2")
     .arg(_value.name)
-    .arg(_value.on)
     .arg(QString::number(_value.speed));
 }
 
@@ -63,13 +62,6 @@ QString WheelData::to_string() const
 WheelData& WheelData::set_speed(int speed)
 {
   _value.speed = speed;
-  return *this;
-}
-
-//=============================================================================
-WheelData& WheelData::set_on(bool on)
-{
-  _value.on = on;
   return *this;
 }
 

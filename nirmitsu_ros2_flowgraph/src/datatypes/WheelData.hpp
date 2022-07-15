@@ -27,21 +27,17 @@ using QtNodes::NodeDataType;
 struct WheelDataType
 {
   QString name;
-  bool on;
   int speed;
 
   WheelDataType()
-  : on(false),
-    name(QString()),
+  : name(QString()),
     speed(0)
   { }
 
   WheelDataType(
     QString name_,
-    bool on_,
     int speed_)
   : name(std::move(name_)),
-    on(on_),
     speed(speed_)
   {  };
 };
@@ -59,7 +55,6 @@ public:
   QString to_string() const final;
 
   WheelData& set_name(QString name);
-  WheelData& set_on(bool on);
   WheelData& set_speed(int speed);
 
 private:
