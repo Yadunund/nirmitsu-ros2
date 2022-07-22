@@ -1,0 +1,81 @@
+[0.011s] Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/NodeEditor -- -j16 -l16
+[0.045s] [  1%] [34m[1mAutomatic MOC for target nodes[0m
+[0.057s] [  1%] Built target nodes_autogen
+[0.091s] [ 68%] Built target nodes
+[0.110s] [ 71%] [34m[1mAutomatic MOC for target calculator[0m
+[0.110s] [ 71%] [34m[1mAutomatic MOC for target styles[0m
+[0.110s] [ 71%] [34m[1mAutomatic MOC for target connection_colors[0m
+[0.110s] [ 74%] [34m[1mAutomatic MOC for target example2[0m
+[0.110s] [ 74%] [34m[1mAutomatic MOC for target images[0m
+[0.110s] [ 74%] [34m[1mAutomatic MOC for target test_nodes[0m
+[0.130s] [ 74%] Built target example2_autogen
+[0.130s] [ 74%] Built target test_nodes_autogen
+[0.130s] [ 74%] Built target connection_colors_autogen
+[0.130s] [ 74%] Built target images_autogen
+[0.130s] [ 74%] Built target styles_autogen
+[0.131s] [ 74%] Built target calculator_autogen
+[0.154s] [ 88%] Built target styles
+[0.154s] [ 88%] Built target connection_colors
+[0.154s] [ 88%] Built target example2
+[0.154s] [ 88%] Built target images
+[0.158s] [100%] Built target calculator
+[0.158s] [100%] Built target test_nodes
+[0.168s] Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/NodeEditor -- -j16 -l16
+[0.244s] Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/NodeEditor
+[0.249s] -- Install configuration: ""
+[0.249s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/libnodes.so
+[0.250s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include
+[0.250s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes
+[0.250s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowScene
+[0.250s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/Connection
+[0.250s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/ConnectionStyle
+[0.250s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeGeometry
+[0.250s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeData
+[0.250s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeStyle
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeState
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowViewStyle
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/TypeConverter
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowView
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/DataModelRegistry
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodePainterDelegate
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/StyleCollection
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/Node
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Node.hpp
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Export.hpp
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Serializable.hpp
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionGeometry.hpp
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/PortType.hpp
+[0.251s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeState.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/memory.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/QUuidStdHash.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionStyle.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeGeometry.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/TypeConverter.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodePainterDelegate.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowViewStyle.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/DataModelRegistry.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeStyle.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeData.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/OperatingSystem.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowView.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionGraphicsObject.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Compiler.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Style.hpp
+[0.252s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeGraphicsObject.hpp
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionState.hpp
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/QStringStdHash.hpp
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/StyleCollection.hpp
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowScene.hpp
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Connection.hpp
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorTargets.cmake
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorTargets-noconfig.cmake
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorConfig.cmake
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/connection_colors
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/example2
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/calculator
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/images
+[0.253s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/styles
+[0.254s] Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/NodeEditor

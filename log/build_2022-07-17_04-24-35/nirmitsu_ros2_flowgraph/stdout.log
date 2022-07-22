@@ -1,0 +1,8 @@
+[  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[  5%] Built target nirmitsu_autogen
+[35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/main.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o[0m
+[ 33%] [32m[1mLinking CXX executable nirmitsu[0m

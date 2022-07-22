@@ -1,0 +1,399 @@
+[0.012s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[0.073s] [  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[0.107s] [  5%] Built target nirmitsu_autogen
+[0.133s] [35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[0.186s] [ 11%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o[0m
+[2.782s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.783s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.783s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.783s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.783s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.784s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:[m[K In constructor ‘[01m[KJoystick::Joystick()[m[K’:
+[2.784s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:25:13:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kstd::remove_reference<PosType>::type[m[K’ {aka ‘[01m[KPosType[m[K’})
+[2.784s]    25 |   _position([01;31m[K*std::move(PosType(0,0))[m[K)
+[2.784s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.784s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:27[m[K,
+[2.786s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.786s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.787s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.787s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h:276:48:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<int N, int M1, int M2, class T> QGenericMatrix<M1, M2, T> operator*(const QGenericMatrix<N, M2, T>&, const QGenericMatrix<M1, N, T>&)[m[K’
+[2.787s]   276 | Q_OUTOFLINE_TEMPLATE QGenericMatrix<M1, M2, T> [01;36m[Koperator[m[K*(const QGenericMatrix<N, M2, T>& m1, const QGenericMatrix<M1, N, T>& m2)
+[2.787s]       |                                                [01;36m[K^~~~~~~~[m[K
+[2.787s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h:276:48:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.787s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:25:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::remove_reference<PosType>::type[m[K’ {aka ‘[01m[KPosType[m[K’} is not derived from ‘[01m[Kconst QGenericMatrix<N, M2, T>[m[K’
+[2.788s]    25 |   _position(*std::move(PosType(0,0)[01;36m[K)[m[K)
+[2.788s]       |                                    [01;36m[K^[m[K
+[2.788s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:27[m[K,
+[2.788s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.788s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.788s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.789s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h:301:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<int N, int M, class T> QGenericMatrix<N, M, T> operator*(T, const QGenericMatrix<N, M, T>&)[m[K’
+[2.789s]   301 | Q_OUTOFLINE_TEMPLATE QGenericMatrix<N, M, T> [01;36m[Koperator[m[K*(T factor, const QGenericMatrix<N, M, T>& matrix)
+[2.789s]       |                                              [01;36m[K^~~~~~~~[m[K
+[2.789s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h:301:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.789s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:25:36:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.789s]    25 |   _position(*std::move(PosType(0,0)[01;36m[K)[m[K)
+[2.790s]       |                                    [01;36m[K^[m[K
+[2.790s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:27[m[K,
+[2.790s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.790s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.790s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.790s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h:311:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<int N, int M, class T> QGenericMatrix<N, M, T> operator*(const QGenericMatrix<N, M, T>&, T)[m[K’
+[2.790s]   311 | Q_OUTOFLINE_TEMPLATE QGenericMatrix<N, M, T> [01;36m[Koperator[m[K*(const QGenericMatrix<N, M, T>& matrix, T factor)
+[2.791s]       |                                              [01;36m[K^~~~~~~~[m[K
+[2.791s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h:311:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.791s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:25:36:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::remove_reference<PosType>::type[m[K’ {aka ‘[01m[KPosType[m[K’} is not derived from ‘[01m[Kconst QGenericMatrix<N, M, T>[m[K’
+[2.791s]    25 |   _position(*std::move(PosType(0,0)[01;36m[K)[m[K)
+[2.791s]       |                                    [01;36m[K^[m[K
+[2.791s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:46[m[K,
+[2.792s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[2.792s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:4[m[K,
+[2.792s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel:1[m[K,
+[2.792s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:23[m[K,
+[2.792s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.792s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:183:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QMargins operator*(const QMargins&, int)[m[K’
+[2.793s]   183 | Q_DECL_CONSTEXPR inline QMargins [01;36m[Koperator[m[K*(const QMargins &margins, int factor) noexcept
+[2.793s]       |                                  [01;36m[K^~~~~~~~[m[K
+[2.793s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:183:34:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.793s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:189:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QMargins operator*(int, const QMargins&)[m[K’
+[2.793s]   189 | Q_DECL_CONSTEXPR inline QMargins [01;36m[Koperator[m[K*(int factor, const QMargins &margins) noexcept
+[2.793s]       |                                  [01;36m[K^~~~~~~~[m[K
+[2.794s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:189:34:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.794s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:195:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QMargins operator*(const QMargins&, qreal)[m[K’
+[2.794s]   195 | Q_DECL_CONSTEXPR inline QMargins [01;36m[Koperator[m[K*(const QMargins &margins, qreal factor) noexcept
+[2.794s]       |                                  [01;36m[K^~~~~~~~[m[K
+[2.794s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:195:34:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.795s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:201:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QMargins operator*(qreal, const QMargins&)[m[K’
+[2.795s]   201 | Q_DECL_CONSTEXPR inline QMargins [01;36m[Koperator[m[K*(qreal factor, const QMargins &margins) noexcept
+[2.795s]       |                                  [01;36m[K^~~~~~~~[m[K
+[2.795s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:201:34:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.795s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:415:35:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QMarginsF operator*(const QMarginsF&, qreal)[m[K’
+[2.795s]   415 | Q_DECL_CONSTEXPR inline QMarginsF [01;36m[Koperator[m[K*(const QMarginsF &lhs, qreal rhs) noexcept
+[2.796s]       |                                   [01;36m[K^~~~~~~~[m[K
+[2.796s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:415:35:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.796s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:421:35:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr QMarginsF operator*(qreal, const QMarginsF&)[m[K’
+[2.796s]   421 | Q_DECL_CONSTEXPR inline QMarginsF [01;36m[Koperator[m[K*(qreal lhs, const QMarginsF &rhs) noexcept
+[2.796s]       |                                   [01;36m[K^~~~~~~~[m[K
+[2.796s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:421:35:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.797s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:44[m[K,
+[2.797s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:45[m[K,
+[2.797s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:47[m[K,
+[2.797s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[2.798s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:4[m[K,
+[2.798s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel:1[m[K,
+[2.798s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:23[m[K,
+[2.798s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.798s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:187:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QSize operator*(const QSize&, qreal)[m[K’
+[2.799s]   187 | Q_DECL_CONSTEXPR inline const QSize [01;36m[Koperator[m[K*(const QSize &s, qreal c) noexcept
+[2.799s]       |                                     [01;36m[K^~~~~~~~[m[K
+[2.799s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:187:37:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.799s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:190:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QSize operator*(qreal, const QSize&)[m[K’
+[2.799s]   190 | Q_DECL_CONSTEXPR inline const QSize [01;36m[Koperator[m[K*(qreal c, const QSize &s) noexcept
+[2.800s]       |                                     [01;36m[K^~~~~~~~[m[K
+[2.800s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:190:37:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.800s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:362:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QSizeF operator*(const QSizeF&, qreal)[m[K’
+[2.800s]   362 | Q_DECL_CONSTEXPR inline const QSizeF [01;36m[Koperator[m[K*(const QSizeF &s, qreal c) noexcept
+[2.800s]       |                                      [01;36m[K^~~~~~~~[m[K
+[2.800s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:362:38:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.801s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:365:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QSizeF operator*(qreal, const QSizeF&)[m[K’
+[2.801s]   365 | Q_DECL_CONSTEXPR inline const QSizeF [01;36m[Koperator[m[K*(qreal c, const QSizeF &s) noexcept
+[2.801s]       |                                      [01;36m[K^~~~~~~~[m[K
+[2.801s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:365:38:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.801s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:45[m[K,
+[2.801s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:45[m[K,
+[2.802s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:47[m[K,
+[2.802s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[2.802s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:4[m[K,
+[2.802s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel:1[m[K,
+[2.802s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:23[m[K,
+[2.802s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.803s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:177:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QPoint operator*(const QPoint&, float)[m[K’
+[2.803s]   177 | Q_DECL_CONSTEXPR inline const QPoint [01;36m[Koperator[m[K*(const QPoint &p, float factor)
+[2.803s]       |                                      [01;36m[K^~~~~~~~[m[K
+[2.803s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:177:38:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.803s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:180:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QPoint operator*(const QPoint&, double)[m[K’
+[2.803s]   180 | Q_DECL_CONSTEXPR inline const QPoint [01;36m[Koperator[m[K*(const QPoint &p, double factor)
+[2.804s]       |                                      [01;36m[K^~~~~~~~[m[K
+[2.804s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:180:38:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.804s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:183:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QPoint operator*(const QPoint&, int)[m[K’
+[2.804s]   183 | Q_DECL_CONSTEXPR inline const QPoint [01;36m[Koperator[m[K*(const QPoint &p, int factor)
+[2.804s]       |                                      [01;36m[K^~~~~~~~[m[K
+[2.804s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:183:38:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.804s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:186:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QPoint operator*(float, const QPoint&)[m[K’
+[2.805s]   186 | Q_DECL_CONSTEXPR inline const QPoint [01;36m[Koperator[m[K*(float factor, const QPoint &p)
+[2.805s]       |                                      [01;36m[K^~~~~~~~[m[K
+[2.805s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:186:38:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.805s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:189:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QPoint operator*(double, const QPoint&)[m[K’
+[2.805s]   189 | Q_DECL_CONSTEXPR inline const QPoint [01;36m[Koperator[m[K*(double factor, const QPoint &p)
+[2.805s]       |                                      [01;36m[K^~~~~~~~[m[K
+[2.806s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:189:38:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.806s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:192:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QPoint operator*(int, const QPoint&)[m[K’
+[2.806s]   192 | Q_DECL_CONSTEXPR inline const QPoint [01;36m[Koperator[m[K*(int factor, const QPoint &p)
+[2.806s]       |                                      [01;36m[K^~~~~~~~[m[K
+[2.806s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:192:38:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.806s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:380:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QPointF operator*(const QPointF&, qreal)[m[K’
+[2.807s]   380 | Q_DECL_CONSTEXPR inline const QPointF [01;36m[Koperator[m[K*(const QPointF &p, qreal c)
+[2.807s]       |                                       [01;36m[K^~~~~~~~[m[K
+[2.807s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:380:39:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.807s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:385:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QPointF operator*(qreal, const QPointF&)[m[K’
+[2.807s]   385 | Q_DECL_CONSTEXPR inline const QPointF [01;36m[Koperator[m[K*(qreal c, const QPointF &p)
+[2.807s]       |                                       [01;36m[K^~~~~~~~[m[K
+[2.808s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:385:39:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.808s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:49[m[K,
+[2.808s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:46[m[K,
+[2.808s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:48[m[K,
+[2.808s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[2.808s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:4[m[K,
+[2.808s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel:1[m[K,
+[2.809s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:23[m[K,
+[2.809s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.809s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:146:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPoint operator*(const QPoint&, const QMatrix&)[m[K’
+[2.809s]   146 | inline QPoint [01;36m[Koperator[m[K*(const QPoint &p, const QMatrix &m)
+[2.809s]       |               [01;36m[K^~~~~~~~[m[K
+[2.809s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:146:15:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.810s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:148:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPointF operator*(const QPointF&, const QMatrix&)[m[K’
+[2.810s]   148 | inline QPointF [01;36m[Koperator[m[K*(const QPointF &p, const QMatrix &m)
+[2.810s]       |                [01;36m[K^~~~~~~~[m[K
+[2.810s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:148:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.810s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:150:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQLineF operator*(const QLineF&, const QMatrix&)[m[K’
+[2.810s]   150 | inline QLineF [01;36m[Koperator[m[K*(const QLineF &l, const QMatrix &m)
+[2.811s]       |               [01;36m[K^~~~~~~~[m[K
+[2.811s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:150:15:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.811s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:152:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQLine operator*(const QLine&, const QMatrix&)[m[K’
+[2.811s]   152 | inline QLine [01;36m[Koperator[m[K*(const QLine &l, const QMatrix &m)
+[2.811s]       |              [01;36m[K^~~~~~~~[m[K
+[2.811s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:152:14:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.812s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:154:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPolygon operator*(const QPolygon&, const QMatrix&)[m[K’
+[2.812s]   154 | inline QPolygon [01;36m[Koperator[m[K *(const QPolygon &a, const QMatrix &m)
+[2.812s]       |                 [01;36m[K^~~~~~~~[m[K
+[2.812s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:154:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.812s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:156:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPolygonF operator*(const QPolygonF&, const QMatrix&)[m[K’
+[2.812s]   156 | inline QPolygonF [01;36m[Koperator[m[K *(const QPolygonF &a, const QMatrix &m)
+[2.813s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.813s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:156:18:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.813s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:158:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQRegion operator*(const QRegion&, const QMatrix&)[m[K’
+[2.813s]   158 | inline QRegion [01;36m[Koperator[m[K *(const QRegion &r, const QMatrix &m)
+[2.813s]       |                [01;36m[K^~~~~~~~[m[K
+[2.813s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:158:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.813s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:160:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPainterPath operator*(const QPainterPath&, const QMatrix&)[m[K’
+[2.814s]   160 | Q_GUI_EXPORT QPainterPath [01;36m[Koperator[m[K *(const QPainterPath &p, const QMatrix &m);
+[2.814s]       |                           [01;36m[K^~~~~~~~[m[K
+[2.814s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:160:27:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.814s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:50[m[K,
+[2.814s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:46[m[K,
+[2.814s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:48[m[K,
+[2.815s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+[2.815s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:4[m[K,
+[2.815s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel:1[m[K,
+[2.815s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:23[m[K,
+[2.816s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.816s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:396:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPoint operator*(const QPoint&, const QTransform&)[m[K’
+[2.816s]   396 | inline QPoint [01;36m[Koperator[m[K*(const QPoint &p, const QTransform &m)
+[2.816s]       |               [01;36m[K^~~~~~~~[m[K
+[2.817s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:396:15:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.817s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:398:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPointF operator*(const QPointF&, const QTransform&)[m[K’
+[2.817s]   398 | inline QPointF [01;36m[Koperator[m[K*(const QPointF &p, const QTransform &m)
+[2.817s]       |                [01;36m[K^~~~~~~~[m[K
+[2.817s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:398:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.818s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:400:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQLineF operator*(const QLineF&, const QTransform&)[m[K’
+[2.818s]   400 | inline QLineF [01;36m[Koperator[m[K*(const QLineF &l, const QTransform &m)
+[2.818s]       |               [01;36m[K^~~~~~~~[m[K
+[2.818s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:400:15:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.818s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:402:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQLine operator*(const QLine&, const QTransform&)[m[K’
+[2.819s]   402 | inline QLine [01;36m[Koperator[m[K*(const QLine &l, const QTransform &m)
+[2.819s]       |              [01;36m[K^~~~~~~~[m[K
+[2.819s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:402:14:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.819s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:404:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPolygon operator*(const QPolygon&, const QTransform&)[m[K’
+[2.820s]   404 | inline QPolygon [01;36m[Koperator[m[K *(const QPolygon &a, const QTransform &m)
+[2.820s]       |                 [01;36m[K^~~~~~~~[m[K
+[2.820s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:404:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.820s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:406:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPolygonF operator*(const QPolygonF&, const QTransform&)[m[K’
+[2.820s]   406 | inline QPolygonF [01;36m[Koperator[m[K *(const QPolygonF &a, const QTransform &m)
+[2.820s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.821s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:406:18:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.821s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:408:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQRegion operator*(const QRegion&, const QTransform&)[m[K’
+[2.821s]   408 | inline QRegion [01;36m[Koperator[m[K *(const QRegion &r, const QTransform &m)
+[2.821s]       |                [01;36m[K^~~~~~~~[m[K
+[2.821s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:408:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.822s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:411:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQTransform operator*(const QTransform&, qreal)[m[K’
+[2.822s]   411 | inline QTransform [01;36m[Koperator[m[K *(const QTransform &a, qreal n)
+[2.822s]       |                   [01;36m[K^~~~~~~~[m[K
+[2.822s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:411:19:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.823s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborstreamreader.h:45[m[K,
+[2.823s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborstream.h:47[m[K,
+[2.823s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore:41[m[K,
+[2.823s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGuiDepends:3[m[K,
+[2.823s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:3[m[K,
+[2.824s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.824s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.824s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.824s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:212:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kqfloat16 operator*(qfloat16, qfloat16)[m[K’
+[2.824s]   212 | inline qfloat16 [01;36m[Koperator[m[K*(qfloat16 a, qfloat16 b) noexcept { return qfloat16(static_cast<float>(a) * static_cast<float>(b)); }
+[2.825s]       |                 [01;36m[K^~~~~~~~[m[K
+[2.825s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:212:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.825s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:230:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Klong double operator*(qfloat16, long double)[m[K’
+[2.825s]   230 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(long double)
+[2.825s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.826s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:230:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.826s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:230:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Klong double operator*(long double, qfloat16)[m[K’
+[2.826s]   230 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(long double)
+[2.826s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.826s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:230:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.826s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:231:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble operator*(qfloat16, double)[m[K’
+[2.827s]   231 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(double)
+[2.827s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.827s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:231:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.827s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:231:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble operator*(double, qfloat16)[m[K’
+[2.827s]   231 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(double)
+[2.827s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.827s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:231:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.827s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:232:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat operator*(qfloat16, float)[m[K’
+[2.828s]   232 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(float)
+[2.828s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.828s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:232:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.828s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:232:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kfloat operator*(float, qfloat16)[m[K’
+[2.828s]   232 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(float)
+[2.828s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.828s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:232:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.828s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:241:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble operator*(qfloat16, int)[m[K’
+[2.829s]   241 | [01;36m[KQF16_MAKE_ARITH_OP_INT[m[K(*)
+[2.829s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.829s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:241:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.829s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:241:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble operator*(int, qfloat16)[m[K’
+[2.829s]   241 | [01;36m[KQF16_MAKE_ARITH_OP_INT[m[K(*)
+[2.829s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.829s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:241:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.829s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h:56[m[K,
+[2.830s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlayout.h:49[m[K,
+[2.830s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qabstracttextdocumentlayout.h:45[m[K,
+[2.830s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:5[m[K,
+[2.830s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.830s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.830s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.830s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h:232:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector2D operator*(float, const QVector2D&)[m[K’
+[2.830s]   232 | Q_DECL_CONSTEXPR inline const QVector2D [01;36m[Koperator[m[K*(float factor, const QVector2D &vector)
+[2.830s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.831s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h:232:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.831s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h:237:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector2D operator*(const QVector2D&, float)[m[K’
+[2.831s]   237 | Q_DECL_CONSTEXPR inline const QVector2D [01;36m[Koperator[m[K*(const QVector2D &vector, float factor)
+[2.831s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.831s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h:237:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.831s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h:242:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector2D operator*(const QVector2D&, const QVector2D&)[m[K’
+[2.831s]   242 | Q_DECL_CONSTEXPR inline const QVector2D [01;36m[Koperator[m[K*(const QVector2D &v1, const QVector2D &v2)
+[2.831s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.832s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h:242:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.832s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:44[m[K,
+[2.832s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:42[m[K,
+[2.832s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.832s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.832s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.832s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h:257:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector3D operator*(float, const QVector3D&)[m[K’
+[2.832s]   257 | Q_DECL_CONSTEXPR inline const QVector3D [01;36m[Koperator[m[K*(float factor, const QVector3D &vector)
+[2.832s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.832s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h:257:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.833s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h:262:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector3D operator*(const QVector3D&, float)[m[K’
+[2.833s]   262 | Q_DECL_CONSTEXPR inline const QVector3D [01;36m[Koperator[m[K*(const QVector3D &vector, float factor)
+[2.833s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.833s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h:262:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.833s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h:267:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector3D operator*(const QVector3D&, const QVector3D&)[m[K’
+[2.833s]   267 | Q_DECL_CONSTEXPR inline const QVector3D [01;36m[Koperator[m[K*(const QVector3D &v1, const QVector3D& v2)
+[2.833s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.833s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h:267:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.834s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:45[m[K,
+[2.834s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:42[m[K,
+[2.834s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.834s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.834s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.834s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h:257:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector4D operator*(float, const QVector4D&)[m[K’
+[2.834s]   257 | Q_DECL_CONSTEXPR inline const QVector4D [01;36m[Koperator[m[K*(float factor, const QVector4D &vector)
+[2.834s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.835s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h:257:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.835s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h:262:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector4D operator*(const QVector4D&, float)[m[K’
+[2.835s]   262 | Q_DECL_CONSTEXPR inline const QVector4D [01;36m[Koperator[m[K*(const QVector4D &vector, float factor)
+[2.835s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.835s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h:262:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.835s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h:267:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr const QVector4D operator*(const QVector4D&, const QVector4D&)[m[K’
+[2.835s]   267 | Q_DECL_CONSTEXPR inline const QVector4D [01;36m[Koperator[m[K*(const QVector4D &v1, const QVector4D& v2)
+[2.835s]       |                                         [01;36m[K^~~~~~~~[m[K
+[2.835s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h:267:41:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.836s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:46[m[K,
+[2.836s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:42[m[K,
+[2.836s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.836s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.836s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.836s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h:258:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst QQuaternion operator*(const QQuaternion&, const QQuaternion&)[m[K’
+[2.836s]   258 | inline const QQuaternion [01;36m[Koperator[m[K*(const QQuaternion &q1, const QQuaternion& q2)
+[2.836s]       |                          [01;36m[K^~~~~~~~[m[K
+[2.836s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h:258:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.836s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h:304:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst QQuaternion operator*(float, const QQuaternion&)[m[K’
+[2.837s]   304 | inline const QQuaternion [01;36m[Koperator[m[K*(float factor, const QQuaternion &quaternion)
+[2.837s]       |                          [01;36m[K^~~~~~~~[m[K
+[2.837s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h:304:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.837s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h:309:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst QQuaternion operator*(const QQuaternion&, float)[m[K’
+[2.837s]   309 | inline const QQuaternion [01;36m[Koperator[m[K*(const QQuaternion &quaternion, float factor)
+[2.837s]       |                          [01;36m[K^~~~~~~~[m[K
+[2.837s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h:309:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.837s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h:349:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQVector3D operator*(const QQuaternion&, const QVector3D&)[m[K’
+[2.837s]   349 | inline QVector3D [01;36m[Koperator[m[K*(const QQuaternion &quaternion, const QVector3D &vec)
+[2.837s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.838s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h:349:18:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.838s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:42[m[K,
+[2.838s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.838s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.838s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.838s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:638:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQMatrix4x4 operator*(const QMatrix4x4&, const QMatrix4x4&)[m[K’
+[2.838s]   638 | inline QMatrix4x4 [01;36m[Koperator[m[K*(const QMatrix4x4& m1, const QMatrix4x4& m2)
+[2.838s]       |                   [01;36m[K^~~~~~~~[m[K
+[2.838s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:638:19:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.838s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:728:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQVector3D operator*(const QVector3D&, const QMatrix4x4&)[m[K’
+[2.839s]   728 | inline QVector3D [01;36m[Koperator[m[K*(const QVector3D& vector, const QMatrix4x4& matrix)
+[2.839s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.839s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:728:18:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.839s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:753:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQVector3D operator*(const QMatrix4x4&, const QVector3D&)[m[K’
+[2.839s]   753 | inline QVector3D [01;36m[Koperator[m[K*(const QMatrix4x4& matrix, const QVector3D& vector)
+[2.839s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.839s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:753:18:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.839s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:796:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQVector4D operator*(const QVector4D&, const QMatrix4x4&)[m[K’
+[2.839s]   796 | inline QVector4D [01;36m[Koperator[m[K*(const QVector4D& vector, const QMatrix4x4& matrix)
+[2.839s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.840s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:796:18:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.840s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:818:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQVector4D operator*(const QMatrix4x4&, const QVector4D&)[m[K’
+[2.840s]   818 | inline QVector4D [01;36m[Koperator[m[K*(const QMatrix4x4& matrix, const QVector4D& vector)
+[2.840s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.840s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:818:18:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.840s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:842:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPoint operator*(const QPoint&, const QMatrix4x4&)[m[K’
+[2.840s]   842 | inline QPoint [01;36m[Koperator[m[K*(const QPoint& point, const QMatrix4x4& matrix)
+[2.840s]       |               [01;36m[K^~~~~~~~[m[K
+[2.840s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:842:15:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.840s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:863:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPointF operator*(const QPointF&, const QMatrix4x4&)[m[K’
+[2.841s]   863 | inline QPointF [01;36m[Koperator[m[K*(const QPointF& point, const QMatrix4x4& matrix)
+[2.841s]       |                [01;36m[K^~~~~~~~[m[K
+[2.841s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:863:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.841s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:885:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPoint operator*(const QMatrix4x4&, const QPoint&)[m[K’
+[2.841s]   885 | inline QPoint [01;36m[Koperator[m[K*(const QMatrix4x4& matrix, const QPoint& point)
+[2.841s]       |               [01;36m[K^~~~~~~~[m[K
+[2.841s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:885:15:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.841s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:917:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPointF operator*(const QMatrix4x4&, const QPointF&)[m[K’
+[2.841s]   917 | inline QPointF [01;36m[Koperator[m[K*(const QMatrix4x4& matrix, const QPointF& point)
+[2.841s]       |                [01;36m[K^~~~~~~~[m[K
+[2.842s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:917:16:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.842s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:975:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQMatrix4x4 operator*(float, const QMatrix4x4&)[m[K’
+[2.842s]   975 | inline QMatrix4x4 [01;36m[Koperator[m[K*(float factor, const QMatrix4x4& matrix)
+[2.842s]       |                   [01;36m[K^~~~~~~~[m[K
+[2.842s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:975:19:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.842s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:998:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQMatrix4x4 operator*(const QMatrix4x4&, float)[m[K’
+[2.842s]   998 | inline QMatrix4x4 [01;36m[Koperator[m[K*(const QMatrix4x4& matrix, float factor)
+[2.842s]       |                   [01;36m[K^~~~~~~~[m[K
+[2.842s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h:998:19:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.842s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:70[m[K,
+[2.842s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.843s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.843s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.843s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h:366:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KQPainterPath operator*(const QPainterPath&, const QTransform&)[m[K’
+[2.843s]   366 | inline QPainterPath [01;36m[Koperator[m[K *(const QPainterPath &p, const QTransform &m)
+[2.843s]       |                     [01;36m[K^~~~~~~~[m[K
+[2.843s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h:366:21:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[3.191s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:188: CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o] Error 1
+[3.192s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Error 2
+[3.192s] gmake: *** [Makefile:146: all] Error 2
+[3.195s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '2': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16

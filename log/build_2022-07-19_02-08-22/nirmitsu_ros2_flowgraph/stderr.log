@@ -1,0 +1,10 @@
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/datatypes/Pos.cpp:[m[K In member function ‘[01m[Kvirtual QString Pos::to_string() const[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/datatypes/Pos.cpp:56:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+   56 |   [01;31m[Kcout[m[K << _value.x << " " << _value.y << endl;
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/datatypes/Pos.cpp:56:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+   56 |   cout << _value.x << " " << _value.y << [01;31m[Kendl[m[K;
+      |                                          [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:146: CMakeFiles/nirmitsu.dir/src/datatypes/Pos.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

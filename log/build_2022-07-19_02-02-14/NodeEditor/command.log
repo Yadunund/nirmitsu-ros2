@@ -1,0 +1,4 @@
+Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/NodeEditor -- -j16 -l16
+Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/NodeEditor -- -j16 -l16
+Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/NodeEditor
+Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/NodeEditor

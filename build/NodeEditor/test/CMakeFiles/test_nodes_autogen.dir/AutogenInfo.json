@@ -1,0 +1,118 @@
+{
+	"BUILD_DIR" : "/home/dhruft/ws_nirmitsu/build/NodeEditor/test/test_nodes_autogen",
+	"CMAKE_BINARY_DIR" : "/home/dhruft/ws_nirmitsu/build/NodeEditor",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/dhruft/ws_nirmitsu/build/NodeEditor/test",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/CMakeLists.txt",
+		"/usr/lib/cmake/Catch2/Catch2ConfigVersion.cmake",
+		"/usr/lib/cmake/Catch2/Catch2Config.cmake",
+		"/usr/lib/cmake/Catch2/Catch2Targets.cmake",
+		"/usr/lib/cmake/Catch2/Catch2Targets-none.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfigExtras.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/dhruft/ws_nirmitsu/build/NodeEditor/test/test_nodes_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/dhruft/ws_nirmitsu/build/NodeEditor/test/test_nodes_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"NODE_EDITOR_SHARED",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_TESTCASE_BUILDDIR=\"/home/dhruft/ws_nirmitsu/build/NodeEditor\"",
+		"QT_TESTLIB_LIB",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/src",
+		"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/include/internal",
+		"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/include",
+		"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/include",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtOpenGL",
+		"/usr/include/x86_64-linux-gnu/qt5/QtTest",
+		"/usr/include",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/dhruft/ws_nirmitsu/build/NodeEditor/test/test_nodes_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/dhruft/ws_nirmitsu/build/NodeEditor/test/CMakeFiles/test_nodes_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/dhruft/ws_nirmitsu/build/NodeEditor/test/CMakeFiles/test_nodes_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestDataModelRegistry.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestDragging.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestFlowScene.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestNodeGraphicsObject.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/test_main.cpp",
+			"Mu",
+			null
+		]
+	],
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,210 @@
+[0.359s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DCMAKE_BUILD_TYpe=Release']
+[0.359s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYpe=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f4a8efd9bd0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4a8f95dc30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4a8f95dc30>>)
+[0.401s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.401s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.401s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.401s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.401s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.401s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.402s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dhruft/ws_nirmitsu'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.402s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extension 'ignore_ament_install'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extensions ['colcon_pkg']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extension 'ros'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extensions ['cmake', 'python']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extension 'cmake'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extension 'python'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extensions ['python_setup_py']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2) by extension 'python_setup_py'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nirmitsu_ros2_flowgraph) by extension 'ros'
+[0.447s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nirmitsu-ros2/nirmitsu_ros2_flowgraph' with type 'ros.ament_cmake' and name 'nirmitsu_ros2_flowgraph'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extensions ['ignore', 'ignore_ament_install']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extension 'ignore_ament_install'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extension 'ros'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extensions ['cmake', 'python']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extension 'cmake'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/nirmitsu-ros2/nodeeditor) by extension 'python'
+[0.452s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nirmitsu-ros2/nodeeditor' with type 'cmake' and name 'NodeEditor'
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.487s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.490s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.558s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYpe=Release']'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'cmake_target' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'cmake_clean_first' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'cmake_force_configure' from command line to 'False'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'ament_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.559s] Level 5:colcon.colcon_core.verb:set package 'NodeEditor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.559s] DEBUG:colcon.colcon_core.verb:Building package 'NodeEditor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dhruft/ws_nirmitsu/build/NodeEditor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYpe=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dhruft/ws_nirmitsu/install/NodeEditor', 'merge_install': False, 'path': '/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor', 'symlink_install': False, 'test_result_base': None}
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYpe=Release']'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'cmake_target' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'cmake_clean_cache' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'cmake_clean_first' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'cmake_force_configure' from command line to 'False'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'ament_cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'catkin_cmake_args' from command line to 'None'
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'nirmitsu_ros2_flowgraph' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.560s] DEBUG:colcon.colcon_core.verb:Building package 'nirmitsu_ros2_flowgraph' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYpe=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph', 'merge_install': False, 'path': '/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph', 'symlink_install': False, 'test_result_base': None}
+[0.561s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.566s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.566s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor'
+[0.572s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.572s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.572s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake /home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor -DCMAKE_BUILD_TYpe=Release -DCMAKE_INSTALL_PREFIX=/home/dhruft/ws_nirmitsu/install/NodeEditor
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake /home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor -DCMAKE_BUILD_TYpe=Release -DCMAKE_INSTALL_PREFIX=/home/dhruft/ws_nirmitsu/install/NodeEditor
+[0.934s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/NodeEditor -- -j16 -l16
+[19.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/NodeEditor -- -j16 -l16
+[19.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/NodeEditor
+[19.401s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(NodeEditor)
+[19.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/NodeEditor
+[19.406s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/NodeEditor' for CMake module files
+[19.407s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/NodeEditor' for CMake config files
+[19.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('NodeEditor', 'cmake_prefix_path')
+[19.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/hook/cmake_prefix_path.ps1'
+[19.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/hook/cmake_prefix_path.dsv'
+[19.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/hook/cmake_prefix_path.sh'
+[19.409s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/NodeEditor/lib'
+[19.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('NodeEditor', 'ld_library_path_lib')
+[19.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/hook/ld_library_path_lib.ps1'
+[19.410s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/hook/ld_library_path_lib.dsv'
+[19.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/hook/ld_library_path_lib.sh'
+[19.411s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/NodeEditor/bin'
+[19.411s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/pkgconfig/NodeEditor.pc'
+[19.411s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/python3.10/site-packages'
+[19.411s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/NodeEditor/bin'
+[19.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/package.ps1'
+[19.413s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/package.dsv'
+[19.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/package.sh'
+[19.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/package.bash'
+[19.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/NodeEditor/share/NodeEditor/package.zsh'
+[19.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dhruft/ws_nirmitsu/install/NodeEditor/share/colcon-core/packages/NodeEditor)
+[19.414s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph' with build type 'ament_cmake'
+[19.415s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph'
+[19.416s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.416s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph -DCMAKE_BUILD_TYpe=Release -DCMAKE_INSTALL_PREFIX=/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph
+[20.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '0': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph -DCMAKE_BUILD_TYpe=Release -DCMAKE_INSTALL_PREFIX=/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph
+[20.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[27.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '0': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[28.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph
+[28.011s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nirmitsu_ros2_flowgraph)
+[28.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '0': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph
+[28.014s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph' for CMake module files
+[28.014s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph' for CMake config files
+[28.015s] Level 1:colcon.colcon_core.shell:create_environment_hook('nirmitsu_ros2_flowgraph', 'cmake_prefix_path')
+[28.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.ps1'
+[28.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.dsv'
+[28.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.sh'
+[28.019s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/lib'
+[28.020s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/bin'
+[28.020s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/lib/pkgconfig/nirmitsu_ros2_flowgraph.pc'
+[28.020s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/lib/python3.10/site-packages'
+[28.020s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/bin'
+[28.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.ps1'
+[28.023s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.dsv'
+[28.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.sh'
+[28.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.bash'
+[28.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.zsh'
+[28.024s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/colcon-core/packages/nirmitsu_ros2_flowgraph)
+[28.058s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nirmitsu_ros2_flowgraph)
+[28.059s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph' for CMake module files
+[28.060s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph' for CMake config files
+[28.060s] Level 1:colcon.colcon_core.shell:create_environment_hook('nirmitsu_ros2_flowgraph', 'cmake_prefix_path')
+[28.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.ps1'
+[28.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.dsv'
+[28.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.sh'
+[28.061s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/lib'
+[28.062s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/bin'
+[28.062s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/lib/pkgconfig/nirmitsu_ros2_flowgraph.pc'
+[28.062s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/lib/python3.10/site-packages'
+[28.062s] Level 1:colcon.colcon_core.environment:checking '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/bin'
+[28.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.ps1'
+[28.063s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.dsv'
+[28.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.sh'
+[28.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.bash'
+[28.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.zsh'
+[28.064s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/colcon-core/packages/nirmitsu_ros2_flowgraph)
+[28.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.065s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.072s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.072s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.072s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.110s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[28.112s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dhruft/ws_nirmitsu/install/local_setup.ps1'
+[28.114s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dhruft/ws_nirmitsu/install/_local_setup_util_ps1.py'
+[28.115s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dhruft/ws_nirmitsu/install/setup.ps1'
+[28.116s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dhruft/ws_nirmitsu/install/local_setup.sh'
+[28.117s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dhruft/ws_nirmitsu/install/_local_setup_util_sh.py'
+[28.118s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dhruft/ws_nirmitsu/install/setup.sh'
+[28.119s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dhruft/ws_nirmitsu/install/local_setup.bash'
+[28.120s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dhruft/ws_nirmitsu/install/setup.bash'
+[28.121s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dhruft/ws_nirmitsu/install/local_setup.zsh'
+[28.122s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dhruft/ws_nirmitsu/install/setup.zsh'

@@ -1,0 +1,241 @@
+[0.018s] Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake /home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor -DCMAKE_BUILD_TYpe=Release -DCMAKE_INSTALL_PREFIX=/home/dhruft/ws_nirmitsu/install/NodeEditor
+[0.095s] -- The CXX compiler identification is GNU 11.2.0
+[0.104s] -- Detecting CXX compiler ABI info
+[0.199s] -- Detecting CXX compiler ABI info - done
+[0.210s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.210s] -- Detecting CXX compile features
+[0.210s] -- Detecting CXX compile features - done
+[0.258s] -- Configuring done
+[0.353s] -- Generating done
+[0.355s] [33mCMake Warning:
+[0.355s]   Manually-specified variables were not used by the project:
+[0.355s] 
+[0.355s]     CMAKE_BUILD_TYpe
+[0.355s] 
+[0.356s] [0m
+[0.356s] -- Build files have been written to: /home/dhruft/ws_nirmitsu/build/NodeEditor
+[0.364s] Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake /home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor -DCMAKE_BUILD_TYpe=Release -DCMAKE_INSTALL_PREFIX=/home/dhruft/ws_nirmitsu/install/NodeEditor
+[0.367s] Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/NodeEditor -- -j16 -l16
+[0.417s] [  1%] [34m[1mAutomatic MOC for target nodes[0m
+[0.451s] [  1%] Built target nodes_autogen
+[0.470s] [  6%] [34m[1mGenerating include/nodes/internal/moc_ConnectionState.cpp[0m
+[0.470s] [  6%] [34m[1mGenerating include/nodes/internal/moc_Connection.cpp[0m
+[0.470s] [  6%] [34m[1mGenerating include/nodes/internal/moc_ConnectionGraphicsObject.cpp[0m
+[0.470s] [  6%] [34m[1mGenerating include/nodes/internal/moc_ConnectionGeometry.cpp[0m
+[0.470s] [  6%] [34m[1mGenerating include/nodes/internal/moc_Compiler.cpp[0m
+[0.470s] [  6%] [34m[1mGenerating qrc_resources.cpp[0m
+[0.472s] [  8%] [34m[1mGenerating include/nodes/internal/moc_DataModelRegistry.cpp[0m
+[0.472s] [  8%] [34m[1mGenerating include/nodes/internal/moc_ConnectionStyle.cpp[0m
+[0.472s] [  9%] [34m[1mGenerating include/nodes/internal/moc_FlowScene.cpp[0m
+[0.472s] [ 10%] [34m[1mGenerating include/nodes/internal/moc_FlowView.cpp[0m
+[0.473s] [ 12%] [34m[1mGenerating include/nodes/internal/moc_Export.cpp[0m
+[0.473s] [ 12%] [34m[1mGenerating include/nodes/internal/moc_NodeDataModel.cpp[0m
+[0.473s] [ 12%] [34m[1mGenerating include/nodes/internal/moc_FlowViewStyle.cpp[0m
+[0.473s] [ 13%] [34m[1mGenerating include/nodes/internal/moc_NodeData.cpp[0m
+[0.473s] [ 13%] [34m[1mGenerating include/nodes/internal/moc_Node.cpp[0m
+[0.479s] [ 14%] [34m[1mGenerating include/nodes/internal/moc_NodeGeometry.cpp[0m
+[0.495s] [ 15%] [34m[1mGenerating include/nodes/internal/moc_NodeGraphicsObject.cpp[0m
+[0.501s] [ 16%] [34m[1mGenerating include/nodes/internal/moc_NodePainterDelegate.cpp[0m
+[0.506s] [ 17%] [34m[1mGenerating include/nodes/internal/moc_NodeState.cpp[0m
+[0.538s] [ 18%] [34m[1mGenerating include/nodes/internal/moc_NodeStyle.cpp[0m
+[0.545s] [ 19%] [34m[1mGenerating include/nodes/internal/moc_PortType.cpp[0m
+[0.568s] [ 20%] [34m[1mGenerating include/nodes/internal/moc_QStringStdHash.cpp[0m
+[0.569s] [ 21%] [34m[1mGenerating include/nodes/internal/moc_QUuidStdHash.cpp[0m
+[0.578s] [ 21%] [34m[1mGenerating include/nodes/internal/moc_OperatingSystem.cpp[0m
+[0.580s] [ 22%] [34m[1mGenerating include/nodes/internal/moc_Serializable.cpp[0m
+[0.598s] [ 23%] [34m[1mGenerating include/nodes/internal/moc_Style.cpp[0m
+[0.598s] [ 23%] [34m[1mGenerating include/nodes/internal/moc_StyleCollection.cpp[0m
+[0.610s] [ 25%] [34m[1mGenerating include/nodes/internal/moc_TypeConverter.cpp[0m
+[0.611s] [ 25%] [34m[1mGenerating include/nodes/internal/moc_memory.cpp[0m
+[0.687s] [ 32%] [32mBuilding CXX object CMakeFiles/nodes.dir/nodes_autogen/mocs_compilation.cpp.o[0m
+[0.687s] [ 32%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/ConnectionPainter.cpp.o[0m
+[0.688s] [ 32%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/ConnectionState.cpp.o[0m
+[0.688s] [ 32%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/ConnectionGraphicsObject.cpp.o[0m
+[0.688s] [ 32%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/ConnectionBlurEffect.cpp.o[0m
+[0.688s] [ 32%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/ConnectionStyle.cpp.o[0m
+[0.688s] [ 32%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/ConnectionGeometry.cpp.o[0m
+[0.688s] [ 32%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/Connection.cpp.o[0m
+[0.692s] [ 35%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/FlowView.cpp.o[0m
+[0.692s] [ 35%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/FlowScene.cpp.o[0m
+[0.693s] [ 35%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/FlowViewStyle.cpp.o[0m
+[0.693s] [ 36%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/DataModelRegistry.cpp.o[0m
+[0.693s] [ 36%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodeConnectionInteraction.cpp.o[0m
+[0.693s] [ 36%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodeDataModel.cpp.o[0m
+[0.697s] [ 37%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodeGeometry.cpp.o[0m
+[0.700s] [ 38%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/Node.cpp.o[0m
+[0.733s] [ 39%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodeGraphicsObject.cpp.o[0m
+[2.614s] [ 40%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodePainter.cpp.o[0m
+[3.118s] [ 41%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodeState.cpp.o[0m
+[3.319s] [ 41%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodeStyle.cpp.o[0m
+[3.741s] [ 42%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/Properties.cpp.o[0m
+[3.815s] [ 43%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/StyleCollection.cpp.o[0m
+[3.840s] [ 44%] [32mBuilding CXX object CMakeFiles/nodes.dir/qrc_resources.cpp.o[0m
+[3.895s] [ 45%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_Compiler.cpp.o[0m
+[3.908s] [ 46%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_Connection.cpp.o[0m
+[3.929s] [ 46%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_ConnectionGeometry.cpp.o[0m
+[3.988s] [ 47%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_ConnectionGraphicsObject.cpp.o[0m
+[4.021s] [ 48%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_ConnectionState.cpp.o[0m
+[4.025s] [ 49%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_ConnectionStyle.cpp.o[0m
+[4.057s] [ 51%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_Export.cpp.o[0m
+[4.057s] [ 51%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_DataModelRegistry.cpp.o[0m
+[4.098s] [ 51%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_FlowScene.cpp.o[0m
+[4.116s] [ 52%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_FlowView.cpp.o[0m
+[4.155s] [ 53%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_FlowViewStyle.cpp.o[0m
+[4.196s] [ 54%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_Node.cpp.o[0m
+[4.212s] [ 55%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_NodeData.cpp.o[0m
+[4.283s] [ 56%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_NodeDataModel.cpp.o[0m
+[4.360s] [ 56%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_NodeGeometry.cpp.o[0m
+[4.424s] [ 57%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_NodeGraphicsObject.cpp.o[0m
+[5.149s] [ 58%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_NodePainterDelegate.cpp.o[0m
+[5.203s] [ 59%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_NodeState.cpp.o[0m
+[5.235s] [ 60%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_NodeStyle.cpp.o[0m
+[5.288s] [ 60%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_OperatingSystem.cpp.o[0m
+[5.323s] [ 61%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_PortType.cpp.o[0m
+[5.359s] [ 62%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_QStringStdHash.cpp.o[0m
+[5.397s] [ 63%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_QUuidStdHash.cpp.o[0m
+[5.434s] [ 64%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_Serializable.cpp.o[0m
+[5.458s] [ 65%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_Style.cpp.o[0m
+[5.490s] [ 65%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_StyleCollection.cpp.o[0m
+[5.496s] [ 66%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_TypeConverter.cpp.o[0m
+[5.526s] [ 67%] [32mBuilding CXX object CMakeFiles/nodes.dir/include/nodes/internal/moc_memory.cpp.o[0m
+[7.415s] [ 68%] [32m[1mLinking CXX shared library lib/libnodes.so[0m
+[7.878s] [ 68%] Built target nodes
+[7.897s] [ 74%] [34m[1mAutomatic MOC for target styles[0m
+[7.897s] [ 74%] [34m[1mAutomatic MOC for target example2[0m
+[7.898s] [ 74%] [34m[1mAutomatic MOC for target images[0m
+[7.898s] [ 74%] [34m[1mAutomatic MOC for target connection_colors[0m
+[7.898s] [ 74%] [34m[1mAutomatic MOC for target test_nodes[0m
+[7.898s] [ 74%] [34m[1mAutomatic MOC for target calculator[0m
+[7.929s] [ 74%] Built target test_nodes_autogen
+[7.967s] [ 76%] [32mBuilding CXX object test/CMakeFiles/test_nodes.dir/test_main.cpp.o[0m
+[7.971s] [ 76%] [32mBuilding CXX object test/CMakeFiles/test_nodes.dir/src/TestDragging.cpp.o[0m
+[7.972s] [ 79%] [32mBuilding CXX object test/CMakeFiles/test_nodes.dir/src/TestDataModelRegistry.cpp.o[0m
+[7.972s] [ 79%] [32mBuilding CXX object test/CMakeFiles/test_nodes.dir/src/TestNodeGraphicsObject.cpp.o[0m
+[7.972s] [ 79%] [32mBuilding CXX object test/CMakeFiles/test_nodes.dir/test_nodes_autogen/mocs_compilation.cpp.o[0m
+[7.976s] [ 79%] [32mBuilding CXX object test/CMakeFiles/test_nodes.dir/src/TestFlowScene.cpp.o[0m
+[8.282s] [ 79%] Built target images_autogen
+[8.283s] [ 79%] Built target connection_colors_autogen
+[8.301s] [ 79%] Built target styles_autogen
+[8.301s] [ 79%] Built target calculator_autogen
+[8.301s] [ 79%] Built target example2_autogen
+[8.311s] [ 82%] [32mBuilding CXX object examples/connection_colors/CMakeFiles/connection_colors.dir/main.cpp.o[0m
+[8.311s] [ 82%] [32mBuilding CXX object examples/images/CMakeFiles/images.dir/ImageLoaderModel.cpp.o[0m
+[8.311s] [ 82%] [32mBuilding CXX object examples/connection_colors/CMakeFiles/connection_colors.dir/models.cpp.o[0m
+[8.311s] [ 83%] [32mBuilding CXX object examples/connection_colors/CMakeFiles/connection_colors.dir/connection_colors_autogen/mocs_compilation.cpp.o[0m
+[8.311s] [ 83%] [32mBuilding CXX object examples/images/CMakeFiles/images.dir/images_autogen/mocs_compilation.cpp.o[0m
+[8.311s] [ 82%] [32mBuilding CXX object examples/images/CMakeFiles/images.dir/main.cpp.o[0m
+[8.315s] [ 84%] [32mBuilding CXX object examples/images/CMakeFiles/images.dir/ImageShowModel.cpp.o[0m
+[8.330s] [ 84%] [32mBuilding CXX object examples/calculator/CMakeFiles/calculator.dir/calculator_autogen/mocs_compilation.cpp.o[0m
+[8.331s] [ 85%] [32mBuilding CXX object examples/styles/CMakeFiles/styles.dir/styles_autogen/mocs_compilation.cpp.o[0m
+[8.333s] [ 86%] [32mBuilding CXX object examples/example2/CMakeFiles/example2.dir/TextDisplayDataModel.cpp.o[0m
+[8.333s] [ 87%] [32mBuilding CXX object examples/example2/CMakeFiles/example2.dir/example2_autogen/mocs_compilation.cpp.o[0m
+[10.342s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/NodeEditor/examples/example2/example2_autogen/EWIEGA46WW/moc_TextDisplayDataModel.cpp:10[m[K,
+[10.342s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/NodeEditor/examples/example2/example2_autogen/mocs_compilation.cpp:2[m[K:
+[10.342s] [01m[K/home/dhruft/ws_nirmitsu/build/NodeEditor/examples/example2/example2_autogen/EWIEGA46WW/../../../../../../src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:[m[K In member function ‘[01m[Kvirtual void TextDisplayDataModel::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[10.342s] [01m[K/home/dhruft/ws_nirmitsu/build/NodeEditor/examples/example2/example2_autogen/EWIEGA46WW/../../../../../../src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:65:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.342s]    65 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[10.343s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[10.634s] [ 87%] [32mBuilding CXX object examples/styles/CMakeFiles/styles.dir/main.cpp.o[0m
+[10.634s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.cpp:1[m[K:
+[10.634s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:[m[K In member function ‘[01m[Kvirtual void TextDisplayDataModel::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[10.634s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:65:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.635s]    65 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[10.635s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[10.786s] [ 88%] [32mBuilding CXX object examples/styles/CMakeFiles/styles.dir/models.cpp.o[0m
+[10.852s] [ 90%] [32mBuilding CXX object examples/calculator/CMakeFiles/calculator.dir/MathOperationDataModel.cpp.o[0m
+[10.852s] [ 90%] [32mBuilding CXX object examples/calculator/CMakeFiles/calculator.dir/Converters.cpp.o[0m
+[10.884s] [ 91%] [32mBuilding CXX object examples/calculator/CMakeFiles/calculator.dir/ModuloModel.cpp.o[0m
+[10.983s] [ 92%] [32mBuilding CXX object examples/calculator/CMakeFiles/calculator.dir/NumberDisplayDataModel.cpp.o[0m
+[11.034s] [ 93%] [32mBuilding CXX object examples/example2/CMakeFiles/example2.dir/TextSourceDataModel.cpp.o[0m
+[11.049s] [ 93%] [32mBuilding CXX object examples/example2/CMakeFiles/example2.dir/main.cpp.o[0m
+[11.130s] [ 93%] [32mBuilding CXX object examples/calculator/CMakeFiles/calculator.dir/NumberSourceDataModel.cpp.o[0m
+[11.583s] [ 94%] [32m[1mLinking CXX executable ../../bin/connection_colors[0m
+[11.747s] [ 95%] [32m[1mLinking CXX executable ../../bin/images[0m
+[12.003s] [ 96%] [32mBuilding CXX object examples/calculator/CMakeFiles/calculator.dir/main.cpp.o[0m
+[12.410s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestNodeGraphicsObject.cpp:[m[K In member function ‘[01m[Kvirtual QtNodes::NodeDataModel::ConnectionPolicy C_A_T_C_H_T_E_S_T_0()::MockModel::portOutConnectionPolicy(int) const[m[K’:
+[12.410s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestNodeGraphicsObject.cpp:30:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kindex[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.410s]    30 |     portOutConnectionPolicy([01;35m[Kint index[m[K) const override
+[12.410s]       |                             [01;35m[K~~~~^~~~~[m[K
+[12.618s] [ 96%] Built target connection_colors
+[12.690s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestFlowScene.cpp:[m[K In function ‘[01m[Kvoid C_A_T_C_H_T_E_S_T_7()[m[K’:
+[12.690s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestFlowScene.cpp:248:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.690s]   248 |     auto& [01;35m[Knode[m[K = scene.createNode(scene.registry().create("name"));
+[12.690s]       |           [01;35m[K^~~~[m[K
+[12.754s] [ 96%] Built target images
+[13.328s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/main.cpp:10[m[K:
+[13.328s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:[m[K In member function ‘[01m[Kvirtual void TextDisplayDataModel::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[13.328s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:65:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.329s]    65 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[13.329s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[13.643s] [ 97%] [32m[1mLinking CXX executable ../../bin/styles[0m
+[13.893s] [ 98%] [32m[1mLinking CXX executable ../../bin/example2[0m
+[14.090s] [ 98%] Built target styles
+[14.296s] [ 98%] Built target example2
+[14.580s] [ 99%] [32m[1mLinking CXX executable ../../bin/calculator[0m
+[14.963s] [ 99%] Built target calculator
+[18.076s] [100%] [32m[1mLinking CXX executable ../bin/test_nodes[0m
+[18.691s] [100%] Built target test_nodes
+[18.708s] Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/NodeEditor -- -j16 -l16
+[18.813s] Invoking command in '/home/dhruft/ws_nirmitsu/build/NodeEditor': /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/NodeEditor
+[18.822s] -- Install configuration: ""
+[18.822s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/libnodes.so
+[18.824s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include
+[18.824s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes
+[18.824s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowScene
+[18.824s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/Connection
+[18.824s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/ConnectionStyle
+[18.825s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeGeometry
+[18.825s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeData
+[18.825s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeStyle
+[18.825s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeState
+[18.826s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowViewStyle
+[18.826s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/TypeConverter
+[18.826s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowView
+[18.826s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/DataModelRegistry
+[18.826s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodePainterDelegate
+[18.827s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel
+[18.827s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/StyleCollection
+[18.827s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/Node
+[18.827s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal
+[18.827s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Node.hpp
+[18.827s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Export.hpp
+[18.828s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Serializable.hpp
+[18.828s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionGeometry.hpp
+[18.828s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/PortType.hpp
+[18.828s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeState.hpp
+[18.828s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp
+[18.829s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/memory.hpp
+[18.829s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/QUuidStdHash.hpp
+[18.829s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionStyle.hpp
+[18.829s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeGeometry.hpp
+[18.829s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/TypeConverter.hpp
+[18.829s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodePainterDelegate.hpp
+[18.830s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowViewStyle.hpp
+[18.830s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/DataModelRegistry.hpp
+[18.830s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeStyle.hpp
+[18.830s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeData.hpp
+[18.830s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/OperatingSystem.hpp
+[18.831s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowView.hpp
+[18.831s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionGraphicsObject.hpp
+[18.831s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Compiler.hpp
+[18.831s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Style.hpp
+[18.831s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeGraphicsObject.hpp
+[18.831s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionState.hpp
+[18.832s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/QStringStdHash.hpp
+[18.832s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/StyleCollection.hpp
+[18.832s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowScene.hpp
+[18.832s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Connection.hpp
+[18.833s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorTargets.cmake
+[18.833s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorTargets-noconfig.cmake
+[18.833s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorConfig.cmake
+[18.834s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/connection_colors
+[18.834s] -- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/connection_colors" to ""
+[18.834s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/example2
+[18.835s] -- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/example2" to ""
+[18.835s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/calculator
+[18.836s] -- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/calculator" to ""
+[18.836s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/images
+[18.836s] -- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/images" to ""
+[18.836s] -- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/styles
+[18.836s] -- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/styles" to ""
+[18.836s] Invoked command in '/home/dhruft/ws_nirmitsu/build/NodeEditor' returned '0': /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/NodeEditor

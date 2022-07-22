@@ -1,0 +1,199 @@
+[0.009s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[0.041s] [  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[0.337s] [  5%] Built target nirmitsu_autogen
+[0.355s] [35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[0.386s] [ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o[0m
+[0.386s] [ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o[0m
+[0.387s] [ 27%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/main.cpp.o[0m
+[0.387s] [ 27%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o[0m
+[1.716s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:26[m[K:
+[1.716s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:[m[K In member function ‘[01m[Kvirtual void NumberSlider::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[1.716s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:74:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.716s]    74 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[1.716s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.717s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:27[m[K:
+[1.717s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:[m[K In member function ‘[01m[Kvirtual void TextBox::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[1.717s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:82:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.717s]    82 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[1.717s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.723s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:28[m[K:
+[1.723s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:[m[K In member function ‘[01m[Kvirtual void Switch::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[1.723s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:74:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.723s]    74 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[1.724s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.222s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:1[m[K:
+[2.222s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:[m[K In member function ‘[01m[Kvirtual void JoystickWidget::paintEvent(QPaintEvent*)[m[K’:
+[2.222s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:34:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQPainter::drawArc(QRectF&)[m[K’
+[2.222s]    34 |     [01;31m[Kpainter.drawArc(rectangle)[m[K;
+[2.223s]       |     [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[2.223s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h:47[m[K,
+[2.223s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:68[m[K,
+[2.223s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.223s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:1[m[K:
+[2.223s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:355:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(const QRectF&, int, int)[m[K’
+[2.223s]   355 |     void [01;36m[KdrawArc[m[K(const QRectF &rect, int a, int alen);
+[2.223s]       |          [01;36m[K^~~~~~~[m[K
+[2.223s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:355:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[2.223s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:685:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(const QRect&, int, int)[m[K’
+[2.223s]   685 | inline void [01;36m[KQPainter[m[K::drawArc(const QRect &r, int a, int alen)
+[2.223s]       |             [01;36m[K^~~~~~~~[m[K
+[2.224s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:685:13:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[2.224s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:690:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(int, int, int, int, int, int)[m[K’
+[2.224s]   690 | inline void [01;36m[KQPainter[m[K::drawArc(int x, int y, int w, int h, int a, int alen)
+[2.224s]       |             [01;36m[K^~~~~~~~[m[K
+[2.224s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:690:13:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 1 provided
+[2.257s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.257s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.257s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:[m[K In member function ‘[01m[Kvirtual void JoystickWidget::paintEvent(QPaintEvent*)[m[K’:
+[2.257s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:34:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQPainter::drawArc(QRectF&)[m[K’
+[2.257s]    34 |     [01;31m[Kpainter.drawArc(rectangle)[m[K;
+[2.257s]       |     [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[2.257s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter:1[m[K,
+[2.257s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodePainterDelegate.hpp:3[m[K,
+[2.258s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:11[m[K,
+[2.258s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel:1[m[K,
+[2.258s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:23[m[K,
+[2.258s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.258s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:355:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(const QRectF&, int, int)[m[K’
+[2.258s]   355 |     void [01;36m[KdrawArc[m[K(const QRectF &rect, int a, int alen);
+[2.258s]       |          [01;36m[K^~~~~~~[m[K
+[2.258s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:355:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[2.258s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:685:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(const QRect&, int, int)[m[K’
+[2.258s]   685 | inline void [01;36m[KQPainter[m[K::drawArc(const QRect &r, int a, int alen)
+[2.258s]       |             [01;36m[K^~~~~~~~[m[K
+[2.258s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:685:13:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[2.258s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:690:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(int, int, int, int, int, int)[m[K’
+[2.258s]   690 | inline void [01;36m[KQPainter[m[K::drawArc(int x, int y, int w, int h, int a, int alen)
+[2.258s]       |             [01;36m[K^~~~~~~~[m[K
+[2.258s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:690:13:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 1 provided
+[2.260s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.261s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.261s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.261s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.261s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.261s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In constructor ‘[01m[KJoystick::Joystick()[m[K’:
+[2.261s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:87:24:[m[K [01;35m[Kwarning: [m[K‘[01m[KJoystick::_position[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.261s]    87 |   std::shared_ptr<Pos> [01;35m[K_position[m[K;
+[2.261s]       |                        [01;35m[K^~~~~~~~~[m[K
+[2.262s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:86:31:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<StringData> Joystick::_string[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.262s]    86 |   std::shared_ptr<StringData> [01;35m[K_string[m[K;
+[2.262s]       |                               [01;35m[K^~~~~~~[m[K
+[2.262s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:23:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.262s]    23 | [01;35m[KJoystick[m[K::Joystick()
+[2.262s]       | [01;35m[K^~~~~~~~[m[K
+[2.314s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/moc_JoystickWidget.cpp:10[m[K,
+[2.314s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:2[m[K:
+[2.314s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:[m[K In member function ‘[01m[Kvirtual void JoystickWidget::paintEvent(QPaintEvent*)[m[K’:
+[2.314s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:34:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQPainter::drawArc(QRectF&)[m[K’
+[2.314s]    34 |     [01;31m[Kpainter.drawArc(rectangle)[m[K;
+[2.315s]       |     [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[2.315s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h:47[m[K,
+[2.315s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui:68[m[K,
+[2.315s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:6[m[K,
+[2.315s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/moc_JoystickWidget.cpp:10[m[K,
+[2.315s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:2[m[K:
+[2.315s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:355:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(const QRectF&, int, int)[m[K’
+[2.315s]   355 |     void [01;36m[KdrawArc[m[K(const QRectF &rect, int a, int alen);
+[2.315s]       |          [01;36m[K^~~~~~~[m[K
+[2.315s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:355:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[2.315s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:685:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(const QRect&, int, int)[m[K’
+[2.315s]   685 | inline void [01;36m[KQPainter[m[K::drawArc(const QRect &r, int a, int alen)
+[2.315s]       |             [01;36m[K^~~~~~~~[m[K
+[2.315s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:685:13:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[2.315s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:690:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(int, int, int, int, int, int)[m[K’
+[2.315s]   690 | inline void [01;36m[KQPainter[m[K::drawArc(int x, int y, int w, int h, int a, int alen)
+[2.315s]       |             [01;36m[K^~~~~~~~[m[K
+[2.316s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:690:13:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 1 provided
+[2.385s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_Joystick.cpp:10[m[K,
+[2.385s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:3[m[K:
+[2.385s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.385s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.385s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.386s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.386s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_NumberSlider.cpp:10[m[K,
+[2.386s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:4[m[K:
+[2.386s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:[m[K In member function ‘[01m[Kvirtual void NumberSlider::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.386s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:74:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.386s]    74 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.386s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.387s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_Switch.cpp:10[m[K,
+[2.387s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:5[m[K:
+[2.387s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:[m[K In member function ‘[01m[Kvirtual void Switch::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.387s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:74:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.387s]    74 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.387s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.395s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_TextBox.cpp:10[m[K,
+[2.395s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:6[m[K:
+[2.396s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:[m[K In member function ‘[01m[Kvirtual void TextBox::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.396s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:82:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.396s]    82 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.396s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.400s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/Robot.hpp:30[m[K,
+[2.400s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/moc_Robot.cpp:10[m[K,
+[2.400s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:8[m[K:
+[2.400s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:[m[K In constructor ‘[01m[KWheelDataType::WheelDataType()[m[K’:
+[2.400s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:30:8:[m[K [01;35m[Kwarning: [m[K‘[01m[KWheelDataType::on[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.400s]    30 |   bool [01;35m[Kon[m[K;
+[2.401s]       |        [01;35m[K^~[m[K
+[2.401s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:29:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KQString WheelDataType::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.401s]    29 |   QString [01;35m[Kname[m[K;
+[2.401s]       |           [01;35m[K^~~~[m[K
+[2.401s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:33:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.401s]    33 |   [01;35m[KWheelDataType[m[K()
+[2.401s]       |   [01;35m[K^~~~~~~~~~~~~[m[K
+[2.498s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.498s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:29[m[K:
+[2.499s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:[m[K In member function ‘[01m[Kvirtual void JoystickWidget::paintEvent(QPaintEvent*)[m[K’:
+[2.499s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:34:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQPainter::drawArc(QRectF&)[m[K’
+[2.499s]    34 |     [01;31m[Kpainter.drawArc(rectangle)[m[K;
+[2.499s]       |     [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[2.499s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter:1[m[K,
+[2.499s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodePainterDelegate.hpp:3[m[K,
+[2.499s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:11[m[K,
+[2.499s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/DataModelRegistry.hpp:13[m[K,
+[2.499s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowScene.hpp:12[m[K,
+[2.499s]                  from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowScene:1[m[K,
+[2.499s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:19[m[K:
+[2.499s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:355:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(const QRectF&, int, int)[m[K’
+[2.499s]   355 |     void [01;36m[KdrawArc[m[K(const QRectF &rect, int a, int alen);
+[2.500s]       |          [01;36m[K^~~~~~~[m[K
+[2.500s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:355:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[2.500s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:685:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(const QRect&, int, int)[m[K’
+[2.500s]   685 | inline void [01;36m[KQPainter[m[K::drawArc(const QRect &r, int a, int alen)
+[2.500s]       |             [01;36m[K^~~~~~~~[m[K
+[2.500s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:685:13:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[2.500s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:690:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid QPainter::drawArc(int, int, int, int, int, int)[m[K’
+[2.500s]   690 | inline void [01;36m[KQPainter[m[K::drawArc(int x, int y, int w, int h, int a, int alen)
+[2.500s]       |             [01;36m[K^~~~~~~~[m[K
+[2.500s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:690:13:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 1 provided
+[2.501s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:29[m[K:
+[2.501s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.501s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.501s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.501s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.503s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/Robot.hpp:30[m[K,
+[2.503s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:30[m[K:
+[2.503s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:[m[K In constructor ‘[01m[KWheelDataType::WheelDataType()[m[K’:
+[2.503s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:30:8:[m[K [01;35m[Kwarning: [m[K‘[01m[KWheelDataType::on[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.503s]    30 |   bool [01;35m[Kon[m[K;
+[2.503s]       |        [01;35m[K^~[m[K
+[2.503s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:29:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KQString WheelDataType::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.503s]    29 |   QString [01;35m[Kname[m[K;
+[2.503s]       |           [01;35m[K^~~~[m[K
+[2.503s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:33:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.503s]    33 |   [01;35m[KWheelDataType[m[K()
+[2.503s]       |   [01;35m[K^~~~~~~~~~~~~[m[K
+[2.545s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:90: CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o] Error 1
+[2.545s] gmake[2]: *** Waiting for unfinished jobs....
+[2.608s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:188: CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o] Error 1
+[4.459s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/moc_JoystickWidget.cpp:10[m[K,
+[4.459s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:2[m[K:
+[4.459s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:[m[K At global scope:
+[4.459s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:17:17:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kvoid JoystickWidget::moveJoystick(PosType)[m[K’ used but never defined
+[4.459s]    17 |     inline void [01;35m[KmoveJoystick[m[K(PosType position);
+[4.459s]       |                 [01;35m[K^~~~~~~~~~~~[m[K
+[4.529s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:76: CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o] Error 1
+[4.820s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:244: CMakeFiles/nirmitsu.dir/src/main.cpp.o] Error 1
+[4.821s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Error 2
+[4.821s] gmake: *** [Makefile:146: all] Error 2
+[4.824s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '2': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16

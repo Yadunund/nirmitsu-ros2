@@ -1,0 +1,2 @@
+source;share/nirmitsu_ros2_flowgraph/environment/ament_prefix_path.sh
+source;share/nirmitsu_ros2_flowgraph/environment/path.sh

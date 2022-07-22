@@ -1,0 +1,15 @@
+[0.006s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[0.043s] [  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[0.052s] 
+[0.052s] AutoMoc error
+[0.053s] -------------
+[0.053s] "SRC:/src/CustomWidgets/JoystickWidget.cpp"
+[0.053s] contains a "Q_OBJECT" macro, but does not include "JoystickWidget.moc"!
+[0.053s] Consider to
+[0.053s]   - add #include "JoystickWidget.moc"
+[0.053s]   - enable SKIP_AUTOMOC for this file
+[0.053s] 
+[0.053s] gmake[2]: *** [CMakeFiles/nirmitsu_autogen.dir/build.make:71: CMakeFiles/nirmitsu_autogen] Error 1
+[0.053s] gmake[1]: *** [CMakeFiles/Makefile2:164: CMakeFiles/nirmitsu_autogen.dir/all] Error 2
+[0.053s] gmake: *** [Makefile:146: all] Error 2
+[0.056s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '2': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16

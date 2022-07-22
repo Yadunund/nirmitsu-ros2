@@ -1,0 +1,102 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dhruft/ws_nirmitsu/build/NodeEditor
+[  1%] [34m[1mAutomatic MOC for target nodes[0m
+[  1%] Built target nodes_autogen
+[35m[1mConsolidate compiler generated dependencies of target nodes[0m
+[  2%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/ConnectionGraphicsObject.cpp.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodeGraphicsObject.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/nodes.dir/src/NodeConnectionInteraction.cpp.o[0m
+[  5%] [32m[1mLinking CXX shared library lib/libnodes.so[0m
+[ 68%] Built target nodes
+[ 71%] [34m[1mAutomatic MOC for target images[0m
+[ 73%] [34m[1mAutomatic MOC for target calculator[0m
+[ 73%] [34m[1mAutomatic MOC for target example2[0m
+[ 74%] [34m[1mAutomatic MOC for target styles[0m
+[ 74%] [34m[1mAutomatic MOC for target connection_colors[0m
+[ 74%] [34m[1mAutomatic MOC for target test_nodes[0m
+[ 74%] Built target test_nodes_autogen
+[ 74%] Built target connection_colors_autogen
+[ 74%] Built target styles_autogen
+[ 74%] Built target example2_autogen
+[ 74%] Built target images_autogen
+[ 74%] Built target calculator_autogen
+[35m[1mConsolidate compiler generated dependencies of target connection_colors[0m
+[35m[1mConsolidate compiler generated dependencies of target styles[0m
+[35m[1mConsolidate compiler generated dependencies of target example2[0m
+[35m[1mConsolidate compiler generated dependencies of target images[0m
+[35m[1mConsolidate compiler generated dependencies of target test_nodes[0m
+[ 75%] [32m[1mLinking CXX executable ../../bin/styles[0m
+[ 76%] [32m[1mLinking CXX executable ../../bin/connection_colors[0m
+[ 77%] [32m[1mLinking CXX executable ../../bin/example2[0m
+[ 78%] [32m[1mLinking CXX executable ../../bin/images[0m
+[ 79%] [32m[1mLinking CXX executable ../bin/test_nodes[0m
+[ 82%] Built target styles
+[ 83%] Built target connection_colors
+[ 86%] Built target example2
+[35m[1mConsolidate compiler generated dependencies of target calculator[0m
+[ 87%] [32m[1mLinking CXX executable ../../bin/calculator[0m
+[ 90%] Built target images
+[ 95%] Built target test_nodes
+[100%] Built target calculator
+-- Install configuration: ""
+-- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/libnodes.so
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowScene
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/Connection
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/ConnectionStyle
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeGeometry
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeData
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeStyle
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeState
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowViewStyle
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/TypeConverter
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowView
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/DataModelRegistry
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodePainterDelegate
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/StyleCollection
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/Node
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Node.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Export.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Serializable.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionGeometry.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/PortType.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeState.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/memory.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/QUuidStdHash.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionStyle.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeGeometry.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/TypeConverter.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodePainterDelegate.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowViewStyle.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/DataModelRegistry.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeStyle.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeData.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/OperatingSystem.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowView.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionGraphicsObject.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Compiler.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Style.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeGraphicsObject.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionState.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/QStringStdHash.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/StyleCollection.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowScene.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Connection.hpp
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorTargets.cmake
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorTargets-noconfig.cmake
+-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorConfig.cmake
+-- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/connection_colors
+-- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/connection_colors" to ""
+-- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/example2
+-- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/example2" to ""
+-- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/calculator
+-- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/calculator" to ""
+-- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/images
+-- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/images" to ""
+-- Installing: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/styles
+-- Set runtime path of "/home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/styles" to ""
