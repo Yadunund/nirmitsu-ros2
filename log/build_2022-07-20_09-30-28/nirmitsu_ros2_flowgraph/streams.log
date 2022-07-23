@@ -1,0 +1,249 @@
+[0.006s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[0.042s] [  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[0.333s] [  5%] Built target nirmitsu_autogen
+[0.353s] [35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[0.391s] [ 11%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o[0m
+[0.391s] [ 22%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o[0m
+[0.392s] [ 22%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/main.cpp.o[0m
+[0.392s] [ 27%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o[0m
+[1.712s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:26[m[K:
+[1.712s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:[m[K In member function ‘[01m[Kvirtual void NumberSlider::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[1.713s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:74:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.713s]    74 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[1.713s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.713s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:27[m[K:
+[1.713s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:[m[K In member function ‘[01m[Kvirtual void TextBox::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[1.713s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:82:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.713s]    82 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[1.713s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.720s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:28[m[K:
+[1.720s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:[m[K In member function ‘[01m[Kvirtual void Switch::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[1.720s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:74:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.720s]    74 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[1.720s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.235s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:7[m[K,
+[2.235s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:1[m[K:
+[2.236s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:6:8:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ does not name a type
+[2.236s]     6 | inline [01;31m[KJoystickWidget[m[K::JoystickWidget(QWidget *parent) : QWidget(parent)
+[2.236s]       |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.236s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:24:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.236s]    24 | inline void [01;31m[KJoystickWidget[m[K::mousePressEvent(QMouseEvent *event)
+[2.236s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.236s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid mousePressEvent(QMouseEvent*)[m[K’:
+[2.236s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:24:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.237s]    24 | inline void JoystickWidget::mousePressEvent([01;35m[KQMouseEvent *event[m[K)
+[2.237s]       |                                             [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.237s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.237s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.237s]    29 | inline void [01;31m[KJoystickWidget[m[K::mouseReleaseEvent(QMouseEvent *event)
+[2.237s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.237s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid mouseReleaseEvent(QMouseEvent*)[m[K’:
+[2.238s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:29:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.238s]    29 | inline void JoystickWidget::mouseReleaseEvent([01;35m[KQMouseEvent *event[m[K)
+[2.238s]       |                                               [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.238s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.238s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.238s]    34 | inline void [01;31m[KJoystickWidget[m[K::moveJoystick(int x, int y)
+[2.238s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.242s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:7[m[K,
+[2.242s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.242s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.242s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:6:8:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ does not name a type
+[2.242s]     6 | inline [01;31m[KJoystickWidget[m[K::JoystickWidget(QWidget *parent) : QWidget(parent)
+[2.242s]       |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.243s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:24:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.243s]    24 | inline void [01;31m[KJoystickWidget[m[K::mousePressEvent(QMouseEvent *event)
+[2.243s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.243s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid mousePressEvent(QMouseEvent*)[m[K’:
+[2.243s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:24:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.243s]    24 | inline void JoystickWidget::mousePressEvent([01;35m[KQMouseEvent *event[m[K)
+[2.243s]       |                                             [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.243s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.244s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.244s]    29 | inline void [01;31m[KJoystickWidget[m[K::mouseReleaseEvent(QMouseEvent *event)
+[2.244s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.244s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid mouseReleaseEvent(QMouseEvent*)[m[K’:
+[2.244s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:29:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.244s]    29 | inline void JoystickWidget::mouseReleaseEvent([01;35m[KQMouseEvent *event[m[K)
+[2.244s]       |                                               [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.244s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.245s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.245s]    34 | inline void [01;31m[KJoystickWidget[m[K::moveJoystick(int x, int y)
+[2.245s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.245s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid moveJoystick(int, int)[m[K’:
+[2.245s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:36:10:[m[K [01;31m[Kerror: [m[K‘[01m[KposUpdated[m[K’ was not declared in this scope
+[2.246s]    36 |     emit [01;31m[KposUpdated[m[K(PosType(
+[2.246s]       |          [01;31m[K^~~~~~~~~~[m[K
+[2.247s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In member function ‘[01m[Kvirtual void JoystickWidget::mousePressEvent(QMouseEvent*)[m[K’:
+[2.247s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:24:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.248s]    24 | inline void JoystickWidget::mousePressEvent([01;35m[KQMouseEvent *event[m[K)
+[2.248s]       |                                             [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.248s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In member function ‘[01m[Kvirtual void JoystickWidget::mouseReleaseEvent(QMouseEvent*)[m[K’:
+[2.248s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:29:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.248s]    29 | inline void JoystickWidget::mouseReleaseEvent([01;35m[KQMouseEvent *event[m[K)
+[2.249s]       |                                               [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.253s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid moveJoystick(int, int)[m[K’:
+[2.253s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:36:10:[m[K [01;31m[Kerror: [m[K‘[01m[KposUpdated[m[K’ was not declared in this scope
+[2.253s]    36 |     emit [01;31m[KposUpdated[m[K(PosType(
+[2.253s]       |          [01;31m[K^~~~~~~~~~[m[K
+[2.257s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.257s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.257s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.257s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.257s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.258s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:20[m[K:
+[2.258s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In member function ‘[01m[Kvirtual void JoystickWidget::mousePressEvent(QMouseEvent*)[m[K’:
+[2.258s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:24:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.258s]    24 | inline void JoystickWidget::mousePressEvent([01;35m[KQMouseEvent *event[m[K)
+[2.259s]       |                                             [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.259s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In member function ‘[01m[Kvirtual void JoystickWidget::mouseReleaseEvent(QMouseEvent*)[m[K’:
+[2.259s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:29:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.259s]    29 | inline void JoystickWidget::mouseReleaseEvent([01;35m[KQMouseEvent *event[m[K)
+[2.260s]       |                                               [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.260s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.260s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In constructor ‘[01m[KJoystick::Joystick()[m[K’:
+[2.260s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:87:24:[m[K [01;35m[Kwarning: [m[K‘[01m[KJoystick::_position[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.260s]    87 |   std::shared_ptr<Pos> [01;35m[K_position[m[K;
+[2.260s]       |                        [01;35m[K^~~~~~~~~[m[K
+[2.260s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:86:31:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<StringData> Joystick::_string[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.260s]    86 |   std::shared_ptr<StringData> [01;35m[K_string[m[K;
+[2.261s]       |                               [01;35m[K^~~~~~~[m[K
+[2.261s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:23:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.261s]    23 | [01;35m[KJoystick[m[K::Joystick()
+[2.261s]       | [01;35m[K^~~~~~~~[m[K
+[2.311s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:7[m[K,
+[2.311s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/moc_JoystickWidget.cpp:10[m[K,
+[2.312s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:2[m[K:
+[2.312s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:6:8:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ does not name a type
+[2.312s]     6 | inline [01;31m[KJoystickWidget[m[K::JoystickWidget(QWidget *parent) : QWidget(parent)
+[2.312s]       |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.312s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:24:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.312s]    24 | inline void [01;31m[KJoystickWidget[m[K::mousePressEvent(QMouseEvent *event)
+[2.312s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.312s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid mousePressEvent(QMouseEvent*)[m[K’:
+[2.313s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:24:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.313s]    24 | inline void JoystickWidget::mousePressEvent([01;35m[KQMouseEvent *event[m[K)
+[2.313s]       |                                             [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.313s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.313s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.313s]    29 | inline void [01;31m[KJoystickWidget[m[K::mouseReleaseEvent(QMouseEvent *event)
+[2.313s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.314s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid mouseReleaseEvent(QMouseEvent*)[m[K’:
+[2.314s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:29:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.314s]    29 | inline void JoystickWidget::mouseReleaseEvent([01;35m[KQMouseEvent *event[m[K)
+[2.314s]       |                                               [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.314s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.314s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.314s]    34 | inline void [01;31m[KJoystickWidget[m[K::moveJoystick(int x, int y)
+[2.314s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.323s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid moveJoystick(int, int)[m[K’:
+[2.323s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:36:10:[m[K [01;31m[Kerror: [m[K‘[01m[KposUpdated[m[K’ was not declared in this scope
+[2.323s]    36 |     emit [01;31m[KposUpdated[m[K(PosType(
+[2.323s]       |          [01;31m[K^~~~~~~~~~[m[K
+[2.385s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_Joystick.cpp:10[m[K,
+[2.385s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:3[m[K:
+[2.386s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.386s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.386s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.386s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.391s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_NumberSlider.cpp:10[m[K,
+[2.392s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:4[m[K:
+[2.392s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:[m[K In member function ‘[01m[Kvirtual void NumberSlider::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.392s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:74:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.392s]    74 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.392s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.397s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_Switch.cpp:10[m[K,
+[2.397s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:5[m[K:
+[2.397s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:[m[K In member function ‘[01m[Kvirtual void Switch::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.398s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:74:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.398s]    74 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.398s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.405s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_TextBox.cpp:10[m[K,
+[2.405s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:6[m[K:
+[2.405s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:[m[K In member function ‘[01m[Kvirtual void TextBox::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.405s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:82:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.405s]    82 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.405s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.409s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/Robot.hpp:30[m[K,
+[2.409s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/moc_Robot.cpp:10[m[K,
+[2.410s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:8[m[K:
+[2.410s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:[m[K In constructor ‘[01m[KWheelDataType::WheelDataType()[m[K’:
+[2.410s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:30:8:[m[K [01;35m[Kwarning: [m[K‘[01m[KWheelDataType::on[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.410s]    30 |   bool [01;35m[Kon[m[K;
+[2.410s]       |        [01;35m[K^~[m[K
+[2.410s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:29:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KQString WheelDataType::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.410s]    29 |   QString [01;35m[Kname[m[K;
+[2.410s]       |           [01;35m[K^~~~[m[K
+[2.410s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:33:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.410s]    33 |   [01;35m[KWheelDataType[m[K()
+[2.410s]       |   [01;35m[K^~~~~~~~~~~~~[m[K
+[2.504s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.hpp:7[m[K,
+[2.505s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:30[m[K,
+[2.505s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:29[m[K:
+[2.505s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.505s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:6:8:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ does not name a type
+[2.505s]     6 | inline [01;31m[KJoystickWidget[m[K::JoystickWidget(QWidget *parent) : QWidget(parent)
+[2.505s]       |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.505s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:24:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.505s]    24 | inline void [01;31m[KJoystickWidget[m[K::mousePressEvent(QMouseEvent *event)
+[2.506s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.506s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid mousePressEvent(QMouseEvent*)[m[K’:
+[2.506s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:24:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.506s]    24 | inline void JoystickWidget::mousePressEvent([01;35m[KQMouseEvent *event[m[K)
+[2.506s]       |                                             [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.506s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.506s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.506s]    29 | inline void [01;31m[KJoystickWidget[m[K::mouseReleaseEvent(QMouseEvent *event)
+[2.506s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.507s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid mouseReleaseEvent(QMouseEvent*)[m[K’:
+[2.507s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:29:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.507s]    29 | inline void JoystickWidget::mouseReleaseEvent([01;35m[KQMouseEvent *event[m[K)
+[2.507s]       |                                               [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[2.507s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K At global scope:
+[2.507s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[KJoystickWidget[m[K’ has not been declared
+[2.507s]    34 | inline void [01;31m[KJoystickWidget[m[K::moveJoystick(int x, int y)
+[2.507s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.516s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid moveJoystick(int, int)[m[K’:
+[2.516s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:36:10:[m[K [01;31m[Kerror: [m[K‘[01m[KposUpdated[m[K’ was not declared in this scope
+[2.516s]    36 |     emit [01;31m[KposUpdated[m[K(PosType(
+[2.516s]       |          [01;31m[K^~~~~~~~~~[m[K
+[2.519s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:29[m[K:
+[2.519s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.519s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.519s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.519s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.520s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/Robot.hpp:30[m[K,
+[2.520s]                  from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:30[m[K:
+[2.520s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:[m[K In constructor ‘[01m[KWheelDataType::WheelDataType()[m[K’:
+[2.520s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:30:8:[m[K [01;35m[Kwarning: [m[K‘[01m[KWheelDataType::on[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.521s]    30 |   bool [01;35m[Kon[m[K;
+[2.521s]       |        [01;35m[K^~[m[K
+[2.521s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:29:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KQString WheelDataType::name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.521s]    29 |   QString [01;35m[Kname[m[K;
+[2.521s]       |           [01;35m[K^~~~[m[K
+[2.521s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:33:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.521s]    33 |   [01;35m[KWheelDataType[m[K()
+[2.521s]       |   [01;35m[K^~~~~~~~~~~~~[m[K
+[2.572s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:90: CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o] Error 1
+[2.572s] gmake[2]: *** Waiting for unfinished jobs....
+[2.604s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:188: CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o] Error 1
+[4.450s] In file included from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/moc_JoystickWidget.cpp:10[m[K,
+[4.450s]                  from [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:2[m[K:
+[4.450s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:[m[K At global scope:
+[4.450s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:22:17:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kvoid JoystickWidget::moveJoystick(int, int)[m[K’ used but never defined
+[4.450s]    22 |     inline void [01;35m[KmoveJoystick[m[K(int x, int y);
+[4.451s]       |                 [01;35m[K^~~~~~~~~~~~[m[K
+[4.451s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:28:17:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kvirtual void JoystickWidget::mousePressEvent(QMouseEvent*)[m[K’ used but never defined
+[4.451s]    28 |     inline void [01;35m[KmousePressEvent[m[K(QMouseEvent * event);
+[4.451s]       |                 [01;35m[K^~~~~~~~~~~~~~~[m[K
+[4.451s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:29:17:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kvirtual void JoystickWidget::mouseReleaseEvent(QMouseEvent*)[m[K’ used but never defined
+[4.451s]    29 |     inline void [01;35m[KmouseReleaseEvent[m[K(QMouseEvent * event);
+[4.451s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[4.451s] [01m[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/OLLNMSXWPB/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:30:17:[m[K [01;35m[Kwarning: [m[Kinline function ‘[01m[Kvirtual void JoystickWidget::paintEvent(QPaintEvent*)[m[K’ used but never defined
+[4.451s]    30 |     inline void [01;35m[KpaintEvent[m[K(QPaintEvent *event);
+[4.451s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[4.519s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:76: CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o] Error 1
+[4.822s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:244: CMakeFiles/nirmitsu.dir/src/main.cpp.o] Error 1
+[4.822s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Error 2
+[4.822s] gmake: *** [Makefile:146: all] Error 2
+[4.824s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '2': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16

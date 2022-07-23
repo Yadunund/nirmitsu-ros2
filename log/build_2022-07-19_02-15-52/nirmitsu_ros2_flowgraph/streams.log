@@ -1,0 +1,44 @@
+[0.008s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[0.060s] [  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[0.087s] [  5%] Built target nirmitsu_autogen
+[0.108s] [35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[0.145s] [ 11%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o[0m
+[0.145s] [ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o[0m
+[2.139s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[2.139s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[2.139s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.140s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[2.140s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.140s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In constructor ‘[01m[KJoystick::Joystick()[m[K’:
+[2.140s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:87:24:[m[K [01;35m[Kwarning: [m[K‘[01m[KJoystick::_position[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.140s]    87 |   std::shared_ptr<Pos> [01;35m[K_position[m[K;
+[2.140s]       |                        [01;35m[K^~~~~~~~~[m[K
+[2.140s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:86:31:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<StringData> Joystick::_string[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.140s]    86 |   std::shared_ptr<StringData> [01;35m[K_string[m[K;
+[2.140s]       |                               [01;35m[K^~~~~~~[m[K
+[2.140s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:23:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.140s]    23 | [01;35m[KJoystick[m[K::Joystick()
+[2.141s]       | [01;35m[K^~~~~~~~[m[K
+[2.545s] [ 22%] [32m[1mLinking CXX executable nirmitsu[0m
+[3.964s] [100%] Built target nirmitsu
+[3.979s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '0': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[4.010s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph
+[4.015s] -- Install configuration: ""
+[4.015s] -- Installing: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/lib/nirmitsu_ros2_flowgraph/nirmitsu
+[4.017s] -- Set runtime path of "/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/lib/nirmitsu_ros2_flowgraph/nirmitsu" to ""
+[4.017s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/ament_index/resource_index/package_run_dependencies/nirmitsu_ros2_flowgraph
+[4.017s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/ament_index/resource_index/parent_prefix_path/nirmitsu_ros2_flowgraph
+[4.017s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/environment/ament_prefix_path.sh
+[4.017s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/environment/ament_prefix_path.dsv
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/environment/path.sh
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/environment/path.dsv
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/local_setup.bash
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/local_setup.sh
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/local_setup.zsh
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/local_setup.dsv
+[4.018s] -- Installing: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.dsv
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/ament_index/resource_index/packages/nirmitsu_ros2_flowgraph
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/cmake/nirmitsu_ros2_flowgraphConfig.cmake
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/cmake/nirmitsu_ros2_flowgraphConfig-version.cmake
+[4.018s] -- Up-to-date: /home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph/share/nirmitsu_ros2_flowgraph/package.xml
+[4.019s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '0': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --install /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph

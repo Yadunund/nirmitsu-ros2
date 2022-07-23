@@ -1,0 +1,89 @@
+[0.006s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[0.041s] [  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[0.062s] [  5%] Built target nirmitsu_autogen
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[0.109s] [ 11%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o[0m
+[0.110s] [ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o[0m
+[1.699s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid drawJoystick(int, int)[m[K’:
+[1.700s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGraphicsScene[m[K’ was not declared in this scope; did you mean ‘[01m[KQGraphicsEffect[m[K’?
+[1.700s]    16 |     [01;31m[KQGraphicsScene[m[K *scene = new QGraphicsScene(this);
+[1.700s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.700s]       |     [32m[KQGraphicsEffect[m[K
+[1.703s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:16:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kscene[m[K’ was not declared in this scope
+[1.704s]    16 |     QGraphicsScene *[01;31m[Kscene[m[K = new QGraphicsScene(this);
+[1.704s]       |                     [01;31m[K^~~~~[m[K
+[1.704s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:16:33:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[KQGraphicsScene[m[K’
+[1.704s]    16 |     QGraphicsScene *scene = new [01;31m[KQGraphicsScene[m[K(this);
+[1.704s]       |                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.708s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:19:22:[m[K [01;31m[Kerror: [m[K‘[01m[KlPixmap[m[K’ was not declared in this scope; did you mean ‘[01m[KQPixmap[m[K’?
+[1.708s]    19 |     scene->addPixmap([01;31m[KlPixmap[m[K);
+[1.708s]       |                      [01;31m[K^~~~~~~[m[K
+[1.708s]       |                      [32m[KQPixmap[m[K
+[1.721s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGraphicsPixmapItem[m[K’ was not declared in this scope
+[1.721s]    21 |     [01;31m[KQGraphicsPixmapItem[m[K *test = scene->addPixmap(lPixmap);
+[1.721s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.725s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:21:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ktest[m[K’ was not declared in this scope
+[1.726s]    21 |     QGraphicsPixmapItem *[01;31m[Ktest[m[K = scene->addPixmap(lPixmap);
+[1.726s]       |                          [01;31m[K^~~~[m[K
+[1.736s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:24:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kui_graphicsView[m[K’ was not declared in this scope
+[1.736s]    24 |     [01;31m[Kui_graphicsView[m[K->setScene(scene);
+[1.736s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.736s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:14:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.736s]    14 | inline void drawJoystick([01;35m[Kint x[m[K, int y) {
+[1.736s]       |                          [01;35m[K~~~~^[m[K
+[1.737s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:14:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.737s]    14 | inline void drawJoystick(int x, [01;35m[Kint y[m[K) {
+[1.737s]       |                                 [01;35m[K~~~~^[m[K
+[1.779s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[1.779s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[1.779s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.779s]    75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+[1.779s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.787s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:20[m[K:
+[1.787s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid drawJoystick(int, int)[m[K’:
+[1.787s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGraphicsScene[m[K’ was not declared in this scope; did you mean ‘[01m[KQGraphicsEffect[m[K’?
+[1.788s]    16 |     [01;31m[KQGraphicsScene[m[K *scene = new QGraphicsScene(this);
+[1.788s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.788s]       |     [32m[KQGraphicsEffect[m[K
+[1.792s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:16:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kscene[m[K’ was not declared in this scope
+[1.792s]    16 |     QGraphicsScene *[01;31m[Kscene[m[K = new QGraphicsScene(this);
+[1.792s]       |                     [01;31m[K^~~~~[m[K
+[1.792s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:16:33:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[KQGraphicsScene[m[K’
+[1.792s]    16 |     QGraphicsScene *scene = new [01;31m[KQGraphicsScene[m[K(this);
+[1.792s]       |                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.796s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:19:22:[m[K [01;31m[Kerror: [m[K‘[01m[KlPixmap[m[K’ was not declared in this scope; did you mean ‘[01m[KQPixmap[m[K’?
+[1.796s]    19 |     scene->addPixmap([01;31m[KlPixmap[m[K);
+[1.797s]       |                      [01;31m[K^~~~~~~[m[K
+[1.797s]       |                      [32m[KQPixmap[m[K
+[1.810s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[KQGraphicsPixmapItem[m[K’ was not declared in this scope
+[1.810s]    21 |     [01;31m[KQGraphicsPixmapItem[m[K *test = scene->addPixmap(lPixmap);
+[1.810s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.815s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:21:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ktest[m[K’ was not declared in this scope
+[1.815s]    21 |     QGraphicsPixmapItem *[01;31m[Ktest[m[K = scene->addPixmap(lPixmap);
+[1.815s]       |                          [01;31m[K^~~~[m[K
+[1.826s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:24:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kui_graphicsView[m[K’ was not declared in this scope
+[1.826s]    24 |     [01;31m[Kui_graphicsView[m[K->setScene(scene);
+[1.826s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.826s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:14:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.826s]    14 | inline void drawJoystick([01;35m[Kint x[m[K, int y) {
+[1.827s]       |                          [01;35m[K~~~~^[m[K
+[1.827s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:14:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.827s]    14 | inline void drawJoystick(int x, [01;35m[Kint y[m[K) {
+[1.827s]       |                                 [01;35m[K~~~~^[m[K
+[1.827s] In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[1.827s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In constructor ‘[01m[KJoystick::Joystick()[m[K’:
+[1.827s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:87:24:[m[K [01;35m[Kwarning: [m[K‘[01m[KJoystick::_position[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.827s]    87 |   std::shared_ptr<Pos> [01;35m[K_position[m[K;
+[1.827s]       |                        [01;35m[K^~~~~~~~~[m[K
+[1.827s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:86:31:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<StringData> Joystick::_string[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.827s]    86 |   std::shared_ptr<StringData> [01;35m[K_string[m[K;
+[1.828s]       |                               [01;35m[K^~~~~~~[m[K
+[1.828s] [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:23:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.828s]    23 | [01;35m[KJoystick[m[K::Joystick()
+[1.828s]       | [01;35m[K^~~~~~~~[m[K
+[2.009s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:90: CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o] Error 1
+[2.009s] gmake[2]: *** Waiting for unfinished jobs....
+[2.119s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:188: CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o] Error 1
+[2.119s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Error 2
+[2.119s] gmake: *** [Makefile:146: all] Error 2
+[2.121s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '2': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/home/dhruft/ws_nirmitsu/install/nirmitsu_ros2_flowgraph:/opt/ros/humble /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16

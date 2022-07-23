@@ -1,0 +1,264 @@
+[0.000000] (-) TimerEvent: {}
+[0.000276] (NodeEditor) JobQueued: {'identifier': 'NodeEditor', 'dependencies': OrderedDict()}
+[0.000326] (nirmitsu_ros2_flowgraph) JobQueued: {'identifier': 'nirmitsu_ros2_flowgraph', 'dependencies': OrderedDict([('NodeEditor', '/home/dhruft/ws_nirmitsu/install/NodeEditor')])}
+[0.000359] (NodeEditor) JobStarted: {'identifier': 'NodeEditor'}
+[0.009953] (NodeEditor) JobProgress: {'identifier': 'NodeEditor', 'progress': 'cmake'}
+[0.010616] (NodeEditor) JobProgress: {'identifier': 'NodeEditor', 'progress': 'build'}
+[0.011704] (NodeEditor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dhruft/ws_nirmitsu/build/NodeEditor', '--', '-j16', '-l16'], 'cwd': '/home/dhruft/ws_nirmitsu/build/NodeEditor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'dhruft'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('HOME', '/home/dhruft'), ('OLDPWD', '/home/dhruft'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1754'), ('SYSTEMD_EXEC_PID', '2244'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2654'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'dhruft'), ('JOURNAL_STREAM', '8:31595'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dhruft'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dhruft:@/tmp/.ICE-unix/1936,unix/dhruft:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', 'ab25dac2a751486c8be85340bac63484'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_SG.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RTZLP1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:023ba144-f39e-429a-8fa4-04c7aa9fdbcd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dhruft/ws_nirmitsu/build/NodeEditor'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.066339] (NodeEditor) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mAutomatic MOC for target nodes\x1b[0m\n'}
+[0.086611] (NodeEditor) StdoutLine: {'line': b'[  1%] Built target nodes_autogen\n'}
+[0.098284] (-) TimerEvent: {}
+[0.140486] (NodeEditor) StdoutLine: {'line': b'[ 68%] Built target nodes\n'}
+[0.164694] (NodeEditor) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mAutomatic MOC for target test_nodes\x1b[0m\n'}
+[0.165110] (NodeEditor) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mAutomatic MOC for target styles\x1b[0m\n'}
+[0.165197] (NodeEditor) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mAutomatic MOC for target calculator\x1b[0m\n'}
+[0.165272] (NodeEditor) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mAutomatic MOC for target images\x1b[0m\n'}
+[0.165384] (NodeEditor) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mAutomatic MOC for target example2\x1b[0m\n'}
+[0.165459] (NodeEditor) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mAutomatic MOC for target connection_colors\x1b[0m\n'}
+[0.187024] (NodeEditor) StdoutLine: {'line': b'[ 74%] Built target connection_colors_autogen\n'}
+[0.187372] (NodeEditor) StdoutLine: {'line': b'[ 74%] Built target test_nodes_autogen\n'}
+[0.187782] (NodeEditor) StdoutLine: {'line': b'[ 74%] Built target styles_autogen\n'}
+[0.188753] (NodeEditor) StdoutLine: {'line': b'[ 74%] Built target images_autogen\n'}
+[0.189007] (NodeEditor) StdoutLine: {'line': b'[ 74%] Built target example2_autogen\n'}
+[0.189100] (NodeEditor) StdoutLine: {'line': b'[ 74%] Built target calculator_autogen\n'}
+[0.198448] (-) TimerEvent: {}
+[0.215989] (NodeEditor) StdoutLine: {'line': b'[ 81%] Built target connection_colors\n'}
+[0.216438] (NodeEditor) StdoutLine: {'line': b'[ 81%] Built target images\n'}
+[0.216704] (NodeEditor) StdoutLine: {'line': b'[ 84%] Built target styles\n'}
+[0.217443] (NodeEditor) StdoutLine: {'line': b'[ 93%] Built target example2\n'}
+[0.217736] (NodeEditor) StdoutLine: {'line': b'[ 94%] Built target calculator\n'}
+[0.217865] (NodeEditor) StdoutLine: {'line': b'[100%] Built target test_nodes\n'}
+[0.231439] (NodeEditor) CommandEnded: {'returncode': 0}
+[0.298584] (-) TimerEvent: {}
+[0.335111] (NodeEditor) JobProgress: {'identifier': 'NodeEditor', 'progress': 'install'}
+[0.345260] (NodeEditor) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dhruft/ws_nirmitsu/build/NodeEditor'], 'cwd': '/home/dhruft/ws_nirmitsu/build/NodeEditor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'dhruft'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('HOME', '/home/dhruft'), ('OLDPWD', '/home/dhruft'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1754'), ('SYSTEMD_EXEC_PID', '2244'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2654'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'dhruft'), ('JOURNAL_STREAM', '8:31595'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dhruft'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dhruft:@/tmp/.ICE-unix/1936,unix/dhruft:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', 'ab25dac2a751486c8be85340bac63484'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_SG.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RTZLP1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:023ba144-f39e-429a-8fa4-04c7aa9fdbcd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dhruft/ws_nirmitsu/build/NodeEditor'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.352769] (NodeEditor) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.353104] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/libnodes.so\n'}
+[0.353264] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include\n'}
+[0.353405] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes\n'}
+[0.353595] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowScene\n'}
+[0.354001] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/Connection\n'}
+[0.354153] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/ConnectionStyle\n'}
+[0.354267] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeGeometry\n'}
+[0.354382] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeData\n'}
+[0.354477] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeStyle\n'}
+[0.354574] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeState\n'}
+[0.354674] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowViewStyle\n'}
+[0.354774] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/TypeConverter\n'}
+[0.354875] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/FlowView\n'}
+[0.354973] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/DataModelRegistry\n'}
+[0.355098] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodePainterDelegate\n'}
+[0.355178] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel\n'}
+[0.355260] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/StyleCollection\n'}
+[0.355360] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/Node\n'}
+[0.355459] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal\n'}
+[0.355559] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Node.hpp\n'}
+[0.355658] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Export.hpp\n'}
+[0.355758] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Serializable.hpp\n'}
+[0.355856] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionGeometry.hpp\n'}
+[0.355955] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/PortType.hpp\n'}
+[0.356065] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeState.hpp\n'}
+[0.356258] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp\n'}
+[0.356343] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/memory.hpp\n'}
+[0.356436] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/QUuidStdHash.hpp\n'}
+[0.356515] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionStyle.hpp\n'}
+[0.356595] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeGeometry.hpp\n'}
+[0.356674] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/TypeConverter.hpp\n'}
+[0.356752] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodePainterDelegate.hpp\n'}
+[0.356830] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowViewStyle.hpp\n'}
+[0.356908] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/DataModelRegistry.hpp\n'}
+[0.356985] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeStyle.hpp\n'}
+[0.357064] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeData.hpp\n'}
+[0.357418] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/OperatingSystem.hpp\n'}
+[0.357500] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowView.hpp\n'}
+[0.357578] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionGraphicsObject.hpp\n'}
+[0.357658] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Compiler.hpp\n'}
+[0.357738] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Style.hpp\n'}
+[0.357818] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeGraphicsObject.hpp\n'}
+[0.357905] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/ConnectionState.hpp\n'}
+[0.358005] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/QStringStdHash.hpp\n'}
+[0.358094] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/StyleCollection.hpp\n'}
+[0.358182] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/FlowScene.hpp\n'}
+[0.358270] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/Connection.hpp\n'}
+[0.358356] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorTargets.cmake\n'}
+[0.358447] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorTargets-noconfig.cmake\n'}
+[0.358535] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/cmake/NodeEditor/NodeEditorConfig.cmake\n'}
+[0.358623] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/connection_colors\n'}
+[0.358709] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/example2\n'}
+[0.358793] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/calculator\n'}
+[0.358881] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/images\n'}
+[0.358966] (NodeEditor) StdoutLine: {'line': b'-- Up-to-date: /home/dhruft/ws_nirmitsu/install/NodeEditor/lib/NodeEditor/styles\n'}
+[0.360031] (NodeEditor) CommandEnded: {'returncode': 0}
+[0.382340] (NodeEditor) JobEnded: {'identifier': 'NodeEditor', 'rc': 0}
+[0.383829] (nirmitsu_ros2_flowgraph) JobStarted: {'identifier': 'nirmitsu_ros2_flowgraph'}
+[0.387787] (nirmitsu_ros2_flowgraph) JobProgress: {'identifier': 'nirmitsu_ros2_flowgraph', 'progress': 'cmake'}
+[0.389540] (nirmitsu_ros2_flowgraph) JobProgress: {'identifier': 'nirmitsu_ros2_flowgraph', 'progress': 'build'}
+[0.389726] (nirmitsu_ros2_flowgraph) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph', '--', '-j16', '-l16'], 'cwd': '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'dhruft'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dhruft/ws_nirmitsu/install/NodeEditor/lib'), ('HOME', '/home/dhruft'), ('OLDPWD', '/home/dhruft'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1754'), ('SYSTEMD_EXEC_PID', '2244'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2654'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'dhruft'), ('JOURNAL_STREAM', '8:31595'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dhruft'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dhruft:@/tmp/.ICE-unix/1936,unix/dhruft:/tmp/.ICE-unix/1936'), ('INVOCATION_ID', 'ab25dac2a751486c8be85340bac63484'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_SG.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RTZLP1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:023ba144-f39e-429a-8fa4-04c7aa9fdbcd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/dhruft/ws_nirmitsu/install/NodeEditor')]), 'shell': False}
+[0.398759] (-) TimerEvent: {}
+[0.446338] (nirmitsu_ros2_flowgraph) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target nirmitsu\x1b[0m\n'}
+[0.498927] (-) TimerEvent: {}
+[0.599444] (-) TimerEvent: {}
+[0.690942] (nirmitsu_ros2_flowgraph) StdoutLine: {'line': b'[  5%] Built target nirmitsu_autogen\n'}
+[0.699559] (-) TimerEvent: {}
+[0.716015] (nirmitsu_ros2_flowgraph) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nirmitsu\x1b[0m\n'}
+[0.761426] (nirmitsu_ros2_flowgraph) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[0.761736] (nirmitsu_ros2_flowgraph) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o\x1b[0m\n'}
+[0.762171] (nirmitsu_ros2_flowgraph) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/main.cpp.o\x1b[0m\n'}
+[0.762373] (nirmitsu_ros2_flowgraph) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o\x1b[0m\n'}
+[0.799759] (-) TimerEvent: {}
+[0.900361] (-) TimerEvent: {}
+[1.000866] (-) TimerEvent: {}
+[1.101370] (-) TimerEvent: {}
+[1.201892] (-) TimerEvent: {}
+[1.302410] (-) TimerEvent: {}
+[1.402930] (-) TimerEvent: {}
+[1.503447] (-) TimerEvent: {}
+[1.603953] (-) TimerEvent: {}
+[1.704475] (-) TimerEvent: {}
+[1.804958] (-) TimerEvent: {}
+[1.808708] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KJoystickWidget::JoystickWidget(QWidget*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.809111] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:6:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kparent\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.809326] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'    6 | JoystickWidget::JoystickWidget(\x1b[01;35m\x1b[KQWidget *parent\x1b[m\x1b[K)\n'}
+[1.809503] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[1.905153] (-) TimerEvent: {}
+[2.005649] (-) TimerEvent: {}
+[2.101794] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18\x1b[m\x1b[K:\n'}
+[2.102122] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.102300] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.102480] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   75 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.102637] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.104048] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:20\x1b[m\x1b[K:\n'}
+[2.104429] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KJoystickWidget::JoystickWidget(QWidget*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.104616] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:6:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kparent\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.104790] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'    6 | JoystickWidget::JoystickWidget(\x1b[01;35m\x1b[KQWidget *parent\x1b[m\x1b[K)\n'}
+[2.104953] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.105747] (-) TimerEvent: {}
+[2.108283] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.108621] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:72:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid Joystick::onMove(PosType)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.108804] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   72 | void \x1b[01;31m\x1b[KJoystick\x1b[m\x1b[K::onMove(PosType position)\n'}
+[2.108970] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.109158] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18\x1b[m\x1b[K:\n'}
+[2.109323] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:82:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid Joystick::onMove(Pos)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.109499] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   82 |   void \x1b[01;36m\x1b[KonMove\x1b[m\x1b[K(Pos value);\n'}
+[2.109721] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.109953] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:41:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Joystick\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.110126] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   41 | class \x1b[01;36m\x1b[KJoystick\x1b[m\x1b[K : public NodeDataModel\n'}
+[2.110284] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.205917] (-) TimerEvent: {}
+[2.218118] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_Joystick.cpp:10\x1b[m\x1b[K,\n'}
+[2.218531] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:3\x1b[m\x1b[K:\n'}
+[2.218717] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.218882] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.219060] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   75 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.219222] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.225367] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_NumberSlider.cpp:10\x1b[m\x1b[K,\n'}
+[2.225694] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:4\x1b[m\x1b[K:\n'}
+[2.225872] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void NumberSlider::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.226041] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:74:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.226229] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   74 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.226390] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.236372] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_Switch.cpp:10\x1b[m\x1b[K,\n'}
+[2.236731] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:5\x1b[m\x1b[K:\n'}
+[2.236904] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void Switch::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.237072] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:74:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.237237] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   74 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.237392] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.289131] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/moc_TextBox.cpp:10\x1b[m\x1b[K,\n'}
+[2.289462] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:6\x1b[m\x1b[K:\n'}
+[2.289650] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void TextBox::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.289814] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/C7DV6CZZ2Z/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:82:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.289978] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   82 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.290144] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.291689] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:188: CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o] Error 1\n'}
+[2.292014] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.296683] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/Robot.hpp:30\x1b[m\x1b[K,\n'}
+[2.297012] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/moc_Robot.cpp:10\x1b[m\x1b[K,\n'}
+[2.297202] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/mocs_compilation.cpp:8\x1b[m\x1b[K:\n'}
+[2.297359] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KWheelDataType::WheelDataType()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.297516] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:30:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWheelDataType::on\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.297676] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   30 |   bool \x1b[01;35m\x1b[Kon\x1b[m\x1b[K;\n'}
+[2.297826] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.297976] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:29:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KQString WheelDataType::name\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.298135] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   29 |   QString \x1b[01;35m\x1b[Kname\x1b[m\x1b[K;\n'}
+[2.298285] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.298435] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/nirmitsu_autogen/7VHOO6JSR2/../../../../src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:33:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.298591] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   33 |   \x1b[01;35m\x1b[KWheelDataType\x1b[m\x1b[K()\n'}
+[2.298738] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.306065] (-) TimerEvent: {}
+[2.406533] (-) TimerEvent: {}
+[2.430090] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:26\x1b[m\x1b[K:\n'}
+[2.430424] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void NumberSlider::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.430603] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/NumberSlider.hpp:74:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.430794] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   74 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.430965] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.431346] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:27\x1b[m\x1b[K:\n'}
+[2.431599] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void TextBox::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.431779] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/TextBox.hpp:82:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.431948] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   82 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.432138] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.440361] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:28\x1b[m\x1b[K:\n'}
+[2.440710] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void Switch::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.440887] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Switch.hpp:74:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.441070] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   74 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.441230] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.444866] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:29\x1b[m\x1b[K:\n'}
+[2.445190] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.445368] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.445562] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   75 |   setInData(\x1b[01;35m\x1b[Kstd::shared_ptr<NodeData> data\x1b[m\x1b[K, int) override\n'}
+[2.445718] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.446521] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/Robot.hpp:30\x1b[m\x1b[K,\n'}
+[2.446778] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/main.cpp:30\x1b[m\x1b[K:\n'}
+[2.446950] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KWheelDataType::WheelDataType()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.447113] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:30:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWheelDataType::on\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.447277] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   30 |   bool \x1b[01;35m\x1b[Kon\x1b[m\x1b[K;\n'}
+[2.447436] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.447585] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:29:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KQString WheelDataType::name\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.447746] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   29 |   QString \x1b[01;35m\x1b[Kname\x1b[m\x1b[K;\n'}
+[2.447904] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.448058] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/robot/../datatypes/WheelData.hpp:33:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.448275] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'   33 |   \x1b[01;35m\x1b[KWheelDataType\x1b[m\x1b[K()\n'}
+[2.448430] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.506994] (-) TimerEvent: {}
+[2.607469] (-) TimerEvent: {}
+[2.707951] (-) TimerEvent: {}
+[2.808429] (-) TimerEvent: {}
+[2.908943] (-) TimerEvent: {}
+[3.009422] (-) TimerEvent: {}
+[3.109910] (-) TimerEvent: {}
+[3.210382] (-) TimerEvent: {}
+[3.310852] (-) TimerEvent: {}
+[3.411771] (-) TimerEvent: {}
+[3.512485] (-) TimerEvent: {}
+[3.612953] (-) TimerEvent: {}
+[3.713433] (-) TimerEvent: {}
+[3.813920] (-) TimerEvent: {}
+[3.914442] (-) TimerEvent: {}
+[4.014926] (-) TimerEvent: {}
+[4.115407] (-) TimerEvent: {}
+[4.215907] (-) TimerEvent: {}
+[4.316445] (-) TimerEvent: {}
+[4.416922] (-) TimerEvent: {}
+[4.517405] (-) TimerEvent: {}
+[4.617896] (-) TimerEvent: {}
+[4.718400] (-) TimerEvent: {}
+[4.818878] (-) TimerEvent: {}
+[4.919350] (-) TimerEvent: {}
+[5.019831] (-) TimerEvent: {}
+[5.120347] (-) TimerEvent: {}
+[5.220801] (-) TimerEvent: {}
+[5.321263] (-) TimerEvent: {}
+[5.421664] (-) TimerEvent: {}
+[5.522134] (-) TimerEvent: {}
+[5.622621] (-) TimerEvent: {}
+[5.723100] (-) TimerEvent: {}
+[5.823621] (-) TimerEvent: {}
+[5.924177] (-) TimerEvent: {}
+[6.024664] (-) TimerEvent: {}
+[6.125120] (-) TimerEvent: {}
+[6.225574] (-) TimerEvent: {}
+[6.287775] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Error 2\n'}
+[6.288186] (nirmitsu_ros2_flowgraph) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.291745] (nirmitsu_ros2_flowgraph) CommandEnded: {'returncode': 2}
+[6.325737] (-) TimerEvent: {}
+[6.355824] (nirmitsu_ros2_flowgraph) JobEnded: {'identifier': 'nirmitsu_ros2_flowgraph', 'rc': 2}
+[6.366547] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+source;share/nirmitsu_ros2_flowgraph/local_setup.bash
+source;share/nirmitsu_ros2_flowgraph/local_setup.dsv
+source;share/nirmitsu_ros2_flowgraph/local_setup.sh
+source;share/nirmitsu_ros2_flowgraph/local_setup.zsh

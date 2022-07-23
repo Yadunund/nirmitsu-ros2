@@ -1,0 +1,5 @@
+gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:244: CMakeFiles/nirmitsu.dir/src/main.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:188: CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:76: CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

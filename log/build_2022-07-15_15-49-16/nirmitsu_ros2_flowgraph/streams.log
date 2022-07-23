@@ -1,0 +1,13 @@
+[0.006s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[0.041s] [  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[0.059s] [  5%] Built target nirmitsu_autogen
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[0.102s] [ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o[0m
+[0.103s] [ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o[0m
+[0.103s] [ 22%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/main.cpp.o[0m
+[0.326s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:244: CMakeFiles/nirmitsu.dir/src/main.cpp.o] Interrupt
+[0.326s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:188: CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o] Interrupt
+[0.326s] gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:76: CMakeFiles/nirmitsu.dir/nirmitsu_autogen/mocs_compilation.cpp.o] Interrupt
+[0.326s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Interrupt
+[0.326s] gmake: *** [Makefile:146: all] Interrupt
+[0.329s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '-2': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16

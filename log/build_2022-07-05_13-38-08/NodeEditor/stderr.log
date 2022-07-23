@@ -1,0 +1,30 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_BUILD_TYpe
+
+[0m
+In file included from [01m[K/home/dhruft/ws_nirmitsu/build/NodeEditor/examples/example2/example2_autogen/EWIEGA46WW/moc_TextDisplayDataModel.cpp:10[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/build/NodeEditor/examples/example2/example2_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/build/NodeEditor/examples/example2/example2_autogen/EWIEGA46WW/../../../../../../src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:[m[K In member function ‘[01m[Kvirtual void TextDisplayDataModel::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/build/NodeEditor/examples/example2/example2_autogen/EWIEGA46WW/../../../../../../src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:65:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   65 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.cpp:1[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:[m[K In member function ‘[01m[Kvirtual void TextDisplayDataModel::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:65:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   65 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestNodeGraphicsObject.cpp:[m[K In member function ‘[01m[Kvirtual QtNodes::NodeDataModel::ConnectionPolicy C_A_T_C_H_T_E_S_T_0()::MockModel::portOutConnectionPolicy(int) const[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestNodeGraphicsObject.cpp:30:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kindex[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   30 |     portOutConnectionPolicy([01;35m[Kint index[m[K) const override
+      |                             [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestFlowScene.cpp:[m[K In function ‘[01m[Kvoid C_A_T_C_H_T_E_S_T_7()[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/test/src/TestFlowScene.cpp:248:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  248 |     auto& [01;35m[Knode[m[K = scene.createNode(scene.registry().create("name"));
+      |           [01;35m[K^~~~[m[K
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/main.cpp:10[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:[m[K In member function ‘[01m[Kvirtual void TextDisplayDataModel::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nodeeditor/examples/example2/TextDisplayDataModel.hpp:65:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   65 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K

@@ -1,0 +1,13 @@
+[0.007s] Invoking command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16
+[0.042s] [  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[0.049s] 
+[0.049s] AutoGen error
+[0.049s] -------------
+[0.049s] Info error in info file
+[0.049s] "/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph/CMakeFiles/nirmitsu_autogen.dir/AutogenInfo.json":
+[0.049s] The header file "SRC:/src/CustomWidgets/JoystickWidget.hpp" does not exist.
+[0.049s] 
+[0.049s] gmake[2]: *** [CMakeFiles/nirmitsu_autogen.dir/build.make:71: CMakeFiles/nirmitsu_autogen] Error 1
+[0.049s] gmake[1]: *** [CMakeFiles/Makefile2:164: CMakeFiles/nirmitsu_autogen.dir/all] Error 2
+[0.050s] gmake: *** [Makefile:146: all] Error 2
+[0.052s] Invoked command in '/home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph' returned '2': CMAKE_PREFIX_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor:/opt/ros/humble LD_LIBRARY_PATH=/home/dhruft/ws_nirmitsu/install/NodeEditor/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dhruft/ws_nirmitsu/build/nirmitsu_ros2_flowgraph -- -j16 -l16

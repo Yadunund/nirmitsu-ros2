@@ -1,0 +1,13 @@
+[  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+
+AutoMoc error
+-------------
+"SRC:/src/CustomWidgets/JoystickWidget.cpp"
+contains a "Q_OBJECT" macro, but does not include "JoystickWidget.moc"!
+Consider to
+  - add #include "JoystickWidget.moc"
+  - enable SKIP_AUTOMOC for this file
+
+gmake[2]: *** [CMakeFiles/nirmitsu_autogen.dir/build.make:71: CMakeFiles/nirmitsu_autogen] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:164: CMakeFiles/nirmitsu_autogen.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

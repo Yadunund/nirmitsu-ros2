@@ -1,0 +1,25 @@
+[  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[  5%] Built target nirmitsu_autogen
+[35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/datatypes/Pos.cpp.o[0m
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/datatypes/Pos.cpp:[m[K In member function ‘[01m[Kvirtual QString Pos::to_string() const[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/datatypes/Pos.cpp:57:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::cout[m[K’?
+   57 |   [01;31m[Kcout[m[K << _value.x << " " << _value.y << endl;
+      |   [01;31m[K^~~~[m[K
+      |   [32m[Kstd::cout[m[K
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/datatypes/Pos.cpp:19[m[K:
+[01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+   61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+      |                  [01;36m[K^~~~[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/datatypes/Pos.cpp:57:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::endl[m[K’?
+   57 |   cout << _value.x << " " << _value.y << [01;31m[Kendl[m[K;
+      |                                          [01;31m[K^~~~[m[K
+      |                                          [32m[Kstd::endl[m[K
+In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/datatypes/Pos.cpp:19[m[K:
+[01m[K/usr/include/c++/11/ostream:684:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ declared here
+  684 |     [01;36m[Kendl[m[K(basic_ostream<_CharT, _Traits>& __os)
+      |     [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:146: CMakeFiles/nirmitsu.dir/src/datatypes/Pos.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

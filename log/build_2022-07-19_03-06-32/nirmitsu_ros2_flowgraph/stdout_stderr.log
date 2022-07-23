@@ -1,0 +1,143 @@
+[  5%] [34m[1mAutomatic MOC and UIC for target nirmitsu[0m
+[  5%] Built target nirmitsu_autogen
+[35m[1mConsolidate compiler generated dependencies of target nirmitsu[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/datatypes/Pos.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o[0m
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid drawJoystick(int, int)[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:15:16:[m[K [01;31m[Kerror: [m[Kinvalid user-defined conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst QString&[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |     new QImage([01;31m[Kx[m[K, y);
+      |                [01;31m[K^[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:47[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:4[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:835:31:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[KQString::QString(const char*)[m[K’ (near match)
+  835 |     inline QT_ASCII_CAST_WARN [01;36m[KQString[m[K(const char *ch)
+      |                               [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:835:31:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:15:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst char*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |     new QImage([01;31m[Kx[m[K, y);
+      |                [01;31m[K^[m[K
+      |                [01;31m[K|[m[K
+      |                [01;31m[Kint[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:15:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst char*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |     new QImage([01;31m[Kx[m[K, y);
+      |                [01;31m[K^[m[K
+      |                [01;31m[K|[m[K
+      |                [01;31m[Kint[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:47[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:45[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:4[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:835:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KQString::QString(const char*)[m[K’
+  835 |     inline QT_ASCII_CAST_WARN QString([01;36m[Kconst char *ch[m[K)
+      |                                       [01;36m[K~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:51[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:46[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:48[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:4[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:152:36:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KQImage::QImage(const QString&, const char*)[m[K’
+  152 |     explicit QImage([01;36m[Kconst QString &fileName[m[K, const char *format = nullptr);
+      |                     [01;36m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:15:19:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst char*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |     new QImage(x, [01;31m[Ky[m[K);
+      |                   [01;31m[K^[m[K
+      |                   [01;31m[K|[m[K
+      |                   [01;31m[Kint[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:51[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:46[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:48[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.hpp:4[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:152:58:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[KQImage::QImage(const QString&, const char*)[m[K’
+  152 |     explicit QImage(const QString &fileName, [01;36m[Kconst char *format = nullptr[m[K);
+      |                                              [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/CustomWidgets/JoystickWidget.cpp:16:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+   16 |     QImage[01;31m[K.[m[Kload("joystick.png");
+      |           [01;31m[K^[m[K
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In member function ‘[01m[Kvirtual void Joystick::setInData(std::shared_ptr<QtNodes::NodeData>, int)[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:75:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   75 |   setInData([01;35m[Kstd::shared_ptr<NodeData> data[m[K, int) override
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:20[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:[m[K In function ‘[01m[Kvoid drawJoystick(int, int)[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:15:16:[m[K [01;31m[Kerror: [m[Kinvalid user-defined conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst QString&[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |     new QImage([01;31m[Kx[m[K, y);
+      |                [01;31m[K^[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:47[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:1[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:21[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:835:31:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[KQString::QString(const char*)[m[K’ (near match)
+  835 |     inline QT_ASCII_CAST_WARN [01;36m[KQString[m[K(const char *ch)
+      |                               [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:835:31:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:20[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:15:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst char*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |     new QImage([01;31m[Kx[m[K, y);
+      |                [01;31m[K^[m[K
+      |                [01;31m[K|[m[K
+      |                [01;31m[Kint[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:15:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst char*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |     new QImage([01;31m[Kx[m[K, y);
+      |                [01;31m[K^[m[K
+      |                [01;31m[K|[m[K
+      |                [01;31m[Kint[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:47[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:1[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:21[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:835:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KQString::QString(const char*)[m[K’
+  835 |     inline QT_ASCII_CAST_WARN QString([01;36m[Kconst char *ch[m[K)
+      |                                       [01;36m[K~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:51[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:46[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:48[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:4[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel:1[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:23[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:152:36:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KQImage::QImage(const QString&, const char*)[m[K’
+  152 |     explicit QImage([01;36m[Kconst QString &fileName[m[K, const char *format = nullptr);
+      |                     [01;36m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:20[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:15:19:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst char*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |     new QImage(x, [01;31m[Ky[m[K);
+      |                   [01;31m[K^[m[K
+      |                   [01;31m[K|[m[K
+      |                   [01;31m[Kint[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:51[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:46[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:48[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:1[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/internal/NodeDataModel.hpp:4[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/install/NodeEditor/include/nodes/NodeDataModel:1[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:23[m[K,
+                 from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:152:58:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[KQImage::QImage(const QString&, const char*)[m[K’
+  152 |     explicit QImage(const QString &fileName, [01;36m[Kconst char *format = nullptr[m[K);
+      |                                              [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:20[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/../CustomWidgets/JoystickWidget.cpp:16:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+   16 |     QImage[01;31m[K.[m[Kload("joystick.png");
+      |           [01;31m[K^[m[K
+In file included from [01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:18[m[K:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:[m[K In constructor ‘[01m[KJoystick::Joystick()[m[K’:
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:87:24:[m[K [01;35m[Kwarning: [m[K‘[01m[KJoystick::_position[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   87 |   std::shared_ptr<Pos> [01;35m[K_position[m[K;
+      |                        [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.hpp:86:31:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<StringData> Joystick::_string[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   86 |   std::shared_ptr<StringData> [01;35m[K_string[m[K;
+      |                               [01;35m[K^~~~~~~[m[K
+[01m[K/home/dhruft/ws_nirmitsu/src/nirmitsu-ros2/nirmitsu_ros2_flowgraph/src/inputs/Joystick.cpp:23:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   23 | [01;35m[KJoystick[m[K::Joystick()
+      | [01;35m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:90: CMakeFiles/nirmitsu.dir/src/CustomWidgets/JoystickWidget.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/nirmitsu.dir/build.make:188: CMakeFiles/nirmitsu.dir/src/inputs/Joystick.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/nirmitsu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

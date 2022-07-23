@@ -1,0 +1,8 @@
+source;share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.ps1
+source;share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.dsv
+source;share/nirmitsu_ros2_flowgraph/hook/cmake_prefix_path.sh
+source;share/nirmitsu_ros2_flowgraph/local_setup.bash
+source;share/nirmitsu_ros2_flowgraph/local_setup.dsv
+source;share/nirmitsu_ros2_flowgraph/local_setup.ps1
+source;share/nirmitsu_ros2_flowgraph/local_setup.sh
+source;share/nirmitsu_ros2_flowgraph/local_setup.zsh
