@@ -28,7 +28,7 @@ using QtNodes::NodeDataType;
 // should inherit. It adds a convenience function to output the data structure
 // in a QString format. NodeDataModels in nirmitsu should attempt to dynamic
 // cast to this data type.
-template <typename T>
+template<typename T>
 class BaseNodeData : public NodeData
 {
 public:

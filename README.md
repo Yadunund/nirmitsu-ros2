@@ -1,4 +1,6 @@
 # nirmitsu-ros2
+![](https://github.com/Yadunund/nirmitsu-ros2/workflows/build/badge.svg)
+![](https://github.com/Yadunund/nirmitsu-ros2/workflows/style/badge.svg)
 
 ## Requirements
 * [ROS 2 foxy, galactic, humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)

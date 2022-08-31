@@ -26,9 +26,9 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include"../datatypes/StringData.hpp"
-#include"../datatypes/IntegerData.hpp"
-#include"../datatypes/WheelData.hpp"
+#include "../datatypes/StringData.hpp"
+#include "../datatypes/IntegerData.hpp"
+#include "../datatypes/WheelData.hpp"
 
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -79,16 +79,16 @@ public:
 
   void setInData(std::shared_ptr<NodeData> data, PortIndex portIndex) override;
 
-  QWidget * embeddedWidget() override;
+  QWidget* embeddedWidget() override;
 
   bool resizable() const override { return true; }
 
 private:
-    QLabel* _label;
-    std::shared_ptr<StringData> _string_data;
-    std::shared_ptr<StringData> _name_data;
-    std::shared_ptr<IntegerData> _speed_data;
-    std::shared_ptr<WheelData> _wheel_data;
+  QLabel* _label;
+  std::shared_ptr<StringData> _string_data;
+  std::shared_ptr<StringData> _name_data;
+  std::shared_ptr<IntegerData> _speed_data;
+  std::shared_ptr<WheelData> _wheel_data;
 };
 
 #endif // SRC__RobotWheelWHEEL_HPP

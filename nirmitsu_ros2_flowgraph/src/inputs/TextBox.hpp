@@ -24,7 +24,7 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include"../datatypes/StringData.hpp"
+#include "../datatypes/StringData.hpp"
 
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -80,9 +80,9 @@ public:
 
   void
   setInData(std::shared_ptr<NodeData> data, int) override
-  { }
+  {}
 
-  QWidget *
+  QWidget*
   embeddedWidget() override { return _text_box; }
 
 protected Q_SLOTS:
