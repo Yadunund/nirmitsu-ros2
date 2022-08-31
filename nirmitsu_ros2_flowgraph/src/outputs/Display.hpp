@@ -71,7 +71,7 @@ public:
   void
   setInData(std::shared_ptr<NodeData> data, int) override;
 
-  QWidget *
+  QWidget*
   embeddedWidget() override { return _text_box; }
 
 private:

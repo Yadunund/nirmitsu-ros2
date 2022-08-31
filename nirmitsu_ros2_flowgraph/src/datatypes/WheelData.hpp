@@ -32,14 +32,14 @@ struct WheelDataType
   WheelDataType()
   : name(QString()),
     speed(0)
-  { }
+  {}
 
   WheelDataType(
     QString name_,
     int speed_)
   : name(std::move(name_)),
     speed(speed_)
-  {  };
+  {}
 };
 
 //=============================================================================
