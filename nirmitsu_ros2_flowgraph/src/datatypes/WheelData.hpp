@@ -28,17 +28,21 @@ struct WheelDataType
 {
   QString name;
   int speed;
+  bool reverse;
 
   WheelDataType()
   : name(QString()),
-    speed(0)
+    speed(0),
+    reverse(false)
   {}
 
   WheelDataType(
     QString name_,
-    int speed_)
+    int speed_,
+    bool reverse_)
   : name(std::move(name_)),
-    speed(speed_)
+    speed(speed_),
+    reverse(reverse_)
   {}
 };
 
@@ -56,6 +60,7 @@ public:
 
   WheelData& set_name(QString name);
   WheelData& set_speed(int speed);
+  WheelData& set_reverse(bool reverse);
 
 private:
   WheelDataType _value;
