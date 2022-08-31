@@ -23,8 +23,8 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include"../datatypes/IntegerData.hpp"
-#include"../datatypes/StringData.hpp"
+#include "../datatypes/IntegerData.hpp"
+#include "../datatypes/StringData.hpp"
 
 #include <QSlider>
 
@@ -72,9 +72,9 @@ public:
 
   void
   setInData(std::shared_ptr<NodeData> data, int) override
-  { }
+  {}
 
-  QWidget *
+  QWidget*
   embeddedWidget() override { return _slider; }
 
 protected Q_SLOTS:

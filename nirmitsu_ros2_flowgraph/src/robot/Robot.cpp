@@ -42,7 +42,7 @@ Robot::Robot()
       {
         std::this_thread::sleep_for(data->_period);
         // TODO(YV): Wait on a cv for input from wheels
-        std::lock_guard<std::mutex>lock(data->_mutex);
+        std::lock_guard<std::mutex> lock(data->_mutex);
         if (data->_wheel_1_data == nullptr && data->_wheel_2_data == nullptr)
         {
           RCLCPP_DEBUG(
@@ -54,8 +54,8 @@ Robot::Robot()
 
         // If we're receiving joystick commands, only publish that Twist
         if (data->_joystick_data != nullptr &&
-          data->_wheel_1_data != nullptr &&
-          data->_wheel_2_data != nullptr)
+        data->_wheel_1_data != nullptr &&
+        data->_wheel_2_data != nullptr)
         {
           auto msg = std::make_unique<Twist>();
           msg->header.stamp = data->_node->get_clock()->now();
@@ -72,7 +72,7 @@ Robot::Robot()
           const auto& value = data->_wheel_1_data->value();
           msg->header.frame_id = value.name.toStdString();
           msg->twist.linear.x =
-            data->_on_data->value() ? value.speed / 100.0 : 0.0;
+          data->_on_data->value() ? value.speed / 100.0 : 0.0;
           data->_pub->publish(std::move(msg));
 
         }
@@ -84,7 +84,7 @@ Robot::Robot()
           const auto& value = data->_wheel_2_data->value();
           msg->header.frame_id = value.name.toStdString();
           msg->twist.linear.x =
-            data->_on_data->value() ? value.speed / 100.0 : 0.0;
+          data->_on_data->value() ? value.speed / 100.0 : 0.0;
           data->_pub->publish(std::move(msg));
         }
 
@@ -135,16 +135,16 @@ QString Robot::portCaption(PortType portType, PortIndex portIndex) const
 {
   if (portType == PortType::In)
   {
-      if (portIndex == 0)
-        return QStringLiteral("Wheel #1");
-      else if (portIndex == 1)
-        return QStringLiteral("Wheel #2");
-      else if (portIndex == 2)
-        return QStringLiteral("Joystick");
-      else if (portIndex == 3)
-        return QStringLiteral("On");
-      else
-        return QString();
+    if (portIndex == 0)
+      return QStringLiteral("Wheel #1");
+    else if (portIndex == 1)
+      return QStringLiteral("Wheel #2");
+    else if (portIndex == 2)
+      return QStringLiteral("Joystick");
+    else if (portIndex == 3)
+      return QStringLiteral("On");
+    else
+      return QString();
   }
   else if (portType == PortType::Out)
   {
@@ -303,7 +303,7 @@ void Robot::inputConnectionDeleted(Connection const& con)
 }
 
 //=============================================================================
-bool Robot::eventFilter(QObject *object, QEvent *event)
+bool Robot::eventFilter(QObject* object, QEvent* event)
 {
   return false;
 }

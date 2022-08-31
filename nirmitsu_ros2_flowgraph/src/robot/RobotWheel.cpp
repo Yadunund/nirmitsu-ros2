@@ -143,8 +143,8 @@ void RobotWheel::setInData(std::shared_ptr<NodeData> data, PortIndex portIndex)
     if (_name_data != nullptr && _speed_data != nullptr)
     {
       _wheel_data = std::make_shared<WheelData>(WheelDataType(
-        _name_data->value(),
-        _speed_data->value()));
+            _name_data->value(),
+            _speed_data->value()));
       _string_data->value(_wheel_data->to_string());
       Q_EMIT dataUpdated(0);
       Q_EMIT dataUpdated(1);

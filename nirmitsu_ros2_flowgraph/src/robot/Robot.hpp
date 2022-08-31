@@ -26,9 +26,9 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include"../datatypes/StringData.hpp"
-#include"../datatypes/WheelData.hpp"
-#include"../datatypes/BoolData.hpp"
+#include "../datatypes/StringData.hpp"
+#include "../datatypes/WheelData.hpp"
+#include "../datatypes/BoolData.hpp"
 
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
@@ -98,7 +98,7 @@ public:
 
 protected:
 
-  bool eventFilter(QObject *object, QEvent *event) override;
+  bool eventFilter(QObject* object, QEvent* event) override;
 
 private:
   using Twist = geometry_msgs::msg::TwistStamped;

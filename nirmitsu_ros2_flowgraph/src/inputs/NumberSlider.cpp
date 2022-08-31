@@ -49,7 +49,8 @@ unsigned int NumberSlider::nPorts(PortType portType) const
 }
 
 //=============================================================================
-NodeDataType NumberSlider::dataType(PortType portType, PortIndex portIndex) const
+NodeDataType NumberSlider::dataType(PortType portType,
+  PortIndex portIndex) const
 {
   if (portType == PortType::In)
     return NodeDataType();
