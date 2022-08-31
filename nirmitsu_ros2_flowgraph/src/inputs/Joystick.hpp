@@ -23,9 +23,9 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include"../datatypes/IntegerData.hpp"
-#include"../datatypes/Pos.hpp"
-#include"../datatypes/StringData.hpp"
+#include "../datatypes/IntegerData.hpp"
+#include "../datatypes/Pos.hpp"
+#include "../datatypes/StringData.hpp"
 
 #include "../CustomWidgets/JoystickWidget.hpp"
 
@@ -73,9 +73,9 @@ public:
 
   void
   setInData(std::shared_ptr<NodeData> data, int) override
-  { }
+  {}
 
-  QWidget *
+  QWidget*
   embeddedWidget() override { return _joystick; }
 
 protected Q_SLOTS:

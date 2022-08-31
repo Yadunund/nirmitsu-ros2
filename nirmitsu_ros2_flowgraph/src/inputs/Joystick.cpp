@@ -22,7 +22,7 @@
 //=============================================================================
 Joystick::Joystick()
 : _joystick(new JoystickWidget()),
-  _position(std::make_shared<Pos>(PosType(0,0))),
+  _position(std::make_shared<Pos>(PosType(0, 0))),
   _string(std::make_shared<StringData>())
 {
   connect(
@@ -33,7 +33,7 @@ Joystick::Joystick()
   );
   //Initialize to 0, 0
   onMove(PosType(
-    0,0
+      0, 0
   ));
 
 }
