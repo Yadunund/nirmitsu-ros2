@@ -56,8 +56,8 @@ QString WheelData::to_string() const
   return QStringLiteral("Name: %1\nSpeed: %2\nReverse: %3")
     .arg(_value.name)
     .arg(QString::number(_value.speed)
-    .arg(_value.reverse ? QStringLiteral("True") : QStringLiteral("False"))
-  );
+      .arg(_value.reverse ? QStringLiteral("True") : QStringLiteral("False"))
+    );
 }
 
 //=============================================================================

@@ -25,7 +25,6 @@ RobotWheel::RobotWheel()
   _name_data(nullptr),
   _reverse_data(std::make_shared<BoolData>(false)),
   _wheel_data(nullptr)
-
 {
   _label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
 }
