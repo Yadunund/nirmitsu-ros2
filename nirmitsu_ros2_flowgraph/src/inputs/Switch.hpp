@@ -23,8 +23,8 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include"../datatypes/BoolData.hpp"
-#include"../datatypes/StringData.hpp"
+#include "../datatypes/BoolData.hpp"
+#include "../datatypes/StringData.hpp"
 
 #include <QCheckBox>
 
@@ -72,9 +72,9 @@ public:
 
   void
   setInData(std::shared_ptr<NodeData> data, int) override
-  { }
+  {}
 
-  QWidget *
+  QWidget*
   embeddedWidget() override { return _switch; }
 
 protected Q_SLOTS:
