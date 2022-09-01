@@ -24,10 +24,10 @@
 #include <nodes/NodeData>
 
 #include "../datatypes/IntegerData.hpp"
-#include "../datatypes/Pos.hpp"
+#include "../datatypes/Point2D.hpp"
 #include "../datatypes/StringData.hpp"
 
-#include "../CustomWidgets/JoystickWidget.hpp"
+#include "../widgets/JoystickWidget.hpp"
 
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -79,12 +79,12 @@ public:
   embeddedWidget() override { return _joystick; }
 
 protected Q_SLOTS:
-  void onMove(PosType value);
+  void onMove(Point2DType value);
 
 private:
   JoystickWidget* _joystick;
   std::shared_ptr<StringData> _string;
-  std::shared_ptr<Pos> _position;
+  std::shared_ptr<Point2D> _position;
 };
 
 #endif // SRC__JOYSTICK_HPP

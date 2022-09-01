@@ -17,12 +17,10 @@
 
 #include "Joystick.hpp"
 
-#include "../CustomWidgets/JoystickWidget.cpp"
-
 //=============================================================================
 Joystick::Joystick()
 : _joystick(new JoystickWidget()),
-  _position(std::make_shared<Pos>(PosType(0, 0))),
+  _position(std::make_shared<Point2D>(Point2DType(0, 0))),
   _string(std::make_shared<StringData>())
 {
   connect(
@@ -32,7 +30,7 @@ Joystick::Joystick()
     &Joystick::onMove
   );
   //Initialize to 0, 0
-  onMove(PosType(
+  onMove(Point2DType(
       0, 0
   ));
 
@@ -74,7 +72,7 @@ std::shared_ptr<NodeData> Joystick::outData(PortIndex portIndex)
     return nullptr;
 }
 //=============================================================================
-void Joystick::onMove(PosType position)
+void Joystick::onMove(Point2DType position)
 {
   _position->value(position);
   _string->value(_position->to_string());

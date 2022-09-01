@@ -15,8 +15,8 @@
  *
 */
 
-#ifndef SRC__DATATYPES__POS_HPP
-#define SRC__DATATYPES__POS_HPP
+#ifndef SRC__DATATYPES__POINT2D_HPP
+#define SRC__DATATYPES__POINT2D_HPP
 
 #include "BaseNodeData.hpp"
 
@@ -24,17 +24,17 @@ using QtNodes::NodeData;
 using QtNodes::NodeDataType;
 
 //=============================================================================
-struct PosType
+struct Point2DType
 {
   int x;
   int y;
 
-  PosType()
+  Point2DType()
   : x(0),
     y(0)
   {}
 
-  PosType(
+  Point2DType(
     int x_,
     int y_)
   : x(x_),
@@ -43,22 +43,22 @@ struct PosType
 };
 
 //=============================================================================
-// Implement PosType datatype
-class Pos : public BaseNodeData<PosType>
+// Implement Point2DType datatype
+class Point2D : public BaseNodeData<Point2DType>
 {
 public:
-  Pos();
-  Pos(PosType value);
+  Point2D();
+  Point2D(Point2DType value);
   NodeDataType type() const override;
-  const PosType& value() const final;
-  Pos& value(PosType value) final;
+  const Point2DType& value() const final;
+  Point2D& value(Point2DType value) final;
   QString to_string() const final;
 
-  Pos& set_x(int x);
-  Pos& set_y(int y);
+  Point2D& set_x(int x);
+  Point2D& set_y(int y);
 
 private:
-  PosType _value;
+  Point2DType _value;
 };
 
-#endif // SRC__DATATYPES__POS_HPP
+#endif // SRC__DATATYPES__POINT2D_HPP

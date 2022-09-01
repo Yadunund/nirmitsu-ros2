@@ -15,59 +15,59 @@
  *
 */
 
-#include "Pos.hpp"
+#include "Point2D.hpp"
 #include <iostream>
 
 //=============================================================================
-Pos::Pos()
-: _value(PosType())
+Point2D::Point2D()
+: _value(Point2DType())
 {
   // Do nothing
 }
 
 //=============================================================================
-Pos::Pos(PosType value)
+Point2D::Point2D(Point2DType value)
 : _value(std::move(value))
 {
   // Do nothing
 }
 
 //=============================================================================
-auto Pos::type() const -> NodeDataType
+auto Point2D::type() const -> NodeDataType
 {
-  return NodeDataType {"position", "Position"};
+  return NodeDataType {"Point2D", "Point2D"};
 }
 
 //=============================================================================
-const PosType& Pos::value() const
+const Point2DType& Point2D::value() const
 {
   return _value;
 }
 
 //=============================================================================
-Pos& Pos::value(PosType value)
+Point2D& Point2D::value(Point2DType value)
 {
   _value = std::move(value);
   return *this;
 }
 
 //=============================================================================
-QString Pos::to_string() const
+QString Point2D::to_string() const
 {
-  return QStringLiteral("X Pos: %1\nY Pos: %2")
+  return QStringLiteral("X: %1\nY: %2")
     .arg(QString::number(_value.x))
     .arg(QString::number(_value.y));
 }
 
 //=============================================================================
-Pos& Pos::set_x(int x)
+Point2D& Point2D::set_x(int x)
 {
   _value.x = x;
   return *this;
 }
 
 //=============================================================================
-Pos& Pos::set_y(int y)
+Point2D& Point2D::set_y(int y)
 {
   _value.y = y;
   return *this;
