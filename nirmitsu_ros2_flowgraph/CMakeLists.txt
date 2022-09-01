@@ -18,6 +18,7 @@ find_package(Qt5 REQUIRED
 )
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(ament_index_cpp REQUIRED)
 
 SET(CMAKE_AUTOMOC ON)
 SET(CMAKE_AUTOUIC ON)
@@ -38,6 +39,7 @@ target_link_libraries(nirmitsu
     ${Qt5OpenGL_LIBRARIES}
     ${std_msgs_LIBRARIES}
     ${geometry_msgs_LIBRARIES}
+    ${ament_index_cpp_LIBRARIES}
 )
 
 target_include_directories(nirmitsu
@@ -53,6 +55,7 @@ target_include_directories(nirmitsu
     ${Qt5OpenGL_INCLUDE_DIRS}
     ${std_msgs_INCLUDE_DIRS}
     ${geometry_msgs_INCLUDE_DIRS}
+    ${ament_index_cpp_INCLUDE_DIRS}
 )
 
 target_compile_features(nirmitsu INTERFACE cxx_std_17)
@@ -67,6 +70,11 @@ install(
   RUNTIME DESTINATION lib/${PROJECT_NAME}
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib
+)
+
+install(
+  DIRECTORY icons
+  DESTINATION share/${PROJECT_NAME}
 )
 
 ament_package()
