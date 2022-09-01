@@ -29,6 +29,7 @@
 #include "../datatypes/StringData.hpp"
 #include "../datatypes/IntegerData.hpp"
 #include "../datatypes/WheelData.hpp"
+#include "../datatypes/BoolData.hpp"
 
 using QtNodes::PortType;
 using QtNodes::PortIndex;
@@ -88,6 +89,7 @@ private:
   std::shared_ptr<StringData> _string_data;
   std::shared_ptr<StringData> _name_data;
   std::shared_ptr<IntegerData> _speed_data;
+  std::shared_ptr<BoolData> _reverse_data;
   std::shared_ptr<WheelData> _wheel_data;
 };
 

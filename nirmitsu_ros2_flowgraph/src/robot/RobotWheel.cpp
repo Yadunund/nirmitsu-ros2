@@ -21,9 +21,10 @@
 RobotWheel::RobotWheel()
 : _label(new QLabel()),
   _string_data(std::make_shared<StringData>()),
-  _wheel_data(nullptr),
   _speed_data(nullptr),
-  _name_data(nullptr)
+  _name_data(nullptr),
+  _reverse_data(std::make_shared<BoolData>(false)),
+  _wheel_data(nullptr)
 {
   _label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
 }
@@ -32,7 +33,7 @@ RobotWheel::RobotWheel()
 unsigned int RobotWheel::nPorts(PortType portType) const
 {
   if (portType == PortType::In)
-    return 2;
+    return 3;
   else if (portType == PortType::Out)
     return 2;
   else
@@ -48,6 +49,8 @@ QString RobotWheel::portCaption(PortType portType, PortIndex portIndex) const
       return QStringLiteral("Name");
     else if (portIndex == 1)
       return QStringLiteral("Speed");
+    else if (portIndex == 2)
+      return QStringLiteral("Reverse");
     else
       return QString();
   }
@@ -80,6 +83,11 @@ NodeDataType RobotWheel::dataType(PortType portType, PortIndex portIndex) const
     else if (portIndex == 1)
     {
       return IntegerData().type();
+    }
+    // Reverse
+    else if (portIndex == 2)
+    {
+      return BoolData().type();
     }
     else
     {
@@ -132,19 +140,31 @@ void RobotWheel::setInData(std::shared_ptr<NodeData> data, PortIndex portIndex)
     if (_wheel_data != nullptr)
       _wheel_data->set_speed(_speed_data->value());
   }
+  // Reverse
+  else if (portIndex == 2)
+  {
+    auto reverse_data = std::dynamic_pointer_cast<BoolData>(data);
+    if (reverse_data == nullptr)
+      return;
+    _reverse_data = std::move(reverse_data);
+    if (_wheel_data != nullptr)
+      _wheel_data->set_reverse(_reverse_data->value());
+  }
   else
   {
     return;
   }
 
-  // Create or update wheel data
+  // Create or update wheel data if both name and speed are provided.
   if (_wheel_data == nullptr)
   {
     if (_name_data != nullptr && _speed_data != nullptr)
     {
       _wheel_data = std::make_shared<WheelData>(WheelDataType(
             _name_data->value(),
-            _speed_data->value()));
+            _speed_data->value(),
+            _reverse_data->value()
+      ));
       _string_data->value(_wheel_data->to_string());
       Q_EMIT dataUpdated(0);
       Q_EMIT dataUpdated(1);

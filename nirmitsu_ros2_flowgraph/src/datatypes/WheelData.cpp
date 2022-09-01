@@ -53,9 +53,11 @@ WheelData& WheelData::value(WheelDataType value)
 //=============================================================================
 QString WheelData::to_string() const
 {
-  return QStringLiteral("Name: %1\nSpeed: %2")
+  return QStringLiteral("Name: %1\nSpeed: %2\nReverse: %3")
     .arg(_value.name)
-    .arg(QString::number(_value.speed));
+    .arg(QString::number(_value.speed)
+      .arg(_value.reverse ? QStringLiteral("True") : QStringLiteral("False"))
+    );
 }
 
 //=============================================================================
@@ -69,5 +71,12 @@ WheelData& WheelData::set_speed(int speed)
 WheelData& WheelData::set_name(QString name)
 {
   _value.name = std::move(name);
+  return *this;
+}
+
+//=============================================================================
+WheelData& WheelData::set_reverse(bool reverse)
+{
+  _value.reverse = reverse;
   return *this;
 }
