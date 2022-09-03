@@ -72,7 +72,7 @@ Robot::Robot()
             const double y = std::abs(p.y) > tolerance ? p.y : 0.0;
             // We map X coordinate to yaw and Y coordinate to linear X-vel
             msg->twist.linear.x = y / 100.0;
-            msg->twist.angular.z = y > 0 ? -x / 100.0 : x / 100.0;
+            msg->twist.angular.z = -x / 100.0;
           }
           data->_pub->publish(std::move(msg));
           continue;
