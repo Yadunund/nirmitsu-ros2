@@ -31,7 +31,7 @@ class Robot(Node):
 
         self.left_wheel_name = self.declare_parameter("left_wheel_name", "Left")
         self.right_wheel_name = self.declare_parameter("right_wheel_name", "Right")
-        self.joystick_name = self.declare_parameter("joystick_frame", "Robot")
+        self.joystick_frame = self.declare_parameter("joystick_frame", "Robot")
         self.track_width = self.declare_parameter("track_width", 0.152)
         self.wheel_radius = self.declare_parameter("wheel_radius", 0.062)
 
