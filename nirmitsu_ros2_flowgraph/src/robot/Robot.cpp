@@ -87,7 +87,7 @@ Robot::Robot()
           const int dir = value.reverse ? -1 : 1;
           msg->header.frame_id = value.name.toStdString();
           msg->twist.linear.x =
-            data->_on_data->value() ? dir * value.speed / 100.0 : 0.0;
+          data->_on_data->value() ? dir * value.speed / 100.0 : 0.0;
           data->_pub->publish(std::move(msg));
 
         }
