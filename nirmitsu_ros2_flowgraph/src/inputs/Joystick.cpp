@@ -48,6 +48,26 @@ unsigned int Joystick::nPorts(PortType portType) const
 }
 
 //=============================================================================
+QString Joystick::portCaption(PortType portType, PortIndex portIndex) const
+{
+  if (portType == PortType::In)
+  {
+    return QString();
+  }
+  else if (portType == PortType::Out)
+  {
+    if (portIndex == 0)
+      return QStringLiteral("Display");
+    else
+      return QStringLiteral("Joystick");
+  }
+  else
+  {
+    return QString();
+  }
+}
+
+//=============================================================================
 NodeDataType Joystick::dataType(PortType portType, PortIndex portIndex) const
 {
   if (portType == PortType::In)

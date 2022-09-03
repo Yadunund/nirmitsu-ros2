@@ -43,23 +43,37 @@ Robot::Robot()
         std::this_thread::sleep_for(data->_period);
         // TODO(YV): Wait on a cv for input from wheels
         std::lock_guard<std::mutex> lock(data->_mutex);
-        if (data->_wheel_1_data == nullptr && data->_wheel_2_data == nullptr)
-        {
-          RCLCPP_DEBUG(
-            data->_node->get_logger(),
-            "[Robot] Waiting for a wheel to connect"
-          );
-          continue;
-        }
+        // if (data->_wheel_1_data == nullptr && data->_wheel_2_data == nullptr)
+        // {
+        //   RCLCPP_DEBUG(
+        //     data->_node->get_logger(),
+        //     "[Robot] Waiting for a wheel to connect"
+        //   );
+        //   continue;
+        // }
 
         // If we're receiving joystick commands, only publish that Twist
-        if (data->_joystick_data != nullptr &&
-        data->_wheel_1_data != nullptr &&
-        data->_wheel_2_data != nullptr)
+        if (data->_joystick_data != nullptr)
         {
           auto msg = std::make_unique<Twist>();
           msg->header.stamp = data->_node->get_clock()->now();
-          msg->header.frame_id = "robot";
+          msg->header.frame_id = "Robot";
+          const auto& p = data->_joystick_data->value();
+          // Zero vel if off or joystick displacements are small.
+          const int tolerance = 15;
+          if (!data->_on_data->value())
+          {
+            msg->twist.linear.x = 0.0;
+            msg->twist.angular.z = 0.0;
+          }
+          else
+          {
+            const double x = std::abs(p.x) > tolerance ? p.x : 0.0;
+            const double y = std::abs(p.y) > tolerance ? p.y : 0.0;
+            // We map X coordinate to yaw and Y coordinate to linear X-vel
+            msg->twist.linear.x = y / 100.0;
+            msg->twist.angular.z = y > 0 ? -x / 100.0 : x / 100.0;
+          }
           data->_pub->publish(std::move(msg));
           continue;
         }
@@ -73,7 +87,7 @@ Robot::Robot()
           const int dir = value.reverse ? -1 : 1;
           msg->header.frame_id = value.name.toStdString();
           msg->twist.linear.x =
-          data->_on_data->value() ? dir * value.speed / 100.0 : 0.0;
+            data->_on_data->value() ? dir * value.speed / 100.0 : 0.0;
           data->_pub->publish(std::move(msg));
 
         }
@@ -179,7 +193,7 @@ NodeDataType Robot::dataType(PortType portType, PortIndex portIndex) const
     // Joystick
     else if (portIndex == 2)
     {
-      return StringData().type();
+      return Point2D().type();
     }
     // On
     else if (portIndex == 3)
@@ -232,10 +246,9 @@ void Robot::setInData(std::shared_ptr<NodeData> data, PortIndex port)
   // Joystick
   else if (port == 2)
   {
-    auto joy_data = std::dynamic_pointer_cast<StringData>(data);
+    auto joy_data = std::dynamic_pointer_cast<Point2D>(data);
     if (joy_data == nullptr)
       return;
-    // First time connecting to Right Wheel
     _data->_joystick_data = std::move(joy_data);
     _data->_string_data->value(
       QStringLiteral("Received joystick command %1:\n")
