@@ -45,6 +45,26 @@ unsigned int Switch::nPorts(PortType portType) const
 }
 
 //=============================================================================
+QString Switch::portCaption(PortType portType, PortIndex portIndex) const
+{
+  if (portType == PortType::In)
+  {
+    return QString();
+  }
+  else if (portType == PortType::Out)
+  {
+    if (portIndex == 0)
+      return QStringLiteral("Display");
+    else
+      return QStringLiteral("On");
+  }
+  else
+  {
+    return QString();
+  }
+}
+
+//=============================================================================
 NodeDataType Switch::dataType(PortType portType, PortIndex portIndex) const
 {
   if (portType == PortType::In)
