@@ -28,3 +28,6 @@ cd ~/ws_nirmitsu
 source install/setup.bash
 ros2 run nirmitsu_ros2_flowgraph nirmitsu
 ```
+
+## Tutorials
+Follow instructions [here](docs/workshop.md) to learn how robots move.
