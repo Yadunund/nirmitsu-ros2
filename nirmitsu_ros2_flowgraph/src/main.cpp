@@ -70,7 +70,7 @@ int main(int argc, char** argv)
 
   FlowView view(&scene);
 
-  view.setWindowTitle("Node-based flow editor");
+  view.setWindowTitle("Nirmitsu Robotics");
   view.resize(800, 600);
   view.show();
 
